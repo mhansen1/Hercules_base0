@@ -484,17 +484,17 @@ void afterSTC(void)
     _mpuInit_();
 
     /* initialize global variable and constructors */
-    __TI_auto_init();
+    //__TI_auto_init();
 
-    SL_ESM_Init(ESM_ApplicationCallback);
-    _enable_interrupt_();
+    //SL_ESM_Init(ESM_ApplicationCallback);
+    //_enable_interrupt_();
 
-    uint32 i;
-    uint32 size=(uint32)&ulHighHandlerSize;
-    for(i=0;i<size;i++)
-    {
-        ((char *)&ulHighHandlerStartAddr)[i] =((char *)&ulHighHandlerLoadStart)[i];
-    }
+    //uint32 i;
+    //uint32 size=(uint32)&ulHighHandlerSize;
+    //for(i=0;i<size;i++)
+    //{
+    //    ((char *)&ulHighHandlerStartAddr)[i] =((char *)&ulHighHandlerLoadStart)[i];
+    //}
 
     /* call the application */
 /*SAFETYMCUSW 296 S MR:8.6 <APPROVED> "Startup code(library functions at block scope)" */
