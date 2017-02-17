@@ -113,4 +113,5 @@ PDE_DEPS__QUOTED :=
 SUBDIRS := \
 demoapp/source \
 hcg/source \
+src \
 

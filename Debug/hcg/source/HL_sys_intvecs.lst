@@ -1,0 +1,78 @@
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+../hcg/source/HL_sys_intvecs.asm                                     PAGE    1
+
+       1                    ;-------------------------------------------------------------------------------
+       2                    ; HL_sys_intvecs.asm
+       3                    ;
+       4                    ; Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com  
+       5                    ; 
+       6                    ; 
+       7                    ;  Redistribution and use in source and binary forms, with or without 
+       8                    ;  modification, are permitted provided that the following conditions 
+       9                    ;  are met:
+      10                    ;
+      11                    ;    Redistributions of source code must retain the above copyright 
+      12                    ;    notice, this list of conditions and the following disclaimer.
+      13                    ;
+      14                    ;    Redistributions in binary form must reproduce the above copyright
+      15                    ;    notice, this list of conditions and the following disclaimer in the 
+      16                    ;    documentation and/or other materials provided with the   
+      17                    ;    distribution.
+      18                    ;
+      19                    ;    Neither the name of Texas Instruments Incorporated nor the names of
+      20                    ;    its contributors may be used to endorse or promote products derived
+      21                    ;    from this software without specific prior written permission.
+      22                    ;
+      23                    ;  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS 
+      24                    ;  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT 
+      25                    ;  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+      26                    ;  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT 
+      27                    ;  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
+      28                    ;  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT 
+      29                    ;  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+      30                    ;  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+      31                    ;  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT 
+      32                    ;  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
+      33                    ;  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+      34                    ;
+      35                    ;
+      36                    ;
+      37                    
+      38 00000000               .sect ".intvecs"
+      39 00000000               .arm
+      40                    
+      41                    ;-------------------------------------------------------------------------------
+      42                    ; import reference for interrupt routines
+      43                    
+      44                        .ref _c_int00
+      45                        .ref phantomInterrupt
+      46                        .def resetEntry
+      47                    
+      48                    ;-------------------------------------------------------------------------------
+      49                    ; interrupt vectors
+      50                    
+      51 00000000           resetEntry
+      52 00000000 EAFFFFFE!         b   _c_int00
+      53 00000004           undefEntry
+      54 00000004 EAFFFFFE!         b   undefEntry
+      55 00000008           svcEntry
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+../hcg/source/HL_sys_intvecs.asm                                     PAGE    2
+
+      56 00000008 EAFFFFFE!         b   svcEntry
+      57 0000000c           prefetchEntry
+      58 0000000c EAFFFFFE!         b   prefetchEntry
+      59 00000010           dataEntry
+      60 00000010 EAFFFFFE!         b   dataEntry
+      61 00000014 EAFFFFFE!         b   phantomInterrupt
+      62 00000018 E51FF1B0          ldr pc,[pc,#-0x1b0]
+      63 0000001c E51FF1B0          ldr pc,[pc,#-0x1b0]
+      64                    
+      65                        
+      66                    ;-------------------------------------------------------------------------------
+
+No Assembly Errors, No Assembly Warnings

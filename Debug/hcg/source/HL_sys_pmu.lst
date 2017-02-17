@@ -1,0 +1,281 @@
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+../hcg/source/HL_sys_pmu.asm                                         PAGE    1
+
+       1                    ;-------------------------------------------------------------------------------
+       2                    ; HL_sys_pmu.asm
+       3                    ;
+       4                    ; Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com  
+       5                    ; 
+       6                    ; 
+       7                    ;  Redistribution and use in source and binary forms, with or without 
+       8                    ;  modification, are permitted provided that the following conditions 
+       9                    ;  are met:
+      10                    ;
+      11                    ;    Redistributions of source code must retain the above copyright 
+      12                    ;    notice, this list of conditions and the following disclaimer.
+      13                    ;
+      14                    ;    Redistributions in binary form must reproduce the above copyright
+      15                    ;    notice, this list of conditions and the following disclaimer in the 
+      16                    ;    documentation and/or other materials provided with the   
+      17                    ;    distribution.
+      18                    ;
+      19                    ;    Neither the name of Texas Instruments Incorporated nor the names of
+      20                    ;    its contributors may be used to endorse or promote products derived
+      21                    ;    from this software without specific prior written permission.
+      22                    ;
+      23                    ;  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS 
+      24                    ;  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT 
+      25                    ;  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+      26                    ;  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT 
+      27                    ;  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
+      28                    ;  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT 
+      29                    ;  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+      30                    ;  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+      31                    ;  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT 
+      32                    ;  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
+      33                    ;  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+      34                    ;
+      35                    ;
+      36                    ;
+      37                    
+      38 00000000               .text
+      39 00000000               .arm
+      40                    
+      41                    
+      42                    ;-------------------------------------------------------------------------------
+      43                    ; Initialize Pmu
+      44                    ; Note: It will reset all counters
+      45                    
+      46                        .def     _pmuInit_
+      47                        .asmfunc
+      48                    
+      49 00000000           _pmuInit_
+      50                    
+      51 00000000 E92D0001          stmfd sp!, {r0}
+      52                            ; set control register
+      53 00000004 EE190F1C          mrc   p15, #0, r0, c9, c12, #0 
+      54 00000008 E3800017          orr   r0,  r0, #(1 << 4) + 6 + 1
+      55 0000000c EE090F1C          mcr   p15, #0, r0, c9, c12, #0
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+../hcg/source/HL_sys_pmu.asm                                         PAGE    2
+
+      56                            ; clear flags
+      57 00000010 E3A00000                  mov   r0,  #0
+      58 00000014 E2400001                  sub   r0,  r0,  #1
+      59 00000018 EE090F7C                  mcr   p15, #0, r0, c9, c12, #3 
+      60                            ; select counter 0 event
+      61 0000001c E3A00000                  mov   r0,  #0
+      62 00000020 EE090FBC          mcr   p15, #0, r0, c9, c12, #5 ; select counter
+      63 00000024 E3A00011          mov   r0,  #0x11
+      64 00000028 EE090F3D          mcr   p15, #0, r0, c9, c13, #1 ; select event
+      65                            ; select counter 1 event
+      66 0000002c E3A00001                  mov   r0,  #1
+      67 00000030 EE090FBC          mcr   p15, #0, r0, c9, c12, #5 ; select counter
+      68 00000034 E3A00011          mov   r0,  #0x11
+      69 00000038 EE090F3D          mcr   p15, #0, r0, c9, c13, #1 ; select event
+      70                            ; select counter 2 event
+      71 0000003c E3A00002                  mov   r0,  #2
+      72 00000040 EE090FBC          mcr   p15, #0, r0, c9, c12, #5 ; select counter
+      73 00000044 E3A00011          mov   r0,  #0x11
+      74 00000048 EE090F3D          mcr   p15, #0, r0, c9, c13, #1 ; select event
+      75 0000004c E8BD0001          ldmfd sp!, {r0}
+      76 00000050 E12FFF1E          bx    lr
+      77                    
+      78                        .endasmfunc
+      79                    
+      80                    
+      81                    ;-------------------------------------------------------------------------------
+      82                    ; Enable Counters Global [Cycle, Event [0..2]]
+      83                    ; Note: It will reset all counters
+      84                    
+      85                        .def     _pmuEnableCountersGlobal_
+      86                        .asmfunc
+      87                    
+      88 00000054           _pmuEnableCountersGlobal_
+      89                    
+      90 00000054 E92D0001          stmfd sp!, {r0}
+      91 00000058 EE190F1C          mrc   p15, #0, r0, c9, c12, #0 
+      92 0000005c E3800007          orr   r0,  r0, #7
+      93 00000060 EE090F1C          mcr   p15, #0, r0, c9, c12, #0
+      94 00000064 E8BD0001          ldmfd sp!, {r0}         
+      95 00000068 E12FFF1E          bx    lr
+      96                    
+      97                        .endasmfunc
+      98                    
+      99                    ;-------------------------------------------------------------------------------
+     100                    ; Disable Counters Global [Cycle, Event [0..2]]
+     101                    
+     102                        .def     _pmuDisableCountersGlobal_
+     103                        .asmfunc
+     104                    
+     105 0000006c           _pmuDisableCountersGlobal_
+     106                    
+     107 0000006c E92D0001          stmfd sp!, {r0}
+     108 00000070 EE190F1C          mrc   p15, #0, r0, c9, c12, #0 
+     109 00000074 E3C00001          bic   r0,  r0, #1
+     110 00000078 EE090F1C          mcr   p15, #0, r0, c9, c12, #0
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+../hcg/source/HL_sys_pmu.asm                                         PAGE    3
+
+     111 0000007c E8BD0001          ldmfd sp!, {r0}         
+     112 00000080 E12FFF1E          bx    lr
+     113                    
+     114                        .endasmfunc
+     115                    
+     116                    ;-------------------------------------------------------------------------------
+     117                    ; Reset Cycle Counter
+     118                    
+     119                        .def     _pmuResetCycleCounter_
+     120                        .asmfunc
+     121                    
+     122 00000084           _pmuResetCycleCounter_
+     123                    
+     124 00000084 E92D0001          stmfd sp!, {r0}
+     125 00000088 EE190F1C          mrc   p15, #0, r0, c9, c12, #0 
+     126 0000008c E3800004          orr   r0,  r0, #4
+     127 00000090 EE090F1C          mcr   p15, #0, r0, c9, c12, #0
+     128 00000094 E8BD0001          ldmfd sp!, {r0}         
+     129 00000098 E12FFF1E          bx    lr
+     130                    
+     131                        .endasmfunc
+     132                    
+     133                    ;-------------------------------------------------------------------------------
+     134                    ; Reset Event Counters [0..2]
+     135                    
+     136                        .def     _pmuResetEventCounters_
+     137                        .asmfunc
+     138                    
+     139 0000009c           _pmuResetEventCounters_
+     140                    
+     141 0000009c E92D0001          stmfd sp!, {r0}
+     142 000000a0 EE190F1C          mrc   p15, #0, r0, c9, c12, #0 
+     143 000000a4 E3800002          orr   r0,  r0, #2
+     144 000000a8 EE090F1C          mcr   p15, #0, r0, c9, c12, #0
+     145 000000ac E8BD0001          ldmfd sp!, {r0}         
+     146 000000b0 E12FFF1E          bx    lr
+     147                    
+     148                        .endasmfunc
+     149                    
+     150                    ;-------------------------------------------------------------------------------
+     151                    ; Reset Cycle Counter abd Event Counters [0..2]
+     152                    
+     153                        .def     _pmuResetCounters_
+     154                        .asmfunc
+     155                    
+     156 000000b4           _pmuResetCounters_
+     157                    
+     158 000000b4 E92D0001          stmfd sp!, {r0}
+     159 000000b8 EE190F1C          mrc   p15, #0, r0, c9, c12, #0 
+     160 000000bc E3800006          orr   r0,  r0, #6
+     161 000000c0 EE090F1C          mcr   p15, #0, r0, c9, c12, #0
+     162 000000c4 E8BD0001          ldmfd sp!, {r0}         
+     163 000000c8 E12FFF1E          bx    lr
+     164                    
+     165                        .endasmfunc
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+../hcg/source/HL_sys_pmu.asm                                         PAGE    4
+
+     166                    
+     167                    ;-------------------------------------------------------------------------------
+     168                    ; Start Counters [Cycle, 0..2]
+     169                    
+     170                        .def     _pmuStartCounters_
+     171                        .asmfunc
+     172                    
+     173 000000cc           _pmuStartCounters_
+     174                    
+     175 000000cc EE090F3C          mcr   p15, #0, r0, c9, c12, #1
+     176 000000d0 E12FFF1E          bx    lr
+     177                    
+     178                        .endasmfunc
+     179                    
+     180                    ;-------------------------------------------------------------------------------
+     181                    ; Stop Counters [Cycle, 0..2]
+     182                    
+     183                        .def     _pmuStopCounters_
+     184                        .asmfunc
+     185                    
+     186 000000d4           _pmuStopCounters_
+     187                    
+     188 000000d4 EE090F5C          mcr   p15, #0, r0, c9, c12, #2
+     189 000000d8 E12FFF1E          bx    lr
+     190                    
+     191                        .endasmfunc
+     192                    
+     193                    ;-------------------------------------------------------------------------------
+     194                    ; Set Count event
+     195                    
+     196                        .def     _pmuSetCountEvent_
+     197                        .asmfunc
+     198                    
+     199 000000dc           _pmuSetCountEvent_
+     200                     
+     201 000000dc EE090FBC          mcr   p15, #0, r0, c9, c12, #5 ; select counter
+     202 000000e0 EE091F3D          mcr   p15, #0, r1, c9, c13, #1 ; select event
+     203 000000e4 E12FFF1E          bx    lr
+     204                    
+     205                        .endasmfunc
+     206                    
+     207                    ;-------------------------------------------------------------------------------
+     208                    ; Get Cycle Count
+     209                    
+     210                        .def     _pmuGetCycleCount_
+     211                        .asmfunc
+     212                    
+     213 000000e8           _pmuGetCycleCount_
+     214                    
+     215 000000e8 EE190F1D          mrc   p15, #0, r0, c9, c13, #0
+     216 000000ec E12FFF1E          bx    lr
+     217                    
+     218                        .endasmfunc
+     219                    
+     220                    ;-------------------------------------------------------------------------------
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+../hcg/source/HL_sys_pmu.asm                                         PAGE    5
+
+     221                    ; Get Event Counter Count Value
+     222                    
+     223                        .def     _pmuGetEventCount_
+     224                        .asmfunc
+     225                    
+     226 000000f0           _pmuGetEventCount_
+     227                    
+     228 000000f0 E1A000A0          lsr   r0,  r0, #1
+     229 000000f4 EE090FBC          mcr   p15, #0, r0, c9, c12, #5 ; select counter
+     230 000000f8 EE190F5D          mrc   p15, #0, r0, c9, c13, #2 ; read event counter
+     231 000000fc E12FFF1E          bx    lr
+     232                    
+     233                        .endasmfunc
+     234                    
+     235                    ;-------------------------------------------------------------------------------
+     236                    ; Get Overflow Flags
+     237                    
+     238                        .def     _pmuGetOverflow_
+     239                        .asmfunc
+     240                    
+     241 00000100           _pmuGetOverflow_
+     242                    
+     243 00000100 EE190F7C          mrc   p15, #0, r0, c9, c12, #3 ; read overflow
+     244 00000104 E3A01000                  mov   r1,  #0
+     245 00000108 E2411001                  sub   r1,  r1,  #1
+     246 0000010c EE091F7C                  mcr   p15, #0, r1, c9, c12, #3 ; clear flags
+     247 00000110 E12FFF1E          bx    lr
+     248                    
+     249                        .endasmfunc
+     250                    
+     251                        
+     252                    
+     253                    ;-------------------------------------------------------------------------------
+     254                    
+
+No Assembly Errors, No Assembly Warnings

@@ -1,0 +1,1813 @@
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE    1
+
+       1                    ;******************************************************************************
+       2                    ;* TI ARM C/C++ Codegen                                        PC v16.9.0.LTS *
+       3                    ;* Date/Time created: Thu Feb 16 13:27:09 2017                                *
+       4                    ;******************************************************************************
+       5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=32 --diag_wrap=off --embed
+       6 00000000                   .state32
+       7                    
+       8                    $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       9                            .dwattr $C$DW$CU, DW_AT_name("../hcg/source/HL_pinmux.c")
+      10                            .dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v16.9.0.LTS Copyright (c) 1996-20
+      11                            .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pro
+      13                    ;       C:\ti\ccsv7\tools\compiler\ti-cgt-arm_16.9.0.LTS\bin\armacpia.exe -@C:\\Users\\bob\\AppData\\L
+      14 00000000                   .sect   ".text"
+      15                            .clink
+      16                            .armfunc muxInit
+      17 00000000                   .state32
+      18                            .global muxInit
+      19                    
+      20                    $C$DW$1 .dwtag  DW_TAG_subprogram
+      21                            .dwattr $C$DW$1, DW_AT_name("muxInit")
+      22                            .dwattr $C$DW$1, DW_AT_low_pc(muxInit)
+      23                            .dwattr $C$DW$1, DW_AT_high_pc(0x00)
+      24                            .dwattr $C$DW$1, DW_AT_TI_symbol_name("muxInit")
+      25                            .dwattr $C$DW$1, DW_AT_external
+      26                            .dwattr $C$DW$1, DW_AT_TI_begin_file("../hcg/source/HL_pinmux.c")
+      27                            .dwattr $C$DW$1, DW_AT_TI_begin_line(0xe0)
+      28                            .dwattr $C$DW$1, DW_AT_TI_begin_column(0x06)
+      29                            .dwattr $C$DW$1, DW_AT_decl_file("../hcg/source/HL_pinmux.c")
+      30                            .dwattr $C$DW$1, DW_AT_decl_line(0xe0)
+      31                            .dwattr $C$DW$1, DW_AT_decl_column(0x06)
+      32                            .dwattr $C$DW$1, DW_AT_TI_max_frame_size(0x00)
+      33                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 224,column 19,is_stmt,address muxInit,isa 2
+      34                    
+      35                            .dwfde $C$DW$CIE, muxInit
+      36                    
+      37                    ;*****************************************************************************
+      38                    ;* FUNCTION NAME: muxInit                                                    *
+      39                    ;*                                                                           *
+      40                    ;*   Regs Modified     : A1,V9                                               *
+      41                    ;*   Regs Used         : A1,V9,LR                                            *
+      42                    ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+      43                    ;*****************************************************************************
+      44 00000000           muxInit:
+      45                    ;* --------------------------------------------------------------------------*
+      46                            .dwcfi  cfa_offset, 0
+      47                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 230,column 2,is_stmt,isa 2
+      48 00000000 E59F0850          LDR       A1, $C$CON1           ; [DPU_4_PIPE0] |230| 
+      49 00000004 E59FC850          LDR       V9, $C$CON2           ; [DPU_4_PIPE0] |230| 
+      50 00000008 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |230| 
+      51                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 231,column 2,is_stmt,isa 2
+      52 0000000c E59F084C          LDR       A1, $C$CON3           ; [DPU_4_PIPE0] |231| 
+      53 00000010 E59FC84C          LDR       V9, $C$CON4           ; [DPU_4_PIPE0] |231| 
+      54 00000014 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |231| 
+      55                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 236,column 5,is_stmt,isa 2
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE    2
+
+      56 00000018 E59F0848          LDR       A1, $C$CON5           ; [DPU_4_PIPE0] |236| 
+      57 0000001c E59FC848          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |236| 
+      58 00000020 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |236| 
+      59                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 238,column 2,is_stmt,isa 2
+      60 00000024 E59F0844          LDR       A1, $C$CON7           ; [DPU_4_PIPE0] |238| 
+      61 00000028 E59FC83C          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |238| 
+      62 0000002c E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |238| 
+      63                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 240,column 2,is_stmt,isa 2
+      64 00000030 E59F083C          LDR       A1, $C$CON8           ; [DPU_4_PIPE0] |240| 
+      65 00000034 E59FC830          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |240| 
+      66 00000038 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |240| 
+      67                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 242,column 2,is_stmt,isa 2
+      68 0000003c E59F0834          LDR       A1, $C$CON9           ; [DPU_4_PIPE0] |242| 
+      69 00000040 E59FC824          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |242| 
+      70 00000044 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |242| 
+      71                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 244,column 2,is_stmt,isa 2
+      72 00000048 E59F082C          LDR       A1, $C$CON10          ; [DPU_4_PIPE0] |244| 
+      73 0000004c E59FC82C          LDR       V9, $C$CON11          ; [DPU_4_PIPE0] |244| 
+      74 00000050 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |244| 
+      75                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 246,column 2,is_stmt,isa 2
+      76 00000054 E59F0828          LDR       A1, $C$CON12          ; [DPU_4_PIPE0] |246| 
+      77 00000058 E3A0C000          MOV       V9, #0                ; [DPU_4_PIPE0] |246| 
+      78 0000005c E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |246| 
+      79                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 248,column 2,is_stmt,isa 2
+      80 00000060 E59F0820          LDR       A1, $C$CON13          ; [DPU_4_PIPE0] |248| 
+      81 00000064 E3A0C000          MOV       V9, #0                ; [DPU_4_PIPE0] |248| 
+      82 00000068 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |248| 
+      83                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 250,column 2,is_stmt,isa 2
+      84 0000006c E59F0818          LDR       A1, $C$CON14          ; [DPU_4_PIPE0] |250| 
+      85 00000070 E3A0C000          MOV       V9, #0                ; [DPU_4_PIPE0] |250| 
+      86 00000074 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |250| 
+      87                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 252,column 2,is_stmt,isa 2
+      88 00000078 E59F0810          LDR       A1, $C$CON15          ; [DPU_4_PIPE0] |252| 
+      89 0000007c E3A0C401          MOV       V9, #16777216         ; [DPU_4_PIPE0] |252| 
+      90 00000080 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |252| 
+      91                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 254,column 2,is_stmt,isa 2
+      92 00000084 E59F0808          LDR       A1, $C$CON16          ; [DPU_4_PIPE0] |254| 
+      93 00000088 E59FC808          LDR       V9, $C$CON17          ; [DPU_4_PIPE0] |254| 
+      94 0000008c E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |254| 
+      95                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 256,column 2,is_stmt,isa 2
+      96 00000090 E59F0804          LDR       A1, $C$CON18          ; [DPU_4_PIPE0] |256| 
+      97 00000094 E59FC7D0          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |256| 
+      98 00000098 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |256| 
+      99                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 258,column 2,is_stmt,isa 2
+     100 0000009c E59F07FC          LDR       A1, $C$CON19          ; [DPU_4_PIPE0] |258| 
+     101 000000a0 E59FC7C4          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |258| 
+     102 000000a4 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |258| 
+     103                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 260,column 2,is_stmt,isa 2
+     104 000000a8 E59F07F4          LDR       A1, $C$CON20          ; [DPU_4_PIPE0] |260| 
+     105 000000ac E59FC7B8          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |260| 
+     106 000000b0 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |260| 
+     107                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 262,column 2,is_stmt,isa 2
+     108 000000b4 E59F07EC          LDR       A1, $C$CON21          ; [DPU_4_PIPE0] |262| 
+     109 000000b8 E59FC7AC          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |262| 
+     110 000000bc E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |262| 
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE    3
+
+     111                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 264,column 2,is_stmt,isa 2
+     112 000000c0 E59F07E4          LDR       A1, $C$CON22          ; [DPU_4_PIPE0] |264| 
+     113 000000c4 E59FC7A0          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |264| 
+     114 000000c8 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |264| 
+     115                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 266,column 2,is_stmt,isa 2
+     116 000000cc E59F07DC          LDR       A1, $C$CON23          ; [DPU_4_PIPE0] |266| 
+     117 000000d0 E59FC794          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |266| 
+     118 000000d4 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |266| 
+     119                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 268,column 2,is_stmt,isa 2
+     120 000000d8 E59F07D4          LDR       A1, $C$CON24          ; [DPU_4_PIPE0] |268| 
+     121 000000dc E59FC788          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |268| 
+     122 000000e0 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |268| 
+     123                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 270,column 2,is_stmt,isa 2
+     124 000000e4 E59F07CC          LDR       A1, $C$CON25          ; [DPU_4_PIPE0] |270| 
+     125 000000e8 E59FC77C          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |270| 
+     126 000000ec E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |270| 
+     127                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 272,column 2,is_stmt,isa 2
+     128 000000f0 E59F07C4          LDR       A1, $C$CON26          ; [DPU_4_PIPE0] |272| 
+     129 000000f4 E59FC770          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |272| 
+     130 000000f8 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |272| 
+     131                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 274,column 2,is_stmt,isa 2
+     132 000000fc E59F07BC          LDR       A1, $C$CON27          ; [DPU_4_PIPE0] |274| 
+     133 00000100 E59FC764          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |274| 
+     134 00000104 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |274| 
+     135                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 276,column 2,is_stmt,isa 2
+     136 00000108 E59F07B4          LDR       A1, $C$CON28          ; [DPU_4_PIPE0] |276| 
+     137 0000010c E59FC758          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |276| 
+     138 00000110 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |276| 
+     139                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 278,column 2,is_stmt,isa 2
+     140 00000114 E59F07AC          LDR       A1, $C$CON29          ; [DPU_4_PIPE0] |278| 
+     141 00000118 E59FC74C          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |278| 
+     142 0000011c E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |278| 
+     143                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 280,column 2,is_stmt,isa 2
+     144 00000120 E59F07A4          LDR       A1, $C$CON30          ; [DPU_4_PIPE0] |280| 
+     145 00000124 E59FC740          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |280| 
+     146 00000128 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |280| 
+     147                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 282,column 2,is_stmt,isa 2
+     148 0000012c E59F079C          LDR       A1, $C$CON31          ; [DPU_4_PIPE0] |282| 
+     149 00000130 E59FC734          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |282| 
+     150 00000134 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |282| 
+     151                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 284,column 2,is_stmt,isa 2
+     152 00000138 E59F0794          LDR       A1, $C$CON32          ; [DPU_4_PIPE0] |284| 
+     153 0000013c E59FC728          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |284| 
+     154 00000140 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |284| 
+     155                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 286,column 2,is_stmt,isa 2
+     156 00000144 E59F078C          LDR       A1, $C$CON33          ; [DPU_4_PIPE0] |286| 
+     157 00000148 E59FC71C          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |286| 
+     158 0000014c E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |286| 
+     159                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 288,column 2,is_stmt,isa 2
+     160 00000150 E59F0784          LDR       A1, $C$CON34          ; [DPU_4_PIPE0] |288| 
+     161 00000154 E59FC710          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |288| 
+     162 00000158 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |288| 
+     163                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 290,column 2,is_stmt,isa 2
+     164 0000015c E59F077C          LDR       A1, $C$CON35          ; [DPU_4_PIPE0] |290| 
+     165 00000160 E59FC704          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |290| 
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE    4
+
+     166 00000164 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |290| 
+     167                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 292,column 2,is_stmt,isa 2
+     168 00000168 E59F0774          LDR       A1, $C$CON36          ; [DPU_4_PIPE0] |292| 
+     169 0000016c E59FC6F8          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |292| 
+     170 00000170 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |292| 
+     171                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 294,column 2,is_stmt,isa 2
+     172 00000174 E59F076C          LDR       A1, $C$CON37          ; [DPU_4_PIPE0] |294| 
+     173 00000178 E59FC6EC          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |294| 
+     174 0000017c E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |294| 
+     175                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 296,column 2,is_stmt,isa 2
+     176 00000180 E59F0764          LDR       A1, $C$CON38          ; [DPU_4_PIPE0] |296| 
+     177 00000184 E59FC6E0          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |296| 
+     178 00000188 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |296| 
+     179                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 298,column 2,is_stmt,isa 2
+     180 0000018c E59F075C          LDR       A1, $C$CON39          ; [DPU_4_PIPE0] |298| 
+     181 00000190 E59FC6D4          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |298| 
+     182 00000194 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |298| 
+     183                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 300,column 2,is_stmt,isa 2
+     184 00000198 E59F0754          LDR       A1, $C$CON40          ; [DPU_4_PIPE0] |300| 
+     185 0000019c E59FC6C8          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |300| 
+     186 000001a0 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |300| 
+     187                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 302,column 2,is_stmt,isa 2
+     188 000001a4 E59F074C          LDR       A1, $C$CON41          ; [DPU_4_PIPE0] |302| 
+     189 000001a8 E59FC6BC          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |302| 
+     190 000001ac E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |302| 
+     191                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 304,column 2,is_stmt,isa 2
+     192 000001b0 E59F0744          LDR       A1, $C$CON42          ; [DPU_4_PIPE0] |304| 
+     193 000001b4 E59FC6B0          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |304| 
+     194 000001b8 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |304| 
+     195                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 306,column 2,is_stmt,isa 2
+     196 000001bc E59F073C          LDR       A1, $C$CON43          ; [DPU_4_PIPE0] |306| 
+     197 000001c0 E59FC6A4          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |306| 
+     198 000001c4 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |306| 
+     199                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 308,column 2,is_stmt,isa 2
+     200 000001c8 E59F0734          LDR       A1, $C$CON44          ; [DPU_4_PIPE0] |308| 
+     201 000001cc E59FC698          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |308| 
+     202 000001d0 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |308| 
+     203                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 310,column 2,is_stmt,isa 2
+     204 000001d4 E59F072C          LDR       A1, $C$CON45          ; [DPU_4_PIPE0] |310| 
+     205 000001d8 E300C101          MOV       V9, #257              ; [DPU_4_PIPE0] |310| 
+     206 000001dc E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |310| 
+     207                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 312,column 2,is_stmt,isa 2
+     208 000001e0 E59F0724          LDR       A1, $C$CON46          ; [DPU_4_PIPE0] |312| 
+     209 000001e4 E59FC724          LDR       V9, $C$CON47          ; [DPU_4_PIPE0] |312| 
+     210 000001e8 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |312| 
+     211                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 314,column 2,is_stmt,isa 2
+     212 000001ec E59F0720          LDR       A1, $C$CON48          ; [DPU_4_PIPE0] |314| 
+     213 000001f0 E3A0C000          MOV       V9, #0                ; [DPU_4_PIPE0] |314| 
+     214 000001f4 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |314| 
+     215                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 316,column 2,is_stmt,isa 2
+     216 000001f8 E59F0718          LDR       A1, $C$CON49          ; [DPU_4_PIPE0] |316| 
+     217 000001fc E3A0C000          MOV       V9, #0                ; [DPU_4_PIPE0] |316| 
+     218 00000200 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |316| 
+     219                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 318,column 2,is_stmt,isa 2
+     220 00000204 E59F0710          LDR       A1, $C$CON50          ; [DPU_4_PIPE0] |318| 
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE    5
+
+     221 00000208 E59FC710          LDR       V9, $C$CON51          ; [DPU_4_PIPE0] |318| 
+     222 0000020c E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |318| 
+     223                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 320,column 2,is_stmt,isa 2
+     224 00000210 E59F070C          LDR       A1, $C$CON52          ; [DPU_4_PIPE0] |320| 
+     225 00000214 E59FC650          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |320| 
+     226 00000218 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |320| 
+     227                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 322,column 2,is_stmt,isa 2
+     228 0000021c E59F0704          LDR       A1, $C$CON53          ; [DPU_4_PIPE0] |322| 
+     229 00000220 E59FC644          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |322| 
+     230 00000224 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |322| 
+     231                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 324,column 2,is_stmt,isa 2
+     232 00000228 E59F06FC          LDR       A1, $C$CON54          ; [DPU_4_PIPE0] |324| 
+     233 0000022c E59FC638          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |324| 
+     234 00000230 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |324| 
+     235                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 326,column 2,is_stmt,isa 2
+     236 00000234 E59F06F4          LDR       A1, $C$CON55          ; [DPU_4_PIPE0] |326| 
+     237 00000238 E59FC62C          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |326| 
+     238 0000023c E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |326| 
+     239                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 328,column 2,is_stmt,isa 2
+     240 00000240 E59F06EC          LDR       A1, $C$CON56          ; [DPU_4_PIPE0] |328| 
+     241 00000244 E59FC6EC          LDR       V9, $C$CON57          ; [DPU_4_PIPE0] |328| 
+     242 00000248 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |328| 
+     243                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 330,column 2,is_stmt,isa 2
+     244 0000024c E59F06EC          LDR       A1, $C$CON59          ; [DPU_4_PIPE0] |330| 
+     245                    ;* --------------------------------------------------------------------------*
+     246 00000250 E59FC6E4          LDR       V9, $C$CON58          ; [DPU_4_PIPE0] |330| 
+     247 00000254 E58C0000          STR       A1, [V9, #0]          ; [DPU_4_PIPE0] |330| 
+     248                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 332,column 2,is_stmt,isa 2
+     249 00000258 E59F06E4          LDR       A1, $C$CON60          ; [DPU_4_PIPE0] |332| 
+     250 0000025c E59FC608          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |332| 
+     251 00000260 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |332| 
+     252                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 334,column 2,is_stmt,isa 2
+     253 00000264 E59F06DC          LDR       A1, $C$CON61          ; [DPU_4_PIPE0] |334| 
+     254 00000268 E59FC5FC          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |334| 
+     255 0000026c E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |334| 
+     256                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 336,column 2,is_stmt,isa 2
+     257 00000270 E59F06D4          LDR       A1, $C$CON62          ; [DPU_4_PIPE0] |336| 
+     258 00000274 E59FC5F0          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |336| 
+     259 00000278 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |336| 
+     260                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 338,column 2,is_stmt,isa 2
+     261 0000027c E59F06CC          LDR       A1, $C$CON63          ; [DPU_4_PIPE0] |338| 
+     262 00000280 E59FC5E4          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |338| 
+     263 00000284 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |338| 
+     264                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 340,column 2,is_stmt,isa 2
+     265 00000288 E59F06C4          LDR       A1, $C$CON64          ; [DPU_4_PIPE0] |340| 
+     266 0000028c E59FC5D8          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |340| 
+     267 00000290 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |340| 
+     268                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 342,column 2,is_stmt,isa 2
+     269 00000294 E59F06BC          LDR       A1, $C$CON65          ; [DPU_4_PIPE0] |342| 
+     270 00000298 E59FC5CC          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |342| 
+     271 0000029c E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |342| 
+     272                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 344,column 2,is_stmt,isa 2
+     273 000002a0 E59F06B4          LDR       A1, $C$CON66          ; [DPU_4_PIPE0] |344| 
+     274 000002a4 E59FC5C0          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |344| 
+     275 000002a8 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |344| 
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE    6
+
+     276                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 346,column 2,is_stmt,isa 2
+     277 000002ac E59F06AC          LDR       A1, $C$CON67          ; [DPU_4_PIPE0] |346| 
+     278 000002b0 E59FC5B4          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |346| 
+     279 000002b4 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |346| 
+     280                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 348,column 2,is_stmt,isa 2
+     281 000002b8 E59F06A4          LDR       A1, $C$CON68          ; [DPU_4_PIPE0] |348| 
+     282 000002bc E59FC5A8          LDR       V9, $C$CON6           ; [DPU_4_PIPE0] |348| 
+     283 000002c0 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |348| 
+     284                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 350,column 2,is_stmt,isa 2
+     285 000002c4 E59F069C          LDR       A1, $C$CON69          ; [DPU_4_PIPE0] |350| 
+     286 000002c8 E59FC5B0          LDR       V9, $C$CON11          ; [DPU_4_PIPE0] |350| 
+     287 000002cc E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |350| 
+     288                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 353,column 5,is_stmt,isa 2
+     289 000002d0 E59F0694          LDR       A1, $C$CON70          ; [DPU_4_PIPE0] |353| 
+     290 000002d4 E59FC694          LDR       V9, $C$CON71          ; [DPU_4_PIPE0] |353| 
+     291 000002d8 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |353| 
+     292                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 355,column 5,is_stmt,isa 2
+     293 000002dc E59F0690          LDR       A1, $C$CON72          ; [DPU_4_PIPE0] |355| 
+     294 000002e0 E59FC690          LDR       V9, $C$CON73          ; [DPU_4_PIPE0] |355| 
+     295 000002e4 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |355| 
+     296                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 357,column 5,is_stmt,isa 2
+     297 000002e8 E59F068C          LDR       A1, $C$CON74          ; [DPU_4_PIPE0] |357| 
+     298 000002ec E59FC68C          LDR       V9, $C$CON75          ; [DPU_4_PIPE0] |357| 
+     299 000002f0 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |357| 
+     300                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 364,column 2,is_stmt,isa 2
+     301 000002f4 E59FC598          LDR       V9, $C$CON16          ; [DPU_4_PIPE0] |364| 
+     302 000002f8 E59F0594          LDR       A1, $C$CON16          ; [DPU_4_PIPE0] |364| 
+     303 000002fc E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |364| 
+     304 00000300 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |364| 
+     305 00000304 E38CC001          ORR       V9, V9, #1            ; [DPU_4_PIPE0] |364| 
+     306 00000308 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |364| 
+     307                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 365,column 2,is_stmt,isa 2
+     308 0000030c E59FC670          LDR       V9, $C$CON76          ; [DPU_4_PIPE0] |365| 
+     309 00000310 E59F066C          LDR       A1, $C$CON76          ; [DPU_4_PIPE0] |365| 
+     310 00000314 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |365| 
+     311 00000318 E3CCCCFF          BIC       V9, V9, #65280        ; [DPU_4_PIPE0] |365| 
+     312 0000031c E38CCC01          ORR       V9, V9, #256          ; [DPU_4_PIPE0] |365| 
+     313 00000320 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |365| 
+     314                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 366,column 2,is_stmt,isa 2
+     315 00000324 E59FC65C          LDR       V9, $C$CON77          ; [DPU_4_PIPE0] |366| 
+     316 00000328 E59F0658          LDR       A1, $C$CON77          ; [DPU_4_PIPE0] |366| 
+     317 0000032c E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |366| 
+     318 00000330 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |366| 
+     319 00000334 E38CC001          ORR       V9, V9, #1            ; [DPU_4_PIPE0] |366| 
+     320 00000338 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |366| 
+     321                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 367,column 5,is_stmt,isa 2
+     322 0000033c E59FC644          LDR       V9, $C$CON77          ; [DPU_4_PIPE0] |367| 
+     323 00000340 E59F0640          LDR       A1, $C$CON77          ; [DPU_4_PIPE0] |367| 
+     324 00000344 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |367| 
+     325 00000348 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |367| 
+     326 0000034c E38CC001          ORR       V9, V9, #1            ; [DPU_4_PIPE0] |367| 
+     327 00000350 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |367| 
+     328                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 368,column 5,is_stmt,isa 2
+     329 00000354 E59FC630          LDR       V9, $C$CON78          ; [DPU_4_PIPE0] |368| 
+     330 00000358 E59F062C          LDR       A1, $C$CON78          ; [DPU_4_PIPE0] |368| 
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE    7
+
+     331 0000035c E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |368| 
+     332 00000360 E3CCC4FF          BIC       V9, V9, #-16777216    ; [DPU_4_PIPE0] |368| 
+     333 00000364 E38CC401          ORR       V9, V9, #16777216     ; [DPU_4_PIPE0] |368| 
+     334 00000368 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |368| 
+     335                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 369,column 5,is_stmt,isa 2
+     336 0000036c E59FC5F8          LDR       V9, $C$CON70          ; [DPU_4_PIPE0] |369| 
+     337 00000370 E59F05F4          LDR       A1, $C$CON70          ; [DPU_4_PIPE0] |369| 
+     338 00000374 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |369| 
+     339 00000378 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |369| 
+     340 0000037c E38CC001          ORR       V9, V9, #1            ; [DPU_4_PIPE0] |369| 
+     341 00000380 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |369| 
+     342                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 372,column 2,is_stmt,isa 2
+     343 00000384 E59FC604          LDR       V9, $C$CON79          ; [DPU_4_PIPE0] |372| 
+     344 00000388 E59F0600          LDR       A1, $C$CON79          ; [DPU_4_PIPE0] |372| 
+     345 0000038c E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |372| 
+     346 00000390 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |372| 
+     347 00000394 E38CC001          ORR       V9, V9, #1            ; [DPU_4_PIPE0] |372| 
+     348 00000398 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |372| 
+     349                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 373,column 5,is_stmt,isa 2
+     350 0000039c E59FC5EC          LDR       V9, $C$CON79          ; [DPU_4_PIPE0] |373| 
+     351 000003a0 E59F05E8          LDR       A1, $C$CON79          ; [DPU_4_PIPE0] |373| 
+     352 000003a4 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |373| 
+     353 000003a8 E3CCCCFF          BIC       V9, V9, #65280        ; [DPU_4_PIPE0] |373| 
+     354 000003ac E38CCC01          ORR       V9, V9, #256          ; [DPU_4_PIPE0] |373| 
+     355 000003b0 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |373| 
+     356                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 374,column 5,is_stmt,isa 2
+     357 000003b4 E59FC5D4          LDR       V9, $C$CON79          ; [DPU_4_PIPE0] |374| 
+     358 000003b8 E59F05D0          LDR       A1, $C$CON79          ; [DPU_4_PIPE0] |374| 
+     359 000003bc E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |374| 
+     360 000003c0 E3CCC8FF          BIC       V9, V9, #16711680     ; [DPU_4_PIPE0] |374| 
+     361 000003c4 E38CC801          ORR       V9, V9, #65536        ; [DPU_4_PIPE0] |374| 
+     362 000003c8 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |374| 
+     363                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 375,column 5,is_stmt,isa 2
+     364 000003cc E59FC5BC          LDR       V9, $C$CON79          ; [DPU_4_PIPE0] |375| 
+     365 000003d0 E59F05B8          LDR       A1, $C$CON79          ; [DPU_4_PIPE0] |375| 
+     366 000003d4 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |375| 
+     367 000003d8 E3CCC4FF          BIC       V9, V9, #-16777216    ; [DPU_4_PIPE0] |375| 
+     368 000003dc E38CC401          ORR       V9, V9, #16777216     ; [DPU_4_PIPE0] |375| 
+     369 000003e0 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |375| 
+     370                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 376,column 5,is_stmt,isa 2
+     371 000003e4 E59FC5A8          LDR       V9, $C$CON80          ; [DPU_4_PIPE0] |376| 
+     372 000003e8 E59F05A4          LDR       A1, $C$CON80          ; [DPU_4_PIPE0] |376| 
+     373 000003ec E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |376| 
+     374 000003f0 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |376| 
+     375 000003f4 E38CC001          ORR       V9, V9, #1            ; [DPU_4_PIPE0] |376| 
+     376 000003f8 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |376| 
+     377                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 377,column 5,is_stmt,isa 2
+     378 000003fc E59FC590          LDR       V9, $C$CON80          ; [DPU_4_PIPE0] |377| 
+     379 00000400 E59F058C          LDR       A1, $C$CON80          ; [DPU_4_PIPE0] |377| 
+     380 00000404 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |377| 
+     381 00000408 E3CCCCFF          BIC       V9, V9, #65280        ; [DPU_4_PIPE0] |377| 
+     382 0000040c E38CCC01          ORR       V9, V9, #256          ; [DPU_4_PIPE0] |377| 
+     383 00000410 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |377| 
+     384                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 378,column 5,is_stmt,isa 2
+     385 00000414 E59FC578          LDR       V9, $C$CON80          ; [DPU_4_PIPE0] |378| 
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE    8
+
+     386 00000418 E59F0574          LDR       A1, $C$CON80          ; [DPU_4_PIPE0] |378| 
+     387 0000041c E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |378| 
+     388 00000420 E3CCC8FF          BIC       V9, V9, #16711680     ; [DPU_4_PIPE0] |378| 
+     389 00000424 E38CC801          ORR       V9, V9, #65536        ; [DPU_4_PIPE0] |378| 
+     390 00000428 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |378| 
+     391                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 379,column 5,is_stmt,isa 2
+     392 0000042c E59FC564          LDR       V9, $C$CON81          ; [DPU_4_PIPE0] |379| 
+     393 00000430 E59F0560          LDR       A1, $C$CON81          ; [DPU_4_PIPE0] |379| 
+     394 00000434 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |379| 
+     395 00000438 E3CCC4FF          BIC       V9, V9, #-16777216    ; [DPU_4_PIPE0] |379| 
+     396 0000043c E38CC401          ORR       V9, V9, #16777216     ; [DPU_4_PIPE0] |379| 
+     397 00000440 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |379| 
+     398                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 380,column 5,is_stmt,isa 2
+     399 00000444 E59FC550          LDR       V9, $C$CON82          ; [DPU_4_PIPE0] |380| 
+     400 00000448 E59F054C          LDR       A1, $C$CON82          ; [DPU_4_PIPE0] |380| 
+     401 0000044c E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |380| 
+     402 00000450 E3CCC8FF          BIC       V9, V9, #16711680     ; [DPU_4_PIPE0] |380| 
+     403 00000454 E38CC801          ORR       V9, V9, #65536        ; [DPU_4_PIPE0] |380| 
+     404 00000458 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |380| 
+     405                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 381,column 5,is_stmt,isa 2
+     406 0000045c E59FC538          LDR       V9, $C$CON82          ; [DPU_4_PIPE0] |381| 
+     407 00000460 E59F0534          LDR       A1, $C$CON82          ; [DPU_4_PIPE0] |381| 
+     408 00000464 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |381| 
+     409 00000468 E3CCC4FF          BIC       V9, V9, #-16777216    ; [DPU_4_PIPE0] |381| 
+     410 0000046c E38CC401          ORR       V9, V9, #16777216     ; [DPU_4_PIPE0] |381| 
+     411 00000470 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |381| 
+     412                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 382,column 5,is_stmt,isa 2
+     413 00000474 E59FC524          LDR       V9, $C$CON83          ; [DPU_4_PIPE0] |382| 
+     414 00000478 E59F0520          LDR       A1, $C$CON83          ; [DPU_4_PIPE0] |382| 
+     415 0000047c E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |382| 
+     416 00000480 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |382| 
+     417 00000484 E38CC001          ORR       V9, V9, #1            ; [DPU_4_PIPE0] |382| 
+     418 00000488 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |382| 
+     419                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 383,column 5,is_stmt,isa 2
+     420 0000048c E59FC50C          LDR       V9, $C$CON83          ; [DPU_4_PIPE0] |383| 
+     421 00000490 E59F0508          LDR       A1, $C$CON83          ; [DPU_4_PIPE0] |383| 
+     422 00000494 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |383| 
+     423 00000498 E3CCCCFF          BIC       V9, V9, #65280        ; [DPU_4_PIPE0] |383| 
+     424 0000049c E38CCC01          ORR       V9, V9, #256          ; [DPU_4_PIPE0] |383| 
+     425 000004a0 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |383| 
+     426                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 385,column 2,is_stmt,isa 2
+     427 000004a4 E59FC4F8          LDR       V9, $C$CON84          ; [DPU_4_PIPE0] |385| 
+     428 000004a8 E59F04F4          LDR       A1, $C$CON84          ; [DPU_4_PIPE0] |385| 
+     429 000004ac E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |385| 
+     430 000004b0 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |385| 
+     431 000004b4 E38CC001          ORR       V9, V9, #1            ; [DPU_4_PIPE0] |385| 
+     432 000004b8 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |385| 
+     433                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 386,column 2,is_stmt,isa 2
+     434 000004bc E59FC4E0          LDR       V9, $C$CON84          ; [DPU_4_PIPE0] |386| 
+     435 000004c0 E59F04DC          LDR       A1, $C$CON84          ; [DPU_4_PIPE0] |386| 
+     436 000004c4 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |386| 
+     437 000004c8 E3CCCCFF          BIC       V9, V9, #65280        ; [DPU_4_PIPE0] |386| 
+     438 000004cc E38CCC01          ORR       V9, V9, #256          ; [DPU_4_PIPE0] |386| 
+     439 000004d0 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |386| 
+     440                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 387,column 2,is_stmt,isa 2
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE    9
+
+     441 000004d4 E59FC4C8          LDR       V9, $C$CON84          ; [DPU_4_PIPE0] |387| 
+     442 000004d8 E59F04C4          LDR       A1, $C$CON84          ; [DPU_4_PIPE0] |387| 
+     443 000004dc E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |387| 
+     444 000004e0 E3CCC8FF          BIC       V9, V9, #16711680     ; [DPU_4_PIPE0] |387| 
+     445 000004e4 E38CC801          ORR       V9, V9, #65536        ; [DPU_4_PIPE0] |387| 
+     446 000004e8 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |387| 
+     447                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 388,column 2,is_stmt,isa 2
+     448 000004ec E59FC4B0          LDR       V9, $C$CON84          ; [DPU_4_PIPE0] |388| 
+     449 000004f0 E59F04AC          LDR       A1, $C$CON84          ; [DPU_4_PIPE0] |388| 
+     450 000004f4 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |388| 
+     451 000004f8 E3CCC4FF          BIC       V9, V9, #-16777216    ; [DPU_4_PIPE0] |388| 
+     452 000004fc E38CC401          ORR       V9, V9, #16777216     ; [DPU_4_PIPE0] |388| 
+     453 00000500 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |388| 
+     454                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 389,column 2,is_stmt,isa 2
+     455 00000504 E59FC498          LDR       V9, $C$CON84          ; [DPU_4_PIPE0] |389| 
+     456 00000508 E59F0488          LDR       A1, $C$CON81          ; [DPU_4_PIPE0] |389| 
+     457 0000050c E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |389| 
+     458 00000510 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |389| 
+     459 00000514 E38CC001          ORR       V9, V9, #1            ; [DPU_4_PIPE0] |389| 
+     460 00000518 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |389| 
+     461                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 390,column 2,is_stmt,isa 2
+     462 0000051c E59FC480          LDR       V9, $C$CON84          ; [DPU_4_PIPE0] |390| 
+     463 00000520 E59F0470          LDR       A1, $C$CON81          ; [DPU_4_PIPE0] |390| 
+     464 00000524 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |390| 
+     465 00000528 E3CCCCFF          BIC       V9, V9, #65280        ; [DPU_4_PIPE0] |390| 
+     466 0000052c E38CCC01          ORR       V9, V9, #256          ; [DPU_4_PIPE0] |390| 
+     467 00000530 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |390| 
+     468                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 391,column 2,is_stmt,isa 2
+     469 00000534 E59FC468          LDR       V9, $C$CON84          ; [DPU_4_PIPE0] |391| 
+     470 00000538 E59F0458          LDR       A1, $C$CON81          ; [DPU_4_PIPE0] |391| 
+     471 0000053c E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |391| 
+     472 00000540 E3CCC8FF          BIC       V9, V9, #16711680     ; [DPU_4_PIPE0] |391| 
+     473 00000544 E38CC801          ORR       V9, V9, #65536        ; [DPU_4_PIPE0] |391| 
+     474                    ;* --------------------------------------------------------------------------*
+     475 00000548 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |391| 
+     476                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 393,column 2,is_stmt,isa 2
+     477 0000054c E59FC454          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |393| 
+     478 00000550 E59F0450          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |393| 
+     479 00000554 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |393| 
+     480 00000558 E3CCC8FF          BIC       V9, V9, #16711680     ; [DPU_4_PIPE0] |393| 
+     481 0000055c E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |393| 
+     482                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 394,column 2,is_stmt,isa 2
+     483 00000560 E59FC440          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |394| 
+     484 00000564 E59F043C          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |394| 
+     485 00000568 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |394| 
+     486 0000056c E3CCC4FF          BIC       V9, V9, #-16777216    ; [DPU_4_PIPE0] |394| 
+     487 00000570 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |394| 
+     488                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 395,column 2,is_stmt,isa 2
+     489 00000574 E59FC430          LDR       V9, $C$CON86          ; [DPU_4_PIPE0] |395| 
+     490 00000578 E59F042C          LDR       A1, $C$CON86          ; [DPU_4_PIPE0] |395| 
+     491 0000057c E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |395| 
+     492 00000580 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |395| 
+     493 00000584 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |395| 
+     494                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 396,column 2,is_stmt,isa 2
+     495 00000588 E59FC41C          LDR       V9, $C$CON86          ; [DPU_4_PIPE0] |396| 
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   10
+
+     496 0000058c E59F0418          LDR       A1, $C$CON86          ; [DPU_4_PIPE0] |396| 
+     497 00000590 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |396| 
+     498 00000594 E3CCCCFF          BIC       V9, V9, #65280        ; [DPU_4_PIPE0] |396| 
+     499 00000598 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |396| 
+     500                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 397,column 2,is_stmt,isa 2
+     501 0000059c E59FC408          LDR       V9, $C$CON86          ; [DPU_4_PIPE0] |397| 
+     502 000005a0 E59F0404          LDR       A1, $C$CON86          ; [DPU_4_PIPE0] |397| 
+     503 000005a4 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |397| 
+     504 000005a8 E3CCC8FF          BIC       V9, V9, #16711680     ; [DPU_4_PIPE0] |397| 
+     505 000005ac E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |397| 
+     506                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 398,column 2,is_stmt,isa 2
+     507 000005b0 E59FC3F4          LDR       V9, $C$CON86          ; [DPU_4_PIPE0] |398| 
+     508 000005b4 E59F03F0          LDR       A1, $C$CON86          ; [DPU_4_PIPE0] |398| 
+     509 000005b8 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |398| 
+     510 000005bc E3CCC4FF          BIC       V9, V9, #-16777216    ; [DPU_4_PIPE0] |398| 
+     511 000005c0 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |398| 
+     512                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 399,column 2,is_stmt,isa 2
+     513 000005c4 E59FC3D0          LDR       V9, $C$CON82          ; [DPU_4_PIPE0] |399| 
+     514 000005c8 E59F03CC          LDR       A1, $C$CON82          ; [DPU_4_PIPE0] |399| 
+     515 000005cc E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |399| 
+     516 000005d0 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |399| 
+     517 000005d4 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |399| 
+     518                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 400,column 2,is_stmt,isa 2
+     519 000005d8 E59FC3BC          LDR       V9, $C$CON82          ; [DPU_4_PIPE0] |400| 
+     520 000005dc E59F03B8          LDR       A1, $C$CON82          ; [DPU_4_PIPE0] |400| 
+     521 000005e0 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |400| 
+     522 000005e4 E3CCCCFF          BIC       V9, V9, #65280        ; [DPU_4_PIPE0] |400| 
+     523 000005e8 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |400| 
+     524                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 402,column 2,is_stmt,isa 2
+     525 000005ec E59FC3BC          LDR       V9, $C$CON87          ; [DPU_4_PIPE0] |402| 
+     526 000005f0 E59F03B8          LDR       A1, $C$CON87          ; [DPU_4_PIPE0] |402| 
+     527 000005f4 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |402| 
+     528 000005f8 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |402| 
+     529 000005fc E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |402| 
+     530                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 403,column 2,is_stmt,isa 2
+     531 00000600 E59FC3A8          LDR       V9, $C$CON87          ; [DPU_4_PIPE0] |403| 
+     532 00000604 E59F03A4          LDR       A1, $C$CON87          ; [DPU_4_PIPE0] |403| 
+     533 00000608 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |403| 
+     534 0000060c E3CCCCFF          BIC       V9, V9, #65280        ; [DPU_4_PIPE0] |403| 
+     535 00000610 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |403| 
+     536                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 404,column 2,is_stmt,isa 2
+     537 00000614 E59FC394          LDR       V9, $C$CON87          ; [DPU_4_PIPE0] |404| 
+     538 00000618 E59F0390          LDR       A1, $C$CON87          ; [DPU_4_PIPE0] |404| 
+     539 0000061c E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |404| 
+     540 00000620 E3CCC8FF          BIC       V9, V9, #16711680     ; [DPU_4_PIPE0] |404| 
+     541 00000624 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |404| 
+     542                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 405,column 2,is_stmt,isa 2
+     543 00000628 E59FC380          LDR       V9, $C$CON87          ; [DPU_4_PIPE0] |405| 
+     544 0000062c E59F037C          LDR       A1, $C$CON87          ; [DPU_4_PIPE0] |405| 
+     545 00000630 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |405| 
+     546 00000634 E3CCC4FF          BIC       V9, V9, #-16777216    ; [DPU_4_PIPE0] |405| 
+     547 00000638 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |405| 
+     548                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 406,column 2,is_stmt,isa 2
+     549 0000063c E59FC364          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |406| 
+     550 00000640 E59F0360          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |406| 
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   11
+
+     551 00000644 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |406| 
+     552 00000648 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |406| 
+     553 0000064c E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |406| 
+     554                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 407,column 2,is_stmt,isa 2
+     555 00000650 E59FC350          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |407| 
+     556 00000654 E59F034C          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |407| 
+     557 00000658 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |407| 
+     558 0000065c E3CCCCFF          BIC       V9, V9, #65280        ; [DPU_4_PIPE0] |407| 
+     559 00000660 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |407| 
+     560                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 409,column 2,is_stmt,isa 2
+     561 00000664 E59FC33C          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |409| 
+     562 00000668 E59F0338          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |409| 
+     563 0000066c E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |409| 
+     564 00000670 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |409| 
+     565 00000674 E38CC001          ORR       V9, V9, #1            ; [DPU_4_PIPE0] |409| 
+     566 00000678 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |409| 
+     567                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 410,column 2,is_stmt,isa 2
+     568 0000067c E59FC324          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |410| 
+     569 00000680 E59F0320          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |410| 
+     570 00000684 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |410| 
+     571 00000688 E3CCCCFF          BIC       V9, V9, #65280        ; [DPU_4_PIPE0] |410| 
+     572 0000068c E38CCC01          ORR       V9, V9, #256          ; [DPU_4_PIPE0] |410| 
+     573 00000690 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |410| 
+     574                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 411,column 2,is_stmt,isa 2
+     575 00000694 E59FC30C          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |411| 
+     576 00000698 E59F0308          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |411| 
+     577 0000069c E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |411| 
+     578 000006a0 E3CCC8FF          BIC       V9, V9, #16711680     ; [DPU_4_PIPE0] |411| 
+     579 000006a4 E38CC801          ORR       V9, V9, #65536        ; [DPU_4_PIPE0] |411| 
+     580 000006a8 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |411| 
+     581                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 412,column 2,is_stmt,isa 2
+     582 000006ac E59FC2F4          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |412| 
+     583 000006b0 E59F02F0          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |412| 
+     584 000006b4 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |412| 
+     585 000006b8 E3CCC4FF          BIC       V9, V9, #-16777216    ; [DPU_4_PIPE0] |412| 
+     586 000006bc E38CC401          ORR       V9, V9, #16777216     ; [DPU_4_PIPE0] |412| 
+     587 000006c0 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |412| 
+     588                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 413,column 2,is_stmt,isa 2
+     589 000006c4 E59FC2DC          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |413| 
+     590 000006c8 E59F02D8          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |413| 
+     591 000006cc E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |413| 
+     592 000006d0 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |413| 
+     593 000006d4 E38CC001          ORR       V9, V9, #1            ; [DPU_4_PIPE0] |413| 
+     594 000006d8 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |413| 
+     595                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 414,column 2,is_stmt,isa 2
+     596 000006dc E59FC2C4          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |414| 
+     597 000006e0 E59F02C0          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |414| 
+     598 000006e4 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |414| 
+     599 000006e8 E3CCCCFF          BIC       V9, V9, #65280        ; [DPU_4_PIPE0] |414| 
+     600 000006ec E38CCC01          ORR       V9, V9, #256          ; [DPU_4_PIPE0] |414| 
+     601 000006f0 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |414| 
+     602                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 415,column 2,is_stmt,isa 2
+     603 000006f4 E59FC2AC          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |415| 
+     604 000006f8 E59F02A8          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |415| 
+     605 000006fc E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |415| 
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   12
+
+     606 00000700 E3CCC8FF          BIC       V9, V9, #16711680     ; [DPU_4_PIPE0] |415| 
+     607 00000704 E38CC801          ORR       V9, V9, #65536        ; [DPU_4_PIPE0] |415| 
+     608 00000708 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |415| 
+     609                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 416,column 2,is_stmt,isa 2
+     610 0000070c E59FC294          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |416| 
+     611 00000710 E59F0290          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |416| 
+     612 00000714 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |416| 
+     613 00000718 E3CCC4FF          BIC       V9, V9, #-16777216    ; [DPU_4_PIPE0] |416| 
+     614 0000071c E38CC401          ORR       V9, V9, #16777216     ; [DPU_4_PIPE0] |416| 
+     615 00000720 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |416| 
+     616                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 417,column 2,is_stmt,isa 2
+     617 00000724 E59FC27C          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |417| 
+     618 00000728 E59F0278          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |417| 
+     619 0000072c E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |417| 
+     620 00000730 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |417| 
+     621 00000734 E38CC001          ORR       V9, V9, #1            ; [DPU_4_PIPE0] |417| 
+     622 00000738 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |417| 
+     623                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 418,column 2,is_stmt,isa 2
+     624 0000073c E59FC264          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |418| 
+     625 00000740 E59F0260          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |418| 
+     626 00000744 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |418| 
+     627 00000748 E3CCCCFF          BIC       V9, V9, #65280        ; [DPU_4_PIPE0] |418| 
+     628 0000074c E38CCC01          ORR       V9, V9, #256          ; [DPU_4_PIPE0] |418| 
+     629 00000750 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |418| 
+     630                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 419,column 2,is_stmt,isa 2
+     631 00000754 E59FC24C          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |419| 
+     632 00000758 E59F0248          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |419| 
+     633 0000075c E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |419| 
+     634 00000760 E3CCC8FF          BIC       V9, V9, #16711680     ; [DPU_4_PIPE0] |419| 
+     635 00000764 E38CC801          ORR       V9, V9, #65536        ; [DPU_4_PIPE0] |419| 
+     636 00000768 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |419| 
+     637                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 420,column 2,is_stmt,isa 2
+     638 0000076c E59FC234          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |420| 
+     639 00000770 E59F0230          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |420| 
+     640 00000774 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |420| 
+     641 00000778 E3CCC4FF          BIC       V9, V9, #-16777216    ; [DPU_4_PIPE0] |420| 
+     642 0000077c E38CC401          ORR       V9, V9, #16777216     ; [DPU_4_PIPE0] |420| 
+     643 00000780 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |420| 
+     644                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 421,column 2,is_stmt,isa 2
+     645 00000784 E59FC21C          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |421| 
+     646 00000788 E59F0218          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |421| 
+     647 0000078c E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |421| 
+     648 00000790 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |421| 
+     649 00000794 E38CC001          ORR       V9, V9, #1            ; [DPU_4_PIPE0] |421| 
+     650 00000798 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |421| 
+     651                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 422,column 2,is_stmt,isa 2
+     652 0000079c E59FC204          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |422| 
+     653 000007a0 E59F0200          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |422| 
+     654 000007a4 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |422| 
+     655 000007a8 E3CCCCFF          BIC       V9, V9, #65280        ; [DPU_4_PIPE0] |422| 
+     656 000007ac E38CCC01          ORR       V9, V9, #256          ; [DPU_4_PIPE0] |422| 
+     657 000007b0 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |422| 
+     658                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 423,column 2,is_stmt,isa 2
+     659 000007b4 E59FC1EC          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |423| 
+     660 000007b8 E59F01E8          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |423| 
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   13
+
+     661 000007bc E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |423| 
+     662 000007c0 E3CCC8FF          BIC       V9, V9, #16711680     ; [DPU_4_PIPE0] |423| 
+     663 000007c4 E38CC801          ORR       V9, V9, #65536        ; [DPU_4_PIPE0] |423| 
+     664 000007c8 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |423| 
+     665                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 424,column 2,is_stmt,isa 2
+     666 000007cc E59FC1D4          LDR       V9, $C$CON85          ; [DPU_4_PIPE0] |424| 
+     667 000007d0 E59F01D0          LDR       A1, $C$CON85          ; [DPU_4_PIPE0] |424| 
+     668 000007d4 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |424| 
+     669 000007d8 E3CCC4FF          BIC       V9, V9, #-16777216    ; [DPU_4_PIPE0] |424| 
+     670 000007dc E38CC401          ORR       V9, V9, #16777216     ; [DPU_4_PIPE0] |424| 
+     671 000007e0 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |424| 
+     672                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 426,column 2,is_stmt,isa 2
+     673 000007e4 E59F007C          LDR       A1, $C$CON5           ; [DPU_4_PIPE0] |426| 
+     674 000007e8 E590C2B8          LDR       V9, [A1, #696]        ; [DPU_4_PIPE0] |426| 
+     675 000007ec E38CC401          ORR       V9, V9, #16777216     ; [DPU_4_PIPE0] |426| 
+     676 000007f0 E580C2B8          STR       V9, [A1, #696]        ; [DPU_4_PIPE0] |426| 
+     677                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 428,column 2,is_stmt,isa 2
+     678 000007f4 E59FC1A4          LDR       V9, $C$CON83          ; [DPU_4_PIPE0] |428| 
+     679 000007f8 E59F01A0          LDR       A1, $C$CON83          ; [DPU_4_PIPE0] |428| 
+     680 000007fc E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |428| 
+     681 00000800 E3CCC8FF          BIC       V9, V9, #16711680     ; [DPU_4_PIPE0] |428| 
+     682 00000804 E38CC801          ORR       V9, V9, #65536        ; [DPU_4_PIPE0] |428| 
+     683 00000808 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |428| 
+     684                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 429,column 2,is_stmt,isa 2
+     685 0000080c E59FC18C          LDR       V9, $C$CON83          ; [DPU_4_PIPE0] |429| 
+     686 00000810 E59F0188          LDR       A1, $C$CON83          ; [DPU_4_PIPE0] |429| 
+     687 00000814 E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |429| 
+     688 00000818 E3CCC4FF          BIC       V9, V9, #-16777216    ; [DPU_4_PIPE0] |429| 
+     689 0000081c E38CC401          ORR       V9, V9, #16777216     ; [DPU_4_PIPE0] |429| 
+     690 00000820 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |429| 
+     691                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 430,column 2,is_stmt,isa 2
+     692 00000824 E59FC158          LDR       V9, $C$CON76          ; [DPU_4_PIPE0] |430| 
+     693 00000828 E59F0154          LDR       A1, $C$CON76          ; [DPU_4_PIPE0] |430| 
+     694 0000082c E59CC000          LDR       V9, [V9, #0]          ; [DPU_4_PIPE0] |430| 
+     695 00000830 E3CCC0FF          BIC       V9, V9, #255          ; [DPU_4_PIPE0] |430| 
+     696 00000834 E38CC001          ORR       V9, V9, #1            ; [DPU_4_PIPE0] |430| 
+     697 00000838 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |430| 
+     698                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 433,column 2,is_stmt,isa 2
+     699 0000083c E59F0014          LDR       A1, $C$CON1           ; [DPU_4_PIPE0] |433| 
+     700 00000840 E3A0C000          MOV       V9, #0                ; [DPU_4_PIPE0] |433| 
+     701 00000844 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |433| 
+     702                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 434,column 2,is_stmt,isa 2
+     703 00000848 E59F0010          LDR       A1, $C$CON3           ; [DPU_4_PIPE0] |434| 
+     704 0000084c E3A0C000          MOV       V9, #0                ; [DPU_4_PIPE0] |434| 
+     705 00000850 E580C000          STR       V9, [A1, #0]          ; [DPU_4_PIPE0] |434| 
+     706                            .dwpsn  file "../hcg/source/HL_pinmux.c",line 438,column 1,is_stmt,isa 2
+     707                    $C$DW$2 .dwtag  DW_TAG_TI_branch
+     708                            .dwattr $C$DW$2, DW_AT_low_pc(0x00)
+     709                            .dwattr $C$DW$2, DW_AT_TI_return
+     710                    
+     711 00000854 E12FFF1E          BX        LR                    ; [DPU_4_PIPE1] 
+     712                            ; BRANCH OCCURS                  ; [] 
+     713                            .dwattr $C$DW$1, DW_AT_TI_end_file("../hcg/source/HL_pinmux.c")
+     714                            .dwattr $C$DW$1, DW_AT_TI_end_line(0x1b6)
+     715                            .dwattr $C$DW$1, DW_AT_TI_end_column(0x01)
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   14
+
+     716                            .dwendentry
+     717                            .dwendtag $C$DW$1
+     718                    
+     719                    ;******************************************************************************
+     720                    ;* CONSTANT TABLE                                                             *
+     721                    ;******************************************************************************
+     722 00000858                   .sect   ".text"
+     723                            .align  4
+     724 00000858 FFFF1C38  ||$C$CON1||:    .bits   -58312,32
+     725                            .align  4
+     726 0000085c 83E70B13  ||$C$CON2||:    .bits   -2082010349,32
+     727                            .align  4
+     728 00000860 FFFF1C3C  ||$C$CON3||:    .bits   -58308,32
+     729                            .align  4
+     730 00000864 95A4F1E0  ||$C$CON4||:    .bits   -1784352288,32
+     731                            .align  4
+     732 00000868 FFFF1D10  ||$C$CON5||:    .bits   -58096,32
+     733                            .align  4
+     734 0000086c 01010101  ||$C$CON6||:    .bits   16843009,32
+     735                            .align  4
+     736 00000870 FFFF1D14  ||$C$CON7||:    .bits   -58092,32
+     737                            .align  4
+     738 00000874 FFFF1D18  ||$C$CON8||:    .bits   -58088,32
+     739                            .align  4
+     740 00000878 FFFF1D1C  ||$C$CON9||:    .bits   -58084,32
+     741                            .align  4
+     742 0000087c FFFF1D20  ||$C$CON10||:   .bits   -58080,32
+     743                            .align  4
+     744 00000880 00010101  ||$C$CON11||:   .bits   65793,32
+     745                            .align  4
+     746 00000884 FFFF1D24  ||$C$CON12||:   .bits   -58076,32
+     747                            .align  4
+     748 00000888 FFFF1D28  ||$C$CON13||:   .bits   -58072,32
+     749                            .align  4
+     750 0000088c FFFF1D2C  ||$C$CON14||:   .bits   -58068,32
+     751                            .align  4
+     752 00000890 FFFF1D30  ||$C$CON15||:   .bits   -58064,32
+     753                            .align  4
+     754 00000894 FFFF1D34  ||$C$CON16||:   .bits   -58060,32
+     755                            .align  4
+     756 00000898 01010100  ||$C$CON17||:   .bits   16843008,32
+     757                            .align  4
+     758 0000089c FFFF1D38  ||$C$CON18||:   .bits   -58056,32
+     759                            .align  4
+     760 000008a0 FFFF1D3C  ||$C$CON19||:   .bits   -58052,32
+     761                            .align  4
+     762 000008a4 FFFF1D40  ||$C$CON20||:   .bits   -58048,32
+     763                            .align  4
+     764 000008a8 FFFF1D44  ||$C$CON21||:   .bits   -58044,32
+     765                            .align  4
+     766 000008ac FFFF1D48  ||$C$CON22||:   .bits   -58040,32
+     767                            .align  4
+     768 000008b0 FFFF1D4C  ||$C$CON23||:   .bits   -58036,32
+     769                            .align  4
+     770 000008b4 FFFF1D50  ||$C$CON24||:   .bits   -58032,32
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   15
+
+     771                            .align  4
+     772 000008b8 FFFF1D54  ||$C$CON25||:   .bits   -58028,32
+     773                            .align  4
+     774 000008bc FFFF1D58  ||$C$CON26||:   .bits   -58024,32
+     775                            .align  4
+     776 000008c0 FFFF1D5C  ||$C$CON27||:   .bits   -58020,32
+     777                            .align  4
+     778 000008c4 FFFF1D60  ||$C$CON28||:   .bits   -58016,32
+     779                            .align  4
+     780 000008c8 FFFF1D64  ||$C$CON29||:   .bits   -58012,32
+     781                            .align  4
+     782 000008cc FFFF1D68  ||$C$CON30||:   .bits   -58008,32
+     783                            .align  4
+     784 000008d0 FFFF1D6C  ||$C$CON31||:   .bits   -58004,32
+     785                            .align  4
+     786 000008d4 FFFF1D70  ||$C$CON32||:   .bits   -58000,32
+     787                            .align  4
+     788 000008d8 FFFF1D74  ||$C$CON33||:   .bits   -57996,32
+     789                            .align  4
+     790 000008dc FFFF1D78  ||$C$CON34||:   .bits   -57992,32
+     791                            .align  4
+     792 000008e0 FFFF1D7C  ||$C$CON35||:   .bits   -57988,32
+     793                            .align  4
+     794 000008e4 FFFF1D80  ||$C$CON36||:   .bits   -57984,32
+     795                            .align  4
+     796 000008e8 FFFF1D84  ||$C$CON37||:   .bits   -57980,32
+     797                            .align  4
+     798 000008ec FFFF1D88  ||$C$CON38||:   .bits   -57976,32
+     799                            .align  4
+     800 000008f0 FFFF1D8C  ||$C$CON39||:   .bits   -57972,32
+     801                            .align  4
+     802 000008f4 FFFF1D90  ||$C$CON40||:   .bits   -57968,32
+     803                            .align  4
+     804 000008f8 FFFF1D94  ||$C$CON41||:   .bits   -57964,32
+     805                            .align  4
+     806 000008fc FFFF1D98  ||$C$CON42||:   .bits   -57960,32
+     807                            .align  4
+     808 00000900 FFFF1D9C  ||$C$CON43||:   .bits   -57956,32
+     809                            .align  4
+     810 00000904 FFFF1DA0  ||$C$CON44||:   .bits   -57952,32
+     811                            .align  4
+     812 00000908 FFFF1DA4  ||$C$CON45||:   .bits   -57948,32
+     813                            .align  4
+     814 0000090c FFFF1E50  ||$C$CON46||:   .bits   -57776,32
+     815                            .align  4
+     816 00000910 02020201  ||$C$CON47||:   .bits   33686017,32
+     817                            .align  4
+     818 00000914 FFFF1E54  ||$C$CON48||:   .bits   -57772,32
+     819                            .align  4
+     820 00000918 FFFF1E58  ||$C$CON49||:   .bits   -57768,32
+     821                            .align  4
+     822 0000091c FFFF1E5C  ||$C$CON50||:   .bits   -57764,32
+     823                            .align  4
+     824 00000920 01020202  ||$C$CON51||:   .bits   16908802,32
+     825                            .align  4
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   16
+
+     826 00000924 FFFF1E60  ||$C$CON52||:   .bits   -57760,32
+     827                            .align  4
+     828 00000928 FFFF1E64  ||$C$CON53||:   .bits   -57756,32
+     829                            .align  4
+     830 0000092c FFFF1E68  ||$C$CON54||:   .bits   -57752,32
+     831                            .align  4
+     832 00000930 FFFF1E6C  ||$C$CON55||:   .bits   -57748,32
+     833                            .align  4
+     834 00000934 FFFF1E70  ||$C$CON56||:   .bits   -57744,32
+     835                            .align  4
+     836 00000938 00020101  ||$C$CON57||:   .bits   131329,32
+     837                            .align  4
+     838 0000093c FFFF1E74  ||$C$CON58||:   .bits   -57740,32
+     839                            .align  4
+     840 00000940 01010000  ||$C$CON59||:   .bits   16842752,32
+     841                            .align  4
+     842 00000944 FFFF1E78  ||$C$CON60||:   .bits   -57736,32
+     843                            .align  4
+     844 00000948 FFFF1E7C  ||$C$CON61||:   .bits   -57732,32
+     845                            .align  4
+     846 0000094c FFFF1E80  ||$C$CON62||:   .bits   -57728,32
+     847                            .align  4
+     848 00000950 FFFF1E84  ||$C$CON63||:   .bits   -57724,32
+     849                            .align  4
+     850 00000954 FFFF1E88  ||$C$CON64||:   .bits   -57720,32
+     851                            .align  4
+     852 00000958 FFFF1E8C  ||$C$CON65||:   .bits   -57716,32
+     853                            .align  4
+     854 0000095c FFFF1E90  ||$C$CON66||:   .bits   -57712,32
+     855                            .align  4
+     856 00000960 FFFF1E94  ||$C$CON67||:   .bits   -57708,32
+     857                            .align  4
+     858 00000964 FFFF1E98  ||$C$CON68||:   .bits   -57704,32
+     859                            .align  4
+     860 00000968 FFFF1E9C  ||$C$CON69||:   .bits   -57700,32
+     861                            .align  4
+     862 0000096c FFFF1F94  ||$C$CON70||:   .bits   -57452,32
+     863                            .align  4
+     864 00000970 02020200  ||$C$CON71||:   .bits   33686016,32
+     865                            .align  4
+     866 00000974 FFFF1F98  ||$C$CON72||:   .bits   -57448,32
+     867                            .align  4
+     868 00000978 02020202  ||$C$CON73||:   .bits   33686018,32
+     869                            .align  4
+     870 0000097c FFFF1F9C  ||$C$CON74||:   .bits   -57444,32
+     871                            .align  4
+     872 00000980 00020202  ||$C$CON75||:   .bits   131586,32
+     873                            .align  4
+     874 00000984 FFFF1FC8  ||$C$CON76||:   .bits   -57400,32
+     875                            .align  4
+     876 00000988 FFFF1FDC  ||$C$CON77||:   .bits   -57380,32
+     877                            .align  4
+     878 0000098c FFFF1F90  ||$C$CON78||:   .bits   -57456,32
+     879                            .align  4
+     880 00000990 FFFF1FAC  ||$C$CON79||:   .bits   -57428,32
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   17
+
+     881                            .align  4
+     882 00000994 FFFF1FB0  ||$C$CON80||:   .bits   -57424,32
+     883                            .align  4
+     884 00000998 FFFF1FA4  ||$C$CON81||:   .bits   -57436,32
+     885                            .align  4
+     886 0000099c FFFF1FC0  ||$C$CON82||:   .bits   -57408,32
+     887                            .align  4
+     888 000009a0 FFFF1FC4  ||$C$CON83||:   .bits   -57404,32
+     889                            .align  4
+     890 000009a4 FFFF1FA0  ||$C$CON84||:   .bits   -57440,32
+     891                            .align  4
+     892 000009a8 FFFF1FB8  ||$C$CON85||:   .bits   -57416,32
+     893                            .align  4
+     894 000009ac FFFF1FBC  ||$C$CON86||:   .bits   -57412,32
+     895                            .align  4
+     896 000009b0 FFFF1FB4  ||$C$CON87||:   .bits   -57420,32
+     897                    
+     898                    ;******************************************************************************
+     899                    ;* BUILD ATTRIBUTES                                                           *
+     900                    ;******************************************************************************
+     901                            .battr "aeabi", Tag_File, 1, Tag_ABI_PCS_wchar_t(2)
+     902                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_rounding(0)
+     903                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_denormal(0)
+     904                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_exceptions(0)
+     905                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_number_model(1)
+     906                            .battr "aeabi", Tag_File, 1, Tag_ABI_enum_size(1)
+     907                            .battr "aeabi", Tag_File, 1, Tag_ABI_optimization_goals(5)
+     908                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_optimization_goals(0)
+     909                            .battr "TI", Tag_File, 1, Tag_Bitfield_layout(2)
+     910                            .battr "aeabi", Tag_File, 1, Tag_ABI_VFP_args(3)
+     911                            .battr "TI", Tag_File, 1, Tag_FP_interface(1)
+     912                    
+     913                    ;******************************************************************************
+     914                    ;* TYPE INFORMATION                                                           *
+     915                    ;******************************************************************************
+     916                    $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+     917                            .dwattr $C$DW$T$2, DW_AT_name("void")
+     918                    
+     919                    $C$DW$T$4       .dwtag  DW_TAG_base_type
+     920                            .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+     921                            .dwattr $C$DW$T$4, DW_AT_name("bool")
+     922                            .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+     923                    
+     924                    $C$DW$T$5       .dwtag  DW_TAG_base_type
+     925                            .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+     926                            .dwattr $C$DW$T$5, DW_AT_name("signed char")
+     927                            .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+     928                    
+     929                    $C$DW$T$28      .dwtag  DW_TAG_typedef
+     930                            .dwattr $C$DW$T$28, DW_AT_name("int8_t")
+     931                            .dwattr $C$DW$T$28, DW_AT_type(*$C$DW$T$5)
+     932                            .dwattr $C$DW$T$28, DW_AT_language(DW_LANG_C)
+     933                            .dwattr $C$DW$T$28, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     934                            .dwattr $C$DW$T$28, DW_AT_decl_line(0x2a)
+     935                            .dwattr $C$DW$T$28, DW_AT_decl_column(0x1d)
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   18
+
+     936                    
+     937                    $C$DW$T$29      .dwtag  DW_TAG_typedef
+     938                            .dwattr $C$DW$T$29, DW_AT_name("int_least8_t")
+     939                            .dwattr $C$DW$T$29, DW_AT_type(*$C$DW$T$28)
+     940                            .dwattr $C$DW$T$29, DW_AT_language(DW_LANG_C)
+     941                            .dwattr $C$DW$T$29, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     942                            .dwattr $C$DW$T$29, DW_AT_decl_line(0x37)
+     943                            .dwattr $C$DW$T$29, DW_AT_decl_column(0x17)
+     944                    
+     945                    $C$DW$T$30      .dwtag  DW_TAG_typedef
+     946                            .dwattr $C$DW$T$30, DW_AT_name("sint8")
+     947                            .dwattr $C$DW$T$30, DW_AT_type(*$C$DW$T$28)
+     948                            .dwattr $C$DW$T$30, DW_AT_language(DW_LANG_C)
+     949                            .dwattr $C$DW$T$30, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+     950                            .dwattr $C$DW$T$30, DW_AT_decl_line(0x68)
+     951                            .dwattr $C$DW$T$30, DW_AT_decl_column(0x10)
+     952                    
+     953                    $C$DW$T$6       .dwtag  DW_TAG_base_type
+     954                            .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+     955                            .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+     956                            .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+     957                    
+     958                    $C$DW$T$31      .dwtag  DW_TAG_typedef
+     959                            .dwattr $C$DW$T$31, DW_AT_name("uint8_t")
+     960                            .dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$6)
+     961                            .dwattr $C$DW$T$31, DW_AT_language(DW_LANG_C)
+     962                            .dwattr $C$DW$T$31, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     963                            .dwattr $C$DW$T$31, DW_AT_decl_line(0x2b)
+     964                            .dwattr $C$DW$T$31, DW_AT_decl_column(0x1c)
+     965                    
+     966                    $C$DW$T$32      .dwtag  DW_TAG_typedef
+     967                            .dwattr $C$DW$T$32, DW_AT_name("uint8")
+     968                            .dwattr $C$DW$T$32, DW_AT_type(*$C$DW$T$31)
+     969                            .dwattr $C$DW$T$32, DW_AT_language(DW_LANG_C)
+     970                            .dwattr $C$DW$T$32, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+     971                            .dwattr $C$DW$T$32, DW_AT_decl_line(0x4b)
+     972                            .dwattr $C$DW$T$32, DW_AT_decl_column(0x11)
+     973                    
+     974                    $C$DW$T$33      .dwtag  DW_TAG_typedef
+     975                            .dwattr $C$DW$T$33, DW_AT_name("uint_least8_t")
+     976                            .dwattr $C$DW$T$33, DW_AT_type(*$C$DW$T$31)
+     977                            .dwattr $C$DW$T$33, DW_AT_language(DW_LANG_C)
+     978                            .dwattr $C$DW$T$33, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     979                            .dwattr $C$DW$T$33, DW_AT_decl_line(0x38)
+     980                            .dwattr $C$DW$T$33, DW_AT_decl_column(0x16)
+     981                    
+     982                    $C$DW$T$7       .dwtag  DW_TAG_base_type
+     983                            .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+     984                            .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+     985                            .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
+     986                    
+     987                    $C$DW$T$8       .dwtag  DW_TAG_base_type
+     988                            .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+     989                            .dwattr $C$DW$T$8, DW_AT_name("short")
+     990                            .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   19
+
+     991                    
+     992                    $C$DW$T$34      .dwtag  DW_TAG_typedef
+     993                            .dwattr $C$DW$T$34, DW_AT_name("int16_t")
+     994                            .dwattr $C$DW$T$34, DW_AT_type(*$C$DW$T$8)
+     995                            .dwattr $C$DW$T$34, DW_AT_language(DW_LANG_C)
+     996                            .dwattr $C$DW$T$34, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     997                            .dwattr $C$DW$T$34, DW_AT_decl_line(0x2c)
+     998                            .dwattr $C$DW$T$34, DW_AT_decl_column(0x1d)
+     999                    
+    1000                    $C$DW$T$35      .dwtag  DW_TAG_typedef
+    1001                            .dwattr $C$DW$T$35, DW_AT_name("int_least16_t")
+    1002                            .dwattr $C$DW$T$35, DW_AT_type(*$C$DW$T$34)
+    1003                            .dwattr $C$DW$T$35, DW_AT_language(DW_LANG_C)
+    1004                            .dwattr $C$DW$T$35, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1005                            .dwattr $C$DW$T$35, DW_AT_decl_line(0x3a)
+    1006                            .dwattr $C$DW$T$35, DW_AT_decl_column(0x17)
+    1007                    
+    1008                    $C$DW$T$36      .dwtag  DW_TAG_typedef
+    1009                            .dwattr $C$DW$T$36, DW_AT_name("sint16")
+    1010                            .dwattr $C$DW$T$36, DW_AT_type(*$C$DW$T$34)
+    1011                            .dwattr $C$DW$T$36, DW_AT_language(DW_LANG_C)
+    1012                            .dwattr $C$DW$T$36, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1013                            .dwattr $C$DW$T$36, DW_AT_decl_line(0x63)
+    1014                            .dwattr $C$DW$T$36, DW_AT_decl_column(0x11)
+    1015                    
+    1016                    $C$DW$T$9       .dwtag  DW_TAG_base_type
+    1017                            .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+    1018                            .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+    1019                            .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
+    1020                    
+    1021                    $C$DW$T$37      .dwtag  DW_TAG_typedef
+    1022                            .dwattr $C$DW$T$37, DW_AT_name("uint16_t")
+    1023                            .dwattr $C$DW$T$37, DW_AT_type(*$C$DW$T$9)
+    1024                            .dwattr $C$DW$T$37, DW_AT_language(DW_LANG_C)
+    1025                            .dwattr $C$DW$T$37, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1026                            .dwattr $C$DW$T$37, DW_AT_decl_line(0x2d)
+    1027                            .dwattr $C$DW$T$37, DW_AT_decl_column(0x1c)
+    1028                    
+    1029                    $C$DW$T$38      .dwtag  DW_TAG_typedef
+    1030                            .dwattr $C$DW$T$38, DW_AT_name("uint16")
+    1031                            .dwattr $C$DW$T$38, DW_AT_type(*$C$DW$T$37)
+    1032                            .dwattr $C$DW$T$38, DW_AT_language(DW_LANG_C)
+    1033                            .dwattr $C$DW$T$38, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1034                            .dwattr $C$DW$T$38, DW_AT_decl_line(0x46)
+    1035                            .dwattr $C$DW$T$38, DW_AT_decl_column(0x12)
+    1036                    
+    1037                    $C$DW$T$39      .dwtag  DW_TAG_typedef
+    1038                            .dwattr $C$DW$T$39, DW_AT_name("uint_least16_t")
+    1039                            .dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$37)
+    1040                            .dwattr $C$DW$T$39, DW_AT_language(DW_LANG_C)
+    1041                            .dwattr $C$DW$T$39, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1042                            .dwattr $C$DW$T$39, DW_AT_decl_line(0x3b)
+    1043                            .dwattr $C$DW$T$39, DW_AT_decl_column(0x16)
+    1044                    
+    1045                    $C$DW$T$10      .dwtag  DW_TAG_base_type
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   20
+
+    1046                            .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+    1047                            .dwattr $C$DW$T$10, DW_AT_name("int")
+    1048                            .dwattr $C$DW$T$10, DW_AT_byte_size(0x04)
+    1049                    
+    1050                    $C$DW$T$40      .dwtag  DW_TAG_typedef
+    1051                            .dwattr $C$DW$T$40, DW_AT_name("int32_t")
+    1052                            .dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$10)
+    1053                            .dwattr $C$DW$T$40, DW_AT_language(DW_LANG_C)
+    1054                            .dwattr $C$DW$T$40, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1055                            .dwattr $C$DW$T$40, DW_AT_decl_line(0x2e)
+    1056                            .dwattr $C$DW$T$40, DW_AT_decl_column(0x1d)
+    1057                    
+    1058                    $C$DW$T$41      .dwtag  DW_TAG_typedef
+    1059                            .dwattr $C$DW$T$41, DW_AT_name("int_fast16_t")
+    1060                            .dwattr $C$DW$T$41, DW_AT_type(*$C$DW$T$40)
+    1061                            .dwattr $C$DW$T$41, DW_AT_language(DW_LANG_C)
+    1062                            .dwattr $C$DW$T$41, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1063                            .dwattr $C$DW$T$41, DW_AT_decl_line(0x47)
+    1064                            .dwattr $C$DW$T$41, DW_AT_decl_column(0x17)
+    1065                    
+    1066                    $C$DW$T$42      .dwtag  DW_TAG_typedef
+    1067                            .dwattr $C$DW$T$42, DW_AT_name("int_fast32_t")
+    1068                            .dwattr $C$DW$T$42, DW_AT_type(*$C$DW$T$40)
+    1069                            .dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
+    1070                            .dwattr $C$DW$T$42, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1071                            .dwattr $C$DW$T$42, DW_AT_decl_line(0x4a)
+    1072                            .dwattr $C$DW$T$42, DW_AT_decl_column(0x17)
+    1073                    
+    1074                    $C$DW$T$43      .dwtag  DW_TAG_typedef
+    1075                            .dwattr $C$DW$T$43, DW_AT_name("int_fast8_t")
+    1076                            .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$40)
+    1077                            .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
+    1078                            .dwattr $C$DW$T$43, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1079                            .dwattr $C$DW$T$43, DW_AT_decl_line(0x45)
+    1080                            .dwattr $C$DW$T$43, DW_AT_decl_column(0x17)
+    1081                    
+    1082                    $C$DW$T$44      .dwtag  DW_TAG_typedef
+    1083                            .dwattr $C$DW$T$44, DW_AT_name("int_least32_t")
+    1084                            .dwattr $C$DW$T$44, DW_AT_type(*$C$DW$T$40)
+    1085                            .dwattr $C$DW$T$44, DW_AT_language(DW_LANG_C)
+    1086                            .dwattr $C$DW$T$44, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1087                            .dwattr $C$DW$T$44, DW_AT_decl_line(0x3c)
+    1088                            .dwattr $C$DW$T$44, DW_AT_decl_column(0x17)
+    1089                    
+    1090                    $C$DW$T$45      .dwtag  DW_TAG_typedef
+    1091                            .dwattr $C$DW$T$45, DW_AT_name("sint32")
+    1092                            .dwattr $C$DW$T$45, DW_AT_type(*$C$DW$T$40)
+    1093                            .dwattr $C$DW$T$45, DW_AT_language(DW_LANG_C)
+    1094                            .dwattr $C$DW$T$45, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1095                            .dwattr $C$DW$T$45, DW_AT_decl_line(0x5e)
+    1096                            .dwattr $C$DW$T$45, DW_AT_decl_column(0x11)
+    1097                    
+    1098                    $C$DW$T$46      .dwtag  DW_TAG_typedef
+    1099                            .dwattr $C$DW$T$46, DW_AT_name("intptr_t")
+    1100                            .dwattr $C$DW$T$46, DW_AT_type(*$C$DW$T$10)
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   21
+
+    1101                            .dwattr $C$DW$T$46, DW_AT_language(DW_LANG_C)
+    1102                            .dwattr $C$DW$T$46, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1103                            .dwattr $C$DW$T$46, DW_AT_decl_line(0x52)
+    1104                            .dwattr $C$DW$T$46, DW_AT_decl_column(0x1a)
+    1105                    
+    1106                    $C$DW$T$11      .dwtag  DW_TAG_base_type
+    1107                            .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+    1108                            .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+    1109                            .dwattr $C$DW$T$11, DW_AT_byte_size(0x04)
+    1110                    
+    1111                    $C$DW$T$19      .dwtag  DW_TAG_typedef
+    1112                            .dwattr $C$DW$T$19, DW_AT_name("uint32_t")
+    1113                            .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$11)
+    1114                            .dwattr $C$DW$T$19, DW_AT_language(DW_LANG_C)
+    1115                            .dwattr $C$DW$T$19, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1116                            .dwattr $C$DW$T$19, DW_AT_decl_line(0x2f)
+    1117                            .dwattr $C$DW$T$19, DW_AT_decl_column(0x1c)
+    1118                    
+    1119                    $C$DW$T$20      .dwtag  DW_TAG_typedef
+    1120                            .dwattr $C$DW$T$20, DW_AT_name("uint32")
+    1121                            .dwattr $C$DW$T$20, DW_AT_type(*$C$DW$T$19)
+    1122                            .dwattr $C$DW$T$20, DW_AT_language(DW_LANG_C)
+    1123                            .dwattr $C$DW$T$20, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1124                            .dwattr $C$DW$T$20, DW_AT_decl_line(0x41)
+    1125                            .dwattr $C$DW$T$20, DW_AT_decl_column(0x12)
+    1126                    
+    1127                    
+    1128                    $C$DW$T$21      .dwtag  DW_TAG_array_type
+    1129                            .dwattr $C$DW$T$21, DW_AT_type(*$C$DW$T$20)
+    1130                            .dwattr $C$DW$T$21, DW_AT_language(DW_LANG_C)
+    1131                            .dwattr $C$DW$T$21, DW_AT_byte_size(0x1c)
+    1132                    $C$DW$3 .dwtag  DW_TAG_subrange_type
+    1133                            .dwattr $C$DW$3, DW_AT_upper_bound(0x06)
+    1134                    
+    1135                            .dwendtag $C$DW$T$21
+    1136                    
+    1137                    
+    1138                    $C$DW$T$22      .dwtag  DW_TAG_array_type
+    1139                            .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$20)
+    1140                            .dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
+    1141                            .dwattr $C$DW$T$22, DW_AT_byte_size(0x14)
+    1142                    $C$DW$4 .dwtag  DW_TAG_subrange_type
+    1143                            .dwattr $C$DW$4, DW_AT_upper_bound(0x04)
+    1144                    
+    1145                            .dwendtag $C$DW$T$22
+    1146                    
+    1147                    
+    1148                    $C$DW$T$23      .dwtag  DW_TAG_array_type
+    1149                            .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$20)
+    1150                            .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
+    1151                            .dwattr $C$DW$T$23, DW_AT_byte_size(0xa0)
+    1152                    $C$DW$5 .dwtag  DW_TAG_subrange_type
+    1153                            .dwattr $C$DW$5, DW_AT_upper_bound(0x27)
+    1154                    
+    1155                            .dwendtag $C$DW$T$23
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   22
+
+    1156                    
+    1157                    
+    1158                    $C$DW$T$24      .dwtag  DW_TAG_array_type
+    1159                            .dwattr $C$DW$T$24, DW_AT_type(*$C$DW$T$20)
+    1160                            .dwattr $C$DW$T$24, DW_AT_language(DW_LANG_C)
+    1161                            .dwattr $C$DW$T$24, DW_AT_byte_size(0x10)
+    1162                    $C$DW$6 .dwtag  DW_TAG_subrange_type
+    1163                            .dwattr $C$DW$6, DW_AT_upper_bound(0x03)
+    1164                    
+    1165                            .dwendtag $C$DW$T$24
+    1166                    
+    1167                    
+    1168                    $C$DW$T$25      .dwtag  DW_TAG_array_type
+    1169                            .dwattr $C$DW$T$25, DW_AT_type(*$C$DW$T$20)
+    1170                            .dwattr $C$DW$T$25, DW_AT_language(DW_LANG_C)
+    1171                            .dwattr $C$DW$T$25, DW_AT_byte_size(0x2d0)
+    1172                    $C$DW$7 .dwtag  DW_TAG_subrange_type
+    1173                            .dwattr $C$DW$7, DW_AT_upper_bound(0xb3)
+    1174                    
+    1175                            .dwendtag $C$DW$T$25
+    1176                    
+    1177                    $C$DW$T$50      .dwtag  DW_TAG_typedef
+    1178                            .dwattr $C$DW$T$50, DW_AT_name("uint_fast16_t")
+    1179                            .dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$19)
+    1180                            .dwattr $C$DW$T$50, DW_AT_language(DW_LANG_C)
+    1181                            .dwattr $C$DW$T$50, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1182                            .dwattr $C$DW$T$50, DW_AT_decl_line(0x48)
+    1183                            .dwattr $C$DW$T$50, DW_AT_decl_column(0x16)
+    1184                    
+    1185                    $C$DW$T$51      .dwtag  DW_TAG_typedef
+    1186                            .dwattr $C$DW$T$51, DW_AT_name("uint_fast32_t")
+    1187                            .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$19)
+    1188                            .dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
+    1189                            .dwattr $C$DW$T$51, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1190                            .dwattr $C$DW$T$51, DW_AT_decl_line(0x4b)
+    1191                            .dwattr $C$DW$T$51, DW_AT_decl_column(0x16)
+    1192                    
+    1193                    $C$DW$T$52      .dwtag  DW_TAG_typedef
+    1194                            .dwattr $C$DW$T$52, DW_AT_name("uint_fast8_t")
+    1195                            .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$19)
+    1196                            .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
+    1197                            .dwattr $C$DW$T$52, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1198                            .dwattr $C$DW$T$52, DW_AT_decl_line(0x46)
+    1199                            .dwattr $C$DW$T$52, DW_AT_decl_column(0x16)
+    1200                    
+    1201                    $C$DW$T$53      .dwtag  DW_TAG_typedef
+    1202                            .dwattr $C$DW$T$53, DW_AT_name("uint_least32_t")
+    1203                            .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$19)
+    1204                            .dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
+    1205                            .dwattr $C$DW$T$53, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1206                            .dwattr $C$DW$T$53, DW_AT_decl_line(0x3d)
+    1207                            .dwattr $C$DW$T$53, DW_AT_decl_column(0x16)
+    1208                    
+    1209                    $C$DW$T$54      .dwtag  DW_TAG_typedef
+    1210                            .dwattr $C$DW$T$54, DW_AT_name("uintptr_t")
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   23
+
+    1211                            .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$11)
+    1212                            .dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
+    1213                            .dwattr $C$DW$T$54, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1214                            .dwattr $C$DW$T$54, DW_AT_decl_line(0x53)
+    1215                            .dwattr $C$DW$T$54, DW_AT_decl_column(0x1a)
+    1216                    
+    1217                    $C$DW$T$12      .dwtag  DW_TAG_base_type
+    1218                            .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+    1219                            .dwattr $C$DW$T$12, DW_AT_name("long")
+    1220                            .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
+    1221                    
+    1222                    $C$DW$T$13      .dwtag  DW_TAG_base_type
+    1223                            .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+    1224                            .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+    1225                            .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
+    1226                    
+    1227                    $C$DW$T$14      .dwtag  DW_TAG_base_type
+    1228                            .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+    1229                            .dwattr $C$DW$T$14, DW_AT_name("long long")
+    1230                            .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
+    1231                    
+    1232                    $C$DW$T$55      .dwtag  DW_TAG_typedef
+    1233                            .dwattr $C$DW$T$55, DW_AT_name("int64_t")
+    1234                            .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$14)
+    1235                            .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
+    1236                            .dwattr $C$DW$T$55, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1237                            .dwattr $C$DW$T$55, DW_AT_decl_line(0x32)
+    1238                            .dwattr $C$DW$T$55, DW_AT_decl_column(0x21)
+    1239                    
+    1240                    $C$DW$T$56      .dwtag  DW_TAG_typedef
+    1241                            .dwattr $C$DW$T$56, DW_AT_name("int_fast64_t")
+    1242                            .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$55)
+    1243                            .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
+    1244                            .dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1245                            .dwattr $C$DW$T$56, DW_AT_decl_line(0x4e)
+    1246                            .dwattr $C$DW$T$56, DW_AT_decl_column(0x17)
+    1247                    
+    1248                    $C$DW$T$57      .dwtag  DW_TAG_typedef
+    1249                            .dwattr $C$DW$T$57, DW_AT_name("int_least64_t")
+    1250                            .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$55)
+    1251                            .dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
+    1252                            .dwattr $C$DW$T$57, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1253                            .dwattr $C$DW$T$57, DW_AT_decl_line(0x40)
+    1254                            .dwattr $C$DW$T$57, DW_AT_decl_column(0x17)
+    1255                    
+    1256                    $C$DW$T$58      .dwtag  DW_TAG_typedef
+    1257                            .dwattr $C$DW$T$58, DW_AT_name("sint64")
+    1258                            .dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$55)
+    1259                            .dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
+    1260                            .dwattr $C$DW$T$58, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1261                            .dwattr $C$DW$T$58, DW_AT_decl_line(0x59)
+    1262                            .dwattr $C$DW$T$58, DW_AT_decl_column(0x11)
+    1263                    
+    1264                    $C$DW$T$59      .dwtag  DW_TAG_typedef
+    1265                            .dwattr $C$DW$T$59, DW_AT_name("intmax_t")
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   24
+
+    1266                            .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$14)
+    1267                            .dwattr $C$DW$T$59, DW_AT_language(DW_LANG_C)
+    1268                            .dwattr $C$DW$T$59, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1269                            .dwattr $C$DW$T$59, DW_AT_decl_line(0x56)
+    1270                            .dwattr $C$DW$T$59, DW_AT_decl_column(0x20)
+    1271                    
+    1272                    $C$DW$T$15      .dwtag  DW_TAG_base_type
+    1273                            .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+    1274                            .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+    1275                            .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
+    1276                    
+    1277                    $C$DW$T$60      .dwtag  DW_TAG_typedef
+    1278                            .dwattr $C$DW$T$60, DW_AT_name("uint64_t")
+    1279                            .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$15)
+    1280                            .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
+    1281                            .dwattr $C$DW$T$60, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1282                            .dwattr $C$DW$T$60, DW_AT_decl_line(0x33)
+    1283                            .dwattr $C$DW$T$60, DW_AT_decl_column(0x20)
+    1284                    
+    1285                    $C$DW$T$61      .dwtag  DW_TAG_typedef
+    1286                            .dwattr $C$DW$T$61, DW_AT_name("uint64")
+    1287                            .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$60)
+    1288                            .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
+    1289                            .dwattr $C$DW$T$61, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1290                            .dwattr $C$DW$T$61, DW_AT_decl_line(0x3c)
+    1291                            .dwattr $C$DW$T$61, DW_AT_decl_column(0x12)
+    1292                    
+    1293                    $C$DW$T$62      .dwtag  DW_TAG_typedef
+    1294                            .dwattr $C$DW$T$62, DW_AT_name("uint_fast64_t")
+    1295                            .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$60)
+    1296                            .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
+    1297                            .dwattr $C$DW$T$62, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1298                            .dwattr $C$DW$T$62, DW_AT_decl_line(0x4f)
+    1299                            .dwattr $C$DW$T$62, DW_AT_decl_column(0x16)
+    1300                    
+    1301                    $C$DW$T$63      .dwtag  DW_TAG_typedef
+    1302                            .dwattr $C$DW$T$63, DW_AT_name("uint_least64_t")
+    1303                            .dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$60)
+    1304                            .dwattr $C$DW$T$63, DW_AT_language(DW_LANG_C)
+    1305                            .dwattr $C$DW$T$63, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1306                            .dwattr $C$DW$T$63, DW_AT_decl_line(0x41)
+    1307                            .dwattr $C$DW$T$63, DW_AT_decl_column(0x16)
+    1308                    
+    1309                    $C$DW$T$64      .dwtag  DW_TAG_typedef
+    1310                            .dwattr $C$DW$T$64, DW_AT_name("uintmax_t")
+    1311                            .dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$15)
+    1312                            .dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
+    1313                            .dwattr $C$DW$T$64, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+    1314                            .dwattr $C$DW$T$64, DW_AT_decl_line(0x57)
+    1315                            .dwattr $C$DW$T$64, DW_AT_decl_column(0x20)
+    1316                    
+    1317                    $C$DW$T$16      .dwtag  DW_TAG_base_type
+    1318                            .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+    1319                            .dwattr $C$DW$T$16, DW_AT_name("float")
+    1320                            .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   25
+
+    1321                    
+    1322                    $C$DW$T$65      .dwtag  DW_TAG_typedef
+    1323                            .dwattr $C$DW$T$65, DW_AT_name("float32")
+    1324                            .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$16)
+    1325                            .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
+    1326                            .dwattr $C$DW$T$65, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1327                            .dwattr $C$DW$T$65, DW_AT_decl_line(0x6d)
+    1328                            .dwattr $C$DW$T$65, DW_AT_decl_column(0x0f)
+    1329                    
+    1330                    $C$DW$T$17      .dwtag  DW_TAG_base_type
+    1331                            .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+    1332                            .dwattr $C$DW$T$17, DW_AT_name("double")
+    1333                            .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
+    1334                    
+    1335                    $C$DW$T$66      .dwtag  DW_TAG_typedef
+    1336                            .dwattr $C$DW$T$66, DW_AT_name("float64")
+    1337                            .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$17)
+    1338                            .dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
+    1339                            .dwattr $C$DW$T$66, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1340                            .dwattr $C$DW$T$66, DW_AT_decl_line(0x72)
+    1341                            .dwattr $C$DW$T$66, DW_AT_decl_column(0x10)
+    1342                    
+    1343                    $C$DW$T$18      .dwtag  DW_TAG_base_type
+    1344                            .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+    1345                            .dwattr $C$DW$T$18, DW_AT_name("long double")
+    1346                            .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
+    1347                    
+    1348                    $C$DW$T$67      .dwtag  DW_TAG_base_type
+    1349                            .dwattr $C$DW$T$67, DW_AT_encoding(DW_ATE_unsigned_char)
+    1350                            .dwattr $C$DW$T$67, DW_AT_name("unsigned char")
+    1351                            .dwattr $C$DW$T$67, DW_AT_byte_size(0x01)
+    1352                    
+    1353                    $C$DW$T$68      .dwtag  DW_TAG_typedef
+    1354                            .dwattr $C$DW$T$68, DW_AT_name("boolean")
+    1355                            .dwattr $C$DW$T$68, DW_AT_type(*$C$DW$T$67)
+    1356                            .dwattr $C$DW$T$68, DW_AT_language(DW_LANG_C)
+    1357                            .dwattr $C$DW$T$68, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1358                            .dwattr $C$DW$T$68, DW_AT_decl_line(0x53)
+    1359                            .dwattr $C$DW$T$68, DW_AT_decl_column(0x0f)
+    1360                    
+    1361                    $C$DW$T$69      .dwtag  DW_TAG_typedef
+    1362                            .dwattr $C$DW$T$69, DW_AT_name("tBoolean")
+    1363                            .dwattr $C$DW$T$69, DW_AT_type(*$C$DW$T$68)
+    1364                            .dwattr $C$DW$T$69, DW_AT_language(DW_LANG_C)
+    1365                            .dwattr $C$DW$T$69, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1366                            .dwattr $C$DW$T$69, DW_AT_decl_line(0x40)
+    1367                            .dwattr $C$DW$T$69, DW_AT_decl_column(0x11)
+    1368                    
+    1369                    
+    1370                    $C$DW$T$70      .dwtag  DW_TAG_enumeration_type
+    1371                            .dwattr $C$DW$T$70, DW_AT_name("config_value_type")
+    1372                            .dwattr $C$DW$T$70, DW_AT_byte_size(0x01)
+    1373                    $C$DW$8 .dwtag  DW_TAG_enumerator
+    1374                            .dwattr $C$DW$8, DW_AT_name("InitialValue")
+    1375                            .dwattr $C$DW$8, DW_AT_const_value(0x00)
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   26
+
+    1376                            .dwattr $C$DW$8, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pro
+    1377                            .dwattr $C$DW$8, DW_AT_decl_line(0x5c)
+    1378                            .dwattr $C$DW$8, DW_AT_decl_column(0x02)
+    1379                    
+    1380                    $C$DW$9 .dwtag  DW_TAG_enumerator
+    1381                            .dwattr $C$DW$9, DW_AT_name("CurrentValue")
+    1382                            .dwattr $C$DW$9, DW_AT_const_value(0x01)
+    1383                            .dwattr $C$DW$9, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pro
+    1384                            .dwattr $C$DW$9, DW_AT_decl_line(0x5d)
+    1385                            .dwattr $C$DW$9, DW_AT_decl_column(0x02)
+    1386                    
+    1387                            .dwattr $C$DW$T$70, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1388                            .dwattr $C$DW$T$70, DW_AT_decl_line(0x5a)
+    1389                            .dwattr $C$DW$T$70, DW_AT_decl_column(0x0e)
+    1390                            .dwendtag $C$DW$T$70
+    1391                    
+    1392                    $C$DW$T$71      .dwtag  DW_TAG_typedef
+    1393                            .dwattr $C$DW$T$71, DW_AT_name("config_value_type_t")
+    1394                            .dwattr $C$DW$T$71, DW_AT_type(*$C$DW$T$70)
+    1395                            .dwattr $C$DW$T$71, DW_AT_language(DW_LANG_C)
+    1396                            .dwattr $C$DW$T$71, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1397                            .dwattr $C$DW$T$71, DW_AT_decl_line(0x5e)
+    1398                            .dwattr $C$DW$T$71, DW_AT_decl_column(0x02)
+    1399                    
+    1400                    
+    1401                    $C$DW$T$72      .dwtag  DW_TAG_enumeration_type
+    1402                            .dwattr $C$DW$T$72, DW_AT_name("loopBackType")
+    1403                            .dwattr $C$DW$T$72, DW_AT_byte_size(0x01)
+    1404                    $C$DW$10        .dwtag  DW_TAG_enumerator
+    1405                            .dwattr $C$DW$10, DW_AT_name("Digital_Lbk")
+    1406                            .dwattr $C$DW$10, DW_AT_const_value(0x00)
+    1407                            .dwattr $C$DW$10, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1408                            .dwattr $C$DW$10, DW_AT_decl_line(0x4e)
+    1409                            .dwattr $C$DW$10, DW_AT_decl_column(0x05)
+    1410                    
+    1411                    $C$DW$11        .dwtag  DW_TAG_enumerator
+    1412                            .dwattr $C$DW$11, DW_AT_name("Analog_Lbk")
+    1413                            .dwattr $C$DW$11, DW_AT_const_value(0x01)
+    1414                            .dwattr $C$DW$11, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1415                            .dwattr $C$DW$11, DW_AT_decl_line(0x4f)
+    1416                            .dwattr $C$DW$11, DW_AT_decl_column(0x05)
+    1417                    
+    1418                            .dwattr $C$DW$T$72, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1419                            .dwattr $C$DW$T$72, DW_AT_decl_line(0x4c)
+    1420                            .dwattr $C$DW$T$72, DW_AT_decl_column(0x0e)
+    1421                            .dwendtag $C$DW$T$72
+    1422                    
+    1423                    $C$DW$T$73      .dwtag  DW_TAG_typedef
+    1424                            .dwattr $C$DW$T$73, DW_AT_name("loopBackType_t")
+    1425                            .dwattr $C$DW$T$73, DW_AT_type(*$C$DW$T$72)
+    1426                            .dwattr $C$DW$T$73, DW_AT_language(DW_LANG_C)
+    1427                            .dwattr $C$DW$T$73, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1428                            .dwattr $C$DW$T$73, DW_AT_decl_line(0x50)
+    1429                            .dwattr $C$DW$T$73, DW_AT_decl_column(0x02)
+    1430                    
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   27
+
+    1431                    
+    1432                    $C$DW$T$26      .dwtag  DW_TAG_structure_type
+    1433                            .dwattr $C$DW$T$26, DW_AT_name("pinMuxBase")
+    1434                            .dwattr $C$DW$T$26, DW_AT_byte_size(0x3e0)
+    1435                    $C$DW$12        .dwtag  DW_TAG_member
+    1436                            .dwattr $C$DW$12, DW_AT_type(*$C$DW$T$20)
+    1437                            .dwattr $C$DW$12, DW_AT_name("REVISION_REG")
+    1438                            .dwattr $C$DW$12, DW_AT_TI_symbol_name("REVISION_REG")
+    1439                            .dwattr $C$DW$12, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+    1440                            .dwattr $C$DW$12, DW_AT_accessibility(DW_ACCESS_public)
+    1441                            .dwattr $C$DW$12, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1442                            .dwattr $C$DW$12, DW_AT_decl_line(0x46)
+    1443                            .dwattr $C$DW$12, DW_AT_decl_column(0x0c)
+    1444                    
+    1445                    $C$DW$13        .dwtag  DW_TAG_member
+    1446                            .dwattr $C$DW$13, DW_AT_type(*$C$DW$T$21)
+    1447                            .dwattr $C$DW$13, DW_AT_name("rsvd1")
+    1448                            .dwattr $C$DW$13, DW_AT_TI_symbol_name("rsvd1")
+    1449                            .dwattr $C$DW$13, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+    1450                            .dwattr $C$DW$13, DW_AT_accessibility(DW_ACCESS_public)
+    1451                            .dwattr $C$DW$13, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1452                            .dwattr $C$DW$13, DW_AT_decl_line(0x47)
+    1453                            .dwattr $C$DW$13, DW_AT_decl_column(0x09)
+    1454                    
+    1455                    $C$DW$14        .dwtag  DW_TAG_member
+    1456                            .dwattr $C$DW$14, DW_AT_type(*$C$DW$T$20)
+    1457                            .dwattr $C$DW$14, DW_AT_name("BOOT_REG")
+    1458                            .dwattr $C$DW$14, DW_AT_TI_symbol_name("BOOT_REG")
+    1459                            .dwattr $C$DW$14, DW_AT_data_member_location[DW_OP_plus_uconst 0x20]
+    1460                            .dwattr $C$DW$14, DW_AT_accessibility(DW_ACCESS_public)
+    1461                            .dwattr $C$DW$14, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1462                            .dwattr $C$DW$14, DW_AT_decl_line(0x48)
+    1463                            .dwattr $C$DW$14, DW_AT_decl_column(0x09)
+    1464                    
+    1465                    $C$DW$15        .dwtag  DW_TAG_member
+    1466                            .dwattr $C$DW$15, DW_AT_type(*$C$DW$T$22)
+    1467                            .dwattr $C$DW$15, DW_AT_name("rsvd2")
+    1468                            .dwattr $C$DW$15, DW_AT_TI_symbol_name("rsvd2")
+    1469                            .dwattr $C$DW$15, DW_AT_data_member_location[DW_OP_plus_uconst 0x24]
+    1470                            .dwattr $C$DW$15, DW_AT_accessibility(DW_ACCESS_public)
+    1471                            .dwattr $C$DW$15, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1472                            .dwattr $C$DW$15, DW_AT_decl_line(0x49)
+    1473                            .dwattr $C$DW$15, DW_AT_decl_column(0x09)
+    1474                    
+    1475                    $C$DW$16        .dwtag  DW_TAG_member
+    1476                            .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$20)
+    1477                            .dwattr $C$DW$16, DW_AT_name("KICKER0")
+    1478                            .dwattr $C$DW$16, DW_AT_TI_symbol_name("KICKER0")
+    1479                            .dwattr $C$DW$16, DW_AT_data_member_location[DW_OP_plus_uconst 0x38]
+    1480                            .dwattr $C$DW$16, DW_AT_accessibility(DW_ACCESS_public)
+    1481                            .dwattr $C$DW$16, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1482                            .dwattr $C$DW$16, DW_AT_decl_line(0x4a)
+    1483                            .dwattr $C$DW$16, DW_AT_decl_column(0x09)
+    1484                    
+    1485                    $C$DW$17        .dwtag  DW_TAG_member
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   28
+
+    1486                            .dwattr $C$DW$17, DW_AT_type(*$C$DW$T$20)
+    1487                            .dwattr $C$DW$17, DW_AT_name("KICKER1")
+    1488                            .dwattr $C$DW$17, DW_AT_TI_symbol_name("KICKER1")
+    1489                            .dwattr $C$DW$17, DW_AT_data_member_location[DW_OP_plus_uconst 0x3c]
+    1490                            .dwattr $C$DW$17, DW_AT_accessibility(DW_ACCESS_public)
+    1491                            .dwattr $C$DW$17, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1492                            .dwattr $C$DW$17, DW_AT_decl_line(0x4b)
+    1493                            .dwattr $C$DW$17, DW_AT_decl_column(0x09)
+    1494                    
+    1495                    $C$DW$18        .dwtag  DW_TAG_member
+    1496                            .dwattr $C$DW$18, DW_AT_type(*$C$DW$T$23)
+    1497                            .dwattr $C$DW$18, DW_AT_name("rsvd3")
+    1498                            .dwattr $C$DW$18, DW_AT_TI_symbol_name("rsvd3")
+    1499                            .dwattr $C$DW$18, DW_AT_data_member_location[DW_OP_plus_uconst 0x40]
+    1500                            .dwattr $C$DW$18, DW_AT_accessibility(DW_ACCESS_public)
+    1501                            .dwattr $C$DW$18, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1502                            .dwattr $C$DW$18, DW_AT_decl_line(0x4c)
+    1503                            .dwattr $C$DW$18, DW_AT_decl_column(0x09)
+    1504                    
+    1505                    $C$DW$19        .dwtag  DW_TAG_member
+    1506                            .dwattr $C$DW$19, DW_AT_type(*$C$DW$T$20)
+    1507                            .dwattr $C$DW$19, DW_AT_name("ERR_RAW_STATUS_REG")
+    1508                            .dwattr $C$DW$19, DW_AT_TI_symbol_name("ERR_RAW_STATUS_REG")
+    1509                            .dwattr $C$DW$19, DW_AT_data_member_location[DW_OP_plus_uconst 0xe0]
+    1510                            .dwattr $C$DW$19, DW_AT_accessibility(DW_ACCESS_public)
+    1511                            .dwattr $C$DW$19, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1512                            .dwattr $C$DW$19, DW_AT_decl_line(0x4d)
+    1513                            .dwattr $C$DW$19, DW_AT_decl_column(0x09)
+    1514                    
+    1515                    $C$DW$20        .dwtag  DW_TAG_member
+    1516                            .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$20)
+    1517                            .dwattr $C$DW$20, DW_AT_name("ERR_ENABLED_STATUS_REG")
+    1518                            .dwattr $C$DW$20, DW_AT_TI_symbol_name("ERR_ENABLED_STATUS_REG")
+    1519                            .dwattr $C$DW$20, DW_AT_data_member_location[DW_OP_plus_uconst 0xe4]
+    1520                            .dwattr $C$DW$20, DW_AT_accessibility(DW_ACCESS_public)
+    1521                            .dwattr $C$DW$20, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1522                            .dwattr $C$DW$20, DW_AT_decl_line(0x4e)
+    1523                            .dwattr $C$DW$20, DW_AT_decl_column(0x09)
+    1524                    
+    1525                    $C$DW$21        .dwtag  DW_TAG_member
+    1526                            .dwattr $C$DW$21, DW_AT_type(*$C$DW$T$20)
+    1527                            .dwattr $C$DW$21, DW_AT_name("ERR_ENABLE_REG")
+    1528                            .dwattr $C$DW$21, DW_AT_TI_symbol_name("ERR_ENABLE_REG")
+    1529                            .dwattr $C$DW$21, DW_AT_data_member_location[DW_OP_plus_uconst 0xe8]
+    1530                            .dwattr $C$DW$21, DW_AT_accessibility(DW_ACCESS_public)
+    1531                            .dwattr $C$DW$21, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1532                            .dwattr $C$DW$21, DW_AT_decl_line(0x4f)
+    1533                            .dwattr $C$DW$21, DW_AT_decl_column(0x09)
+    1534                    
+    1535                    $C$DW$22        .dwtag  DW_TAG_member
+    1536                            .dwattr $C$DW$22, DW_AT_type(*$C$DW$T$20)
+    1537                            .dwattr $C$DW$22, DW_AT_name("ERR_ENABLE_CLR_REG")
+    1538                            .dwattr $C$DW$22, DW_AT_TI_symbol_name("ERR_ENABLE_CLR_REG")
+    1539                            .dwattr $C$DW$22, DW_AT_data_member_location[DW_OP_plus_uconst 0xec]
+    1540                            .dwattr $C$DW$22, DW_AT_accessibility(DW_ACCESS_public)
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   29
+
+    1541                            .dwattr $C$DW$22, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1542                            .dwattr $C$DW$22, DW_AT_decl_line(0x50)
+    1543                            .dwattr $C$DW$22, DW_AT_decl_column(0x09)
+    1544                    
+    1545                    $C$DW$23        .dwtag  DW_TAG_member
+    1546                            .dwattr $C$DW$23, DW_AT_type(*$C$DW$T$20)
+    1547                            .dwattr $C$DW$23, DW_AT_name("rsvd4")
+    1548                            .dwattr $C$DW$23, DW_AT_TI_symbol_name("rsvd4")
+    1549                            .dwattr $C$DW$23, DW_AT_data_member_location[DW_OP_plus_uconst 0xf0]
+    1550                            .dwattr $C$DW$23, DW_AT_accessibility(DW_ACCESS_public)
+    1551                            .dwattr $C$DW$23, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1552                            .dwattr $C$DW$23, DW_AT_decl_line(0x51)
+    1553                            .dwattr $C$DW$23, DW_AT_decl_column(0x09)
+    1554                    
+    1555                    $C$DW$24        .dwtag  DW_TAG_member
+    1556                            .dwattr $C$DW$24, DW_AT_type(*$C$DW$T$20)
+    1557                            .dwattr $C$DW$24, DW_AT_name("FAULT_ADDRESS_REG")
+    1558                            .dwattr $C$DW$24, DW_AT_TI_symbol_name("FAULT_ADDRESS_REG")
+    1559                            .dwattr $C$DW$24, DW_AT_data_member_location[DW_OP_plus_uconst 0xf4]
+    1560                            .dwattr $C$DW$24, DW_AT_accessibility(DW_ACCESS_public)
+    1561                            .dwattr $C$DW$24, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1562                            .dwattr $C$DW$24, DW_AT_decl_line(0x52)
+    1563                            .dwattr $C$DW$24, DW_AT_decl_column(0x09)
+    1564                    
+    1565                    $C$DW$25        .dwtag  DW_TAG_member
+    1566                            .dwattr $C$DW$25, DW_AT_type(*$C$DW$T$20)
+    1567                            .dwattr $C$DW$25, DW_AT_name("FAULT_STATUS_REG")
+    1568                            .dwattr $C$DW$25, DW_AT_TI_symbol_name("FAULT_STATUS_REG")
+    1569                            .dwattr $C$DW$25, DW_AT_data_member_location[DW_OP_plus_uconst 0xf8]
+    1570                            .dwattr $C$DW$25, DW_AT_accessibility(DW_ACCESS_public)
+    1571                            .dwattr $C$DW$25, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1572                            .dwattr $C$DW$25, DW_AT_decl_line(0x53)
+    1573                            .dwattr $C$DW$25, DW_AT_decl_column(0x09)
+    1574                    
+    1575                    $C$DW$26        .dwtag  DW_TAG_member
+    1576                            .dwattr $C$DW$26, DW_AT_type(*$C$DW$T$20)
+    1577                            .dwattr $C$DW$26, DW_AT_name("FAULT_CLEAR_REG")
+    1578                            .dwattr $C$DW$26, DW_AT_TI_symbol_name("FAULT_CLEAR_REG")
+    1579                            .dwattr $C$DW$26, DW_AT_data_member_location[DW_OP_plus_uconst 0xfc]
+    1580                            .dwattr $C$DW$26, DW_AT_accessibility(DW_ACCESS_public)
+    1581                            .dwattr $C$DW$26, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1582                            .dwattr $C$DW$26, DW_AT_decl_line(0x54)
+    1583                            .dwattr $C$DW$26, DW_AT_decl_column(0x09)
+    1584                    
+    1585                    $C$DW$27        .dwtag  DW_TAG_member
+    1586                            .dwattr $C$DW$27, DW_AT_type(*$C$DW$T$24)
+    1587                            .dwattr $C$DW$27, DW_AT_name("rsvd5")
+    1588                            .dwattr $C$DW$27, DW_AT_TI_symbol_name("rsvd5")
+    1589                            .dwattr $C$DW$27, DW_AT_data_member_location[DW_OP_plus_uconst 0x100]
+    1590                            .dwattr $C$DW$27, DW_AT_accessibility(DW_ACCESS_public)
+    1591                            .dwattr $C$DW$27, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1592                            .dwattr $C$DW$27, DW_AT_decl_line(0x55)
+    1593                            .dwattr $C$DW$27, DW_AT_decl_column(0x09)
+    1594                    
+    1595                    $C$DW$28        .dwtag  DW_TAG_member
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   30
+
+    1596                            .dwattr $C$DW$28, DW_AT_type(*$C$DW$T$25)
+    1597                            .dwattr $C$DW$28, DW_AT_name("PINMUX")
+    1598                            .dwattr $C$DW$28, DW_AT_TI_symbol_name("PINMUX")
+    1599                            .dwattr $C$DW$28, DW_AT_data_member_location[DW_OP_plus_uconst 0x110]
+    1600                            .dwattr $C$DW$28, DW_AT_accessibility(DW_ACCESS_public)
+    1601                            .dwattr $C$DW$28, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1602                            .dwattr $C$DW$28, DW_AT_decl_line(0x56)
+    1603                            .dwattr $C$DW$28, DW_AT_decl_column(0x09)
+    1604                    
+    1605                            .dwattr $C$DW$T$26, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1606                            .dwattr $C$DW$T$26, DW_AT_decl_line(0x44)
+    1607                            .dwattr $C$DW$T$26, DW_AT_decl_column(0x19)
+    1608                            .dwendtag $C$DW$T$26
+    1609                    
+    1610                    $C$DW$T$74      .dwtag  DW_TAG_volatile_type
+    1611                            .dwattr $C$DW$T$74, DW_AT_type(*$C$DW$T$26)
+    1612                    
+    1613                    $C$DW$T$75      .dwtag  DW_TAG_typedef
+    1614                            .dwattr $C$DW$T$75, DW_AT_name("pinMuxBASE_t")
+    1615                            .dwattr $C$DW$T$75, DW_AT_type(*$C$DW$T$74)
+    1616                            .dwattr $C$DW$T$75, DW_AT_language(DW_LANG_C)
+    1617                            .dwattr $C$DW$T$75, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1618                            .dwattr $C$DW$T$75, DW_AT_decl_line(0x59)
+    1619                            .dwattr $C$DW$T$75, DW_AT_decl_column(0x02)
+    1620                    
+    1621                            .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+    1622                    
+    1623                    ;***************************************************************
+    1624                    ;* DWARF CIE ENTRIES                                           *
+    1625                    ;***************************************************************
+    1626                    
+    1627                    $C$DW$CIE       .dwcie 14
+    1628                            .dwcfi  cfa_register, 13
+    1629                            .dwcfi  cfa_offset, 0
+    1630                            .dwcfi  same_value, 4
+    1631                            .dwcfi  same_value, 5
+    1632                            .dwcfi  same_value, 6
+    1633                            .dwcfi  same_value, 7
+    1634                            .dwcfi  same_value, 8
+    1635                            .dwcfi  same_value, 9
+    1636                            .dwcfi  same_value, 10
+    1637                            .dwcfi  same_value, 11
+    1638                            .dwcfi  same_value, 80
+    1639                            .dwcfi  same_value, 81
+    1640                            .dwcfi  same_value, 82
+    1641                            .dwcfi  same_value, 83
+    1642                            .dwcfi  same_value, 84
+    1643                            .dwcfi  same_value, 85
+    1644                            .dwcfi  same_value, 86
+    1645                            .dwcfi  same_value, 87
+    1646                            .dwcfi  same_value, 88
+    1647                            .dwcfi  same_value, 89
+    1648                            .dwcfi  same_value, 90
+    1649                            .dwcfi  same_value, 91
+    1650                            .dwcfi  same_value, 92
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\1148010                              PAGE   31
+
+    1651                            .dwcfi  same_value, 93
+    1652                            .dwcfi  same_value, 94
+    1653                            .dwcfi  same_value, 95
+    1654                            .dwendentry
+    1655                            .dwendtag $C$DW$CU
+    1656                    
+
+No Assembly Errors, No Assembly Warnings

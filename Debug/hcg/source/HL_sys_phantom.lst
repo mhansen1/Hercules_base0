@@ -1,0 +1,1333 @@
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE    1
+
+       1                    ;******************************************************************************
+       2                    ;* TI ARM C/C++ Codegen                                        PC v16.9.0.LTS *
+       3                    ;* Date/Time created: Thu Feb 16 13:27:11 2017                                *
+       4                    ;******************************************************************************
+       5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=32 --diag_wrap=off --embed
+       6 00000000                   .state32
+       7                    
+       8                    $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       9                            .dwattr $C$DW$CU, DW_AT_name("../hcg/source/HL_sys_phantom.c")
+      10                            .dwattr $C$DW$CU, DW_AT_producer("TI TI ARM C/C++ Codegen PC v16.9.0.LTS Copyright (c) 1996-20
+      11                            .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      12                            .dwattr $C$DW$CU, DW_AT_comp_dir("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pro
+      13                    ;       C:\ti\ccsv7\tools\compiler\ti-cgt-arm_16.9.0.LTS\bin\armacpia.exe -@C:\\Users\\bob\\AppData\\L
+      14 00000000                   .sect   ".text:retain"
+      15                            .retain
+      16                            .retainrefs
+      17                            .armfunc phantomInterrupt
+      18 00000000                   .state32
+      19                            .weak   phantomInterrupt
+      20                    
+      21                    $C$DW$1 .dwtag  DW_TAG_subprogram
+      22                            .dwattr $C$DW$1, DW_AT_name("phantomInterrupt")
+      23                            .dwattr $C$DW$1, DW_AT_low_pc(phantomInterrupt)
+      24                            .dwattr $C$DW$1, DW_AT_high_pc(0x00)
+      25                            .dwattr $C$DW$1, DW_AT_TI_symbol_name("phantomInterrupt")
+      26                            .dwattr $C$DW$1, DW_AT_external
+      27                            .dwattr $C$DW$1, DW_AT_TI_begin_file("../hcg/source/HL_sys_phantom.c")
+      28                            .dwattr $C$DW$1, DW_AT_TI_begin_line(0x3c)
+      29                            .dwattr $C$DW$1, DW_AT_TI_begin_column(0x06)
+      30                            .dwattr $C$DW$1, DW_AT_decl_file("../hcg/source/HL_sys_phantom.c")
+      31                            .dwattr $C$DW$1, DW_AT_decl_line(0x3c)
+      32                            .dwattr $C$DW$1, DW_AT_decl_column(0x06)
+      33                            .dwattr $C$DW$1, DW_AT_TI_interrupt
+      34                            .dwattr $C$DW$1, DW_AT_TI_max_frame_size(0x00)
+      35                            .dwpsn  file "../hcg/source/HL_sys_phantom.c",line 61,column 1,is_stmt,address phantomInterrup
+      36                    
+      37                            .dwfde $C$DW$CIE, phantomInterrupt
+      38                    
+      39                    ;*****************************************************************************
+      40                    ;* FUNCTION NAME: phantomInterrupt                                           *
+      41                    ;*                                                                           *
+      42                    ;*   Regs Modified     : SR                                                  *
+      43                    ;*   Regs Used         : LR,SR                                               *
+      44                    ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+      45                    ;*****************************************************************************
+      46 00000000           phantomInterrupt:
+      47                    ;* --------------------------------------------------------------------------*
+      48                            .dwcfi  cfa_offset, 0
+      49                            .dwpsn  file "../hcg/source/HL_sys_phantom.c",line 64,column 1,is_stmt,isa 2
+      50                    $C$DW$2 .dwtag  DW_TAG_TI_branch
+      51                            .dwattr $C$DW$2, DW_AT_low_pc(0x00)
+      52                            .dwattr $C$DW$2, DW_AT_TI_return
+      53                    
+      54 00000000 E25EF004          SUBS      PC, LR, #4            ; [DPU_4_PIPE1] 
+      55                            ; BRANCH OCCURS                  ; [] 
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE    2
+
+      56                            .dwattr $C$DW$1, DW_AT_TI_end_file("../hcg/source/HL_sys_phantom.c")
+      57                            .dwattr $C$DW$1, DW_AT_TI_end_line(0x40)
+      58                            .dwattr $C$DW$1, DW_AT_TI_end_column(0x01)
+      59                            .dwendentry
+      60                            .dwendtag $C$DW$1
+      61                    
+      62                    
+      63                    ;******************************************************************************
+      64                    ;* BUILD ATTRIBUTES                                                           *
+      65                    ;******************************************************************************
+      66                            .battr "aeabi", Tag_File, 1, Tag_ABI_PCS_wchar_t(2)
+      67                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_rounding(0)
+      68                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_denormal(0)
+      69                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_exceptions(0)
+      70                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_number_model(1)
+      71                            .battr "aeabi", Tag_File, 1, Tag_ABI_enum_size(1)
+      72                            .battr "aeabi", Tag_File, 1, Tag_ABI_optimization_goals(5)
+      73                            .battr "aeabi", Tag_File, 1, Tag_ABI_FP_optimization_goals(0)
+      74                            .battr "TI", Tag_File, 1, Tag_Bitfield_layout(2)
+      75                            .battr "aeabi", Tag_File, 1, Tag_ABI_VFP_args(3)
+      76                            .battr "TI", Tag_File, 1, Tag_FP_interface(1)
+      77                    
+      78                    ;******************************************************************************
+      79                    ;* TYPE INFORMATION                                                           *
+      80                    ;******************************************************************************
+      81                    $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+      82                            .dwattr $C$DW$T$2, DW_AT_name("void")
+      83                    
+      84                    
+      85                    $C$DW$T$25      .dwtag  DW_TAG_subroutine_type
+      86                            .dwattr $C$DW$T$25, DW_AT_language(DW_LANG_C)
+      87                            .dwendtag $C$DW$T$25
+      88                    
+      89                    $C$DW$T$26      .dwtag  DW_TAG_pointer_type
+      90                            .dwattr $C$DW$T$26, DW_AT_type(*$C$DW$T$25)
+      91                            .dwattr $C$DW$T$26, DW_AT_address_class(0x20)
+      92                    
+      93                    $C$DW$T$27      .dwtag  DW_TAG_typedef
+      94                            .dwattr $C$DW$T$27, DW_AT_name("t_isrFuncPTR")
+      95                            .dwattr $C$DW$T$27, DW_AT_type(*$C$DW$T$26)
+      96                            .dwattr $C$DW$T$27, DW_AT_language(DW_LANG_C)
+      97                            .dwattr $C$DW$T$27, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/
+      98                            .dwattr $C$DW$T$27, DW_AT_decl_line(0x40)
+      99                            .dwattr $C$DW$T$27, DW_AT_decl_column(0x10)
+     100                    
+     101                    $C$DW$T$4       .dwtag  DW_TAG_base_type
+     102                            .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+     103                            .dwattr $C$DW$T$4, DW_AT_name("bool")
+     104                            .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+     105                    
+     106                    $C$DW$T$5       .dwtag  DW_TAG_base_type
+     107                            .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+     108                            .dwattr $C$DW$T$5, DW_AT_name("signed char")
+     109                            .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+     110                    
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE    3
+
+     111                    $C$DW$T$28      .dwtag  DW_TAG_typedef
+     112                            .dwattr $C$DW$T$28, DW_AT_name("int8_t")
+     113                            .dwattr $C$DW$T$28, DW_AT_type(*$C$DW$T$5)
+     114                            .dwattr $C$DW$T$28, DW_AT_language(DW_LANG_C)
+     115                            .dwattr $C$DW$T$28, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     116                            .dwattr $C$DW$T$28, DW_AT_decl_line(0x2a)
+     117                            .dwattr $C$DW$T$28, DW_AT_decl_column(0x1d)
+     118                    
+     119                    $C$DW$T$29      .dwtag  DW_TAG_typedef
+     120                            .dwattr $C$DW$T$29, DW_AT_name("int_least8_t")
+     121                            .dwattr $C$DW$T$29, DW_AT_type(*$C$DW$T$28)
+     122                            .dwattr $C$DW$T$29, DW_AT_language(DW_LANG_C)
+     123                            .dwattr $C$DW$T$29, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     124                            .dwattr $C$DW$T$29, DW_AT_decl_line(0x37)
+     125                            .dwattr $C$DW$T$29, DW_AT_decl_column(0x17)
+     126                    
+     127                    $C$DW$T$30      .dwtag  DW_TAG_typedef
+     128                            .dwattr $C$DW$T$30, DW_AT_name("sint8")
+     129                            .dwattr $C$DW$T$30, DW_AT_type(*$C$DW$T$28)
+     130                            .dwattr $C$DW$T$30, DW_AT_language(DW_LANG_C)
+     131                            .dwattr $C$DW$T$30, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+     132                            .dwattr $C$DW$T$30, DW_AT_decl_line(0x68)
+     133                            .dwattr $C$DW$T$30, DW_AT_decl_column(0x10)
+     134                    
+     135                    $C$DW$T$6       .dwtag  DW_TAG_base_type
+     136                            .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+     137                            .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+     138                            .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+     139                    
+     140                    $C$DW$T$31      .dwtag  DW_TAG_typedef
+     141                            .dwattr $C$DW$T$31, DW_AT_name("uint8_t")
+     142                            .dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$6)
+     143                            .dwattr $C$DW$T$31, DW_AT_language(DW_LANG_C)
+     144                            .dwattr $C$DW$T$31, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     145                            .dwattr $C$DW$T$31, DW_AT_decl_line(0x2b)
+     146                            .dwattr $C$DW$T$31, DW_AT_decl_column(0x1c)
+     147                    
+     148                    $C$DW$T$32      .dwtag  DW_TAG_typedef
+     149                            .dwattr $C$DW$T$32, DW_AT_name("uint8")
+     150                            .dwattr $C$DW$T$32, DW_AT_type(*$C$DW$T$31)
+     151                            .dwattr $C$DW$T$32, DW_AT_language(DW_LANG_C)
+     152                            .dwattr $C$DW$T$32, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+     153                            .dwattr $C$DW$T$32, DW_AT_decl_line(0x4b)
+     154                            .dwattr $C$DW$T$32, DW_AT_decl_column(0x11)
+     155                    
+     156                    $C$DW$T$33      .dwtag  DW_TAG_typedef
+     157                            .dwattr $C$DW$T$33, DW_AT_name("uint_least8_t")
+     158                            .dwattr $C$DW$T$33, DW_AT_type(*$C$DW$T$31)
+     159                            .dwattr $C$DW$T$33, DW_AT_language(DW_LANG_C)
+     160                            .dwattr $C$DW$T$33, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     161                            .dwattr $C$DW$T$33, DW_AT_decl_line(0x38)
+     162                            .dwattr $C$DW$T$33, DW_AT_decl_column(0x16)
+     163                    
+     164                    $C$DW$T$7       .dwtag  DW_TAG_base_type
+     165                            .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE    4
+
+     166                            .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+     167                            .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
+     168                    
+     169                    $C$DW$T$8       .dwtag  DW_TAG_base_type
+     170                            .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+     171                            .dwattr $C$DW$T$8, DW_AT_name("short")
+     172                            .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
+     173                    
+     174                    $C$DW$T$34      .dwtag  DW_TAG_typedef
+     175                            .dwattr $C$DW$T$34, DW_AT_name("int16_t")
+     176                            .dwattr $C$DW$T$34, DW_AT_type(*$C$DW$T$8)
+     177                            .dwattr $C$DW$T$34, DW_AT_language(DW_LANG_C)
+     178                            .dwattr $C$DW$T$34, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     179                            .dwattr $C$DW$T$34, DW_AT_decl_line(0x2c)
+     180                            .dwattr $C$DW$T$34, DW_AT_decl_column(0x1d)
+     181                    
+     182                    $C$DW$T$35      .dwtag  DW_TAG_typedef
+     183                            .dwattr $C$DW$T$35, DW_AT_name("int_least16_t")
+     184                            .dwattr $C$DW$T$35, DW_AT_type(*$C$DW$T$34)
+     185                            .dwattr $C$DW$T$35, DW_AT_language(DW_LANG_C)
+     186                            .dwattr $C$DW$T$35, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     187                            .dwattr $C$DW$T$35, DW_AT_decl_line(0x3a)
+     188                            .dwattr $C$DW$T$35, DW_AT_decl_column(0x17)
+     189                    
+     190                    $C$DW$T$36      .dwtag  DW_TAG_typedef
+     191                            .dwattr $C$DW$T$36, DW_AT_name("sint16")
+     192                            .dwattr $C$DW$T$36, DW_AT_type(*$C$DW$T$34)
+     193                            .dwattr $C$DW$T$36, DW_AT_language(DW_LANG_C)
+     194                            .dwattr $C$DW$T$36, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+     195                            .dwattr $C$DW$T$36, DW_AT_decl_line(0x63)
+     196                            .dwattr $C$DW$T$36, DW_AT_decl_column(0x11)
+     197                    
+     198                    $C$DW$T$9       .dwtag  DW_TAG_base_type
+     199                            .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+     200                            .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+     201                            .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
+     202                    
+     203                    $C$DW$T$37      .dwtag  DW_TAG_typedef
+     204                            .dwattr $C$DW$T$37, DW_AT_name("uint16_t")
+     205                            .dwattr $C$DW$T$37, DW_AT_type(*$C$DW$T$9)
+     206                            .dwattr $C$DW$T$37, DW_AT_language(DW_LANG_C)
+     207                            .dwattr $C$DW$T$37, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     208                            .dwattr $C$DW$T$37, DW_AT_decl_line(0x2d)
+     209                            .dwattr $C$DW$T$37, DW_AT_decl_column(0x1c)
+     210                    
+     211                    $C$DW$T$38      .dwtag  DW_TAG_typedef
+     212                            .dwattr $C$DW$T$38, DW_AT_name("uint16")
+     213                            .dwattr $C$DW$T$38, DW_AT_type(*$C$DW$T$37)
+     214                            .dwattr $C$DW$T$38, DW_AT_language(DW_LANG_C)
+     215                            .dwattr $C$DW$T$38, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+     216                            .dwattr $C$DW$T$38, DW_AT_decl_line(0x46)
+     217                            .dwattr $C$DW$T$38, DW_AT_decl_column(0x12)
+     218                    
+     219                    $C$DW$T$39      .dwtag  DW_TAG_typedef
+     220                            .dwattr $C$DW$T$39, DW_AT_name("uint_least16_t")
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE    5
+
+     221                            .dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$37)
+     222                            .dwattr $C$DW$T$39, DW_AT_language(DW_LANG_C)
+     223                            .dwattr $C$DW$T$39, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     224                            .dwattr $C$DW$T$39, DW_AT_decl_line(0x3b)
+     225                            .dwattr $C$DW$T$39, DW_AT_decl_column(0x16)
+     226                    
+     227                    $C$DW$T$10      .dwtag  DW_TAG_base_type
+     228                            .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+     229                            .dwattr $C$DW$T$10, DW_AT_name("int")
+     230                            .dwattr $C$DW$T$10, DW_AT_byte_size(0x04)
+     231                    
+     232                    $C$DW$T$40      .dwtag  DW_TAG_typedef
+     233                            .dwattr $C$DW$T$40, DW_AT_name("int32_t")
+     234                            .dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$10)
+     235                            .dwattr $C$DW$T$40, DW_AT_language(DW_LANG_C)
+     236                            .dwattr $C$DW$T$40, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     237                            .dwattr $C$DW$T$40, DW_AT_decl_line(0x2e)
+     238                            .dwattr $C$DW$T$40, DW_AT_decl_column(0x1d)
+     239                    
+     240                    $C$DW$T$41      .dwtag  DW_TAG_typedef
+     241                            .dwattr $C$DW$T$41, DW_AT_name("int_fast16_t")
+     242                            .dwattr $C$DW$T$41, DW_AT_type(*$C$DW$T$40)
+     243                            .dwattr $C$DW$T$41, DW_AT_language(DW_LANG_C)
+     244                            .dwattr $C$DW$T$41, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     245                            .dwattr $C$DW$T$41, DW_AT_decl_line(0x47)
+     246                            .dwattr $C$DW$T$41, DW_AT_decl_column(0x17)
+     247                    
+     248                    $C$DW$T$42      .dwtag  DW_TAG_typedef
+     249                            .dwattr $C$DW$T$42, DW_AT_name("int_fast32_t")
+     250                            .dwattr $C$DW$T$42, DW_AT_type(*$C$DW$T$40)
+     251                            .dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
+     252                            .dwattr $C$DW$T$42, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     253                            .dwattr $C$DW$T$42, DW_AT_decl_line(0x4a)
+     254                            .dwattr $C$DW$T$42, DW_AT_decl_column(0x17)
+     255                    
+     256                    $C$DW$T$43      .dwtag  DW_TAG_typedef
+     257                            .dwattr $C$DW$T$43, DW_AT_name("int_fast8_t")
+     258                            .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$40)
+     259                            .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
+     260                            .dwattr $C$DW$T$43, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     261                            .dwattr $C$DW$T$43, DW_AT_decl_line(0x45)
+     262                            .dwattr $C$DW$T$43, DW_AT_decl_column(0x17)
+     263                    
+     264                    $C$DW$T$44      .dwtag  DW_TAG_typedef
+     265                            .dwattr $C$DW$T$44, DW_AT_name("int_least32_t")
+     266                            .dwattr $C$DW$T$44, DW_AT_type(*$C$DW$T$40)
+     267                            .dwattr $C$DW$T$44, DW_AT_language(DW_LANG_C)
+     268                            .dwattr $C$DW$T$44, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     269                            .dwattr $C$DW$T$44, DW_AT_decl_line(0x3c)
+     270                            .dwattr $C$DW$T$44, DW_AT_decl_column(0x17)
+     271                    
+     272                    $C$DW$T$45      .dwtag  DW_TAG_typedef
+     273                            .dwattr $C$DW$T$45, DW_AT_name("sint32")
+     274                            .dwattr $C$DW$T$45, DW_AT_type(*$C$DW$T$40)
+     275                            .dwattr $C$DW$T$45, DW_AT_language(DW_LANG_C)
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE    6
+
+     276                            .dwattr $C$DW$T$45, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+     277                            .dwattr $C$DW$T$45, DW_AT_decl_line(0x5e)
+     278                            .dwattr $C$DW$T$45, DW_AT_decl_column(0x11)
+     279                    
+     280                    $C$DW$T$46      .dwtag  DW_TAG_typedef
+     281                            .dwattr $C$DW$T$46, DW_AT_name("intptr_t")
+     282                            .dwattr $C$DW$T$46, DW_AT_type(*$C$DW$T$10)
+     283                            .dwattr $C$DW$T$46, DW_AT_language(DW_LANG_C)
+     284                            .dwattr $C$DW$T$46, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     285                            .dwattr $C$DW$T$46, DW_AT_decl_line(0x52)
+     286                            .dwattr $C$DW$T$46, DW_AT_decl_column(0x1a)
+     287                    
+     288                    $C$DW$T$11      .dwtag  DW_TAG_base_type
+     289                            .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+     290                            .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+     291                            .dwattr $C$DW$T$11, DW_AT_byte_size(0x04)
+     292                    
+     293                    $C$DW$T$19      .dwtag  DW_TAG_typedef
+     294                            .dwattr $C$DW$T$19, DW_AT_name("uint32_t")
+     295                            .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$11)
+     296                            .dwattr $C$DW$T$19, DW_AT_language(DW_LANG_C)
+     297                            .dwattr $C$DW$T$19, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     298                            .dwattr $C$DW$T$19, DW_AT_decl_line(0x2f)
+     299                            .dwattr $C$DW$T$19, DW_AT_decl_column(0x1c)
+     300                    
+     301                    $C$DW$T$20      .dwtag  DW_TAG_typedef
+     302                            .dwattr $C$DW$T$20, DW_AT_name("uint32")
+     303                            .dwattr $C$DW$T$20, DW_AT_type(*$C$DW$T$19)
+     304                            .dwattr $C$DW$T$20, DW_AT_language(DW_LANG_C)
+     305                            .dwattr $C$DW$T$20, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+     306                            .dwattr $C$DW$T$20, DW_AT_decl_line(0x41)
+     307                            .dwattr $C$DW$T$20, DW_AT_decl_column(0x12)
+     308                    
+     309                    
+     310                    $C$DW$T$21      .dwtag  DW_TAG_array_type
+     311                            .dwattr $C$DW$T$21, DW_AT_type(*$C$DW$T$20)
+     312                            .dwattr $C$DW$T$21, DW_AT_language(DW_LANG_C)
+     313                            .dwattr $C$DW$T$21, DW_AT_byte_size(0xec)
+     314                    $C$DW$3 .dwtag  DW_TAG_subrange_type
+     315                            .dwattr $C$DW$3, DW_AT_upper_bound(0x3a)
+     316                    
+     317                            .dwendtag $C$DW$T$21
+     318                    
+     319                    
+     320                    $C$DW$T$22      .dwtag  DW_TAG_array_type
+     321                            .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$20)
+     322                            .dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
+     323                            .dwattr $C$DW$T$22, DW_AT_byte_size(0x60)
+     324                    $C$DW$4 .dwtag  DW_TAG_subrange_type
+     325                            .dwattr $C$DW$4, DW_AT_upper_bound(0x17)
+     326                    
+     327                            .dwendtag $C$DW$T$22
+     328                    
+     329                    $C$DW$T$47      .dwtag  DW_TAG_typedef
+     330                            .dwattr $C$DW$T$47, DW_AT_name("uint_fast16_t")
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE    7
+
+     331                            .dwattr $C$DW$T$47, DW_AT_type(*$C$DW$T$19)
+     332                            .dwattr $C$DW$T$47, DW_AT_language(DW_LANG_C)
+     333                            .dwattr $C$DW$T$47, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     334                            .dwattr $C$DW$T$47, DW_AT_decl_line(0x48)
+     335                            .dwattr $C$DW$T$47, DW_AT_decl_column(0x16)
+     336                    
+     337                    $C$DW$T$48      .dwtag  DW_TAG_typedef
+     338                            .dwattr $C$DW$T$48, DW_AT_name("uint_fast32_t")
+     339                            .dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$19)
+     340                            .dwattr $C$DW$T$48, DW_AT_language(DW_LANG_C)
+     341                            .dwattr $C$DW$T$48, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     342                            .dwattr $C$DW$T$48, DW_AT_decl_line(0x4b)
+     343                            .dwattr $C$DW$T$48, DW_AT_decl_column(0x16)
+     344                    
+     345                    $C$DW$T$49      .dwtag  DW_TAG_typedef
+     346                            .dwattr $C$DW$T$49, DW_AT_name("uint_fast8_t")
+     347                            .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$19)
+     348                            .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
+     349                            .dwattr $C$DW$T$49, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     350                            .dwattr $C$DW$T$49, DW_AT_decl_line(0x46)
+     351                            .dwattr $C$DW$T$49, DW_AT_decl_column(0x16)
+     352                    
+     353                    $C$DW$T$50      .dwtag  DW_TAG_typedef
+     354                            .dwattr $C$DW$T$50, DW_AT_name("uint_least32_t")
+     355                            .dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$19)
+     356                            .dwattr $C$DW$T$50, DW_AT_language(DW_LANG_C)
+     357                            .dwattr $C$DW$T$50, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     358                            .dwattr $C$DW$T$50, DW_AT_decl_line(0x3d)
+     359                            .dwattr $C$DW$T$50, DW_AT_decl_column(0x16)
+     360                    
+     361                    $C$DW$T$51      .dwtag  DW_TAG_typedef
+     362                            .dwattr $C$DW$T$51, DW_AT_name("uintptr_t")
+     363                            .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$11)
+     364                            .dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
+     365                            .dwattr $C$DW$T$51, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     366                            .dwattr $C$DW$T$51, DW_AT_decl_line(0x53)
+     367                            .dwattr $C$DW$T$51, DW_AT_decl_column(0x1a)
+     368                    
+     369                    $C$DW$T$12      .dwtag  DW_TAG_base_type
+     370                            .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+     371                            .dwattr $C$DW$T$12, DW_AT_name("long")
+     372                            .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
+     373                    
+     374                    $C$DW$T$13      .dwtag  DW_TAG_base_type
+     375                            .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+     376                            .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+     377                            .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
+     378                    
+     379                    $C$DW$T$14      .dwtag  DW_TAG_base_type
+     380                            .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+     381                            .dwattr $C$DW$T$14, DW_AT_name("long long")
+     382                            .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
+     383                    
+     384                    $C$DW$T$52      .dwtag  DW_TAG_typedef
+     385                            .dwattr $C$DW$T$52, DW_AT_name("int64_t")
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE    8
+
+     386                            .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$14)
+     387                            .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
+     388                            .dwattr $C$DW$T$52, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     389                            .dwattr $C$DW$T$52, DW_AT_decl_line(0x32)
+     390                            .dwattr $C$DW$T$52, DW_AT_decl_column(0x21)
+     391                    
+     392                    $C$DW$T$53      .dwtag  DW_TAG_typedef
+     393                            .dwattr $C$DW$T$53, DW_AT_name("int_fast64_t")
+     394                            .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$52)
+     395                            .dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
+     396                            .dwattr $C$DW$T$53, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     397                            .dwattr $C$DW$T$53, DW_AT_decl_line(0x4e)
+     398                            .dwattr $C$DW$T$53, DW_AT_decl_column(0x17)
+     399                    
+     400                    $C$DW$T$54      .dwtag  DW_TAG_typedef
+     401                            .dwattr $C$DW$T$54, DW_AT_name("int_least64_t")
+     402                            .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$52)
+     403                            .dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
+     404                            .dwattr $C$DW$T$54, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     405                            .dwattr $C$DW$T$54, DW_AT_decl_line(0x40)
+     406                            .dwattr $C$DW$T$54, DW_AT_decl_column(0x17)
+     407                    
+     408                    $C$DW$T$55      .dwtag  DW_TAG_typedef
+     409                            .dwattr $C$DW$T$55, DW_AT_name("sint64")
+     410                            .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$52)
+     411                            .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
+     412                            .dwattr $C$DW$T$55, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+     413                            .dwattr $C$DW$T$55, DW_AT_decl_line(0x59)
+     414                            .dwattr $C$DW$T$55, DW_AT_decl_column(0x11)
+     415                    
+     416                    $C$DW$T$56      .dwtag  DW_TAG_typedef
+     417                            .dwattr $C$DW$T$56, DW_AT_name("intmax_t")
+     418                            .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$14)
+     419                            .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
+     420                            .dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     421                            .dwattr $C$DW$T$56, DW_AT_decl_line(0x56)
+     422                            .dwattr $C$DW$T$56, DW_AT_decl_column(0x20)
+     423                    
+     424                    $C$DW$T$15      .dwtag  DW_TAG_base_type
+     425                            .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+     426                            .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+     427                            .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
+     428                    
+     429                    $C$DW$T$57      .dwtag  DW_TAG_typedef
+     430                            .dwattr $C$DW$T$57, DW_AT_name("uint64_t")
+     431                            .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$15)
+     432                            .dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
+     433                            .dwattr $C$DW$T$57, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     434                            .dwattr $C$DW$T$57, DW_AT_decl_line(0x33)
+     435                            .dwattr $C$DW$T$57, DW_AT_decl_column(0x20)
+     436                    
+     437                    $C$DW$T$58      .dwtag  DW_TAG_typedef
+     438                            .dwattr $C$DW$T$58, DW_AT_name("uint64")
+     439                            .dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$57)
+     440                            .dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE    9
+
+     441                            .dwattr $C$DW$T$58, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+     442                            .dwattr $C$DW$T$58, DW_AT_decl_line(0x3c)
+     443                            .dwattr $C$DW$T$58, DW_AT_decl_column(0x12)
+     444                    
+     445                    $C$DW$T$59      .dwtag  DW_TAG_typedef
+     446                            .dwattr $C$DW$T$59, DW_AT_name("uint_fast64_t")
+     447                            .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$57)
+     448                            .dwattr $C$DW$T$59, DW_AT_language(DW_LANG_C)
+     449                            .dwattr $C$DW$T$59, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     450                            .dwattr $C$DW$T$59, DW_AT_decl_line(0x4f)
+     451                            .dwattr $C$DW$T$59, DW_AT_decl_column(0x16)
+     452                    
+     453                    $C$DW$T$60      .dwtag  DW_TAG_typedef
+     454                            .dwattr $C$DW$T$60, DW_AT_name("uint_least64_t")
+     455                            .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$57)
+     456                            .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
+     457                            .dwattr $C$DW$T$60, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     458                            .dwattr $C$DW$T$60, DW_AT_decl_line(0x41)
+     459                            .dwattr $C$DW$T$60, DW_AT_decl_column(0x16)
+     460                    
+     461                    $C$DW$T$61      .dwtag  DW_TAG_typedef
+     462                            .dwattr $C$DW$T$61, DW_AT_name("uintmax_t")
+     463                            .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$15)
+     464                            .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
+     465                            .dwattr $C$DW$T$61, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
+     466                            .dwattr $C$DW$T$61, DW_AT_decl_line(0x57)
+     467                            .dwattr $C$DW$T$61, DW_AT_decl_column(0x20)
+     468                    
+     469                    $C$DW$T$16      .dwtag  DW_TAG_base_type
+     470                            .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+     471                            .dwattr $C$DW$T$16, DW_AT_name("float")
+     472                            .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
+     473                    
+     474                    $C$DW$T$62      .dwtag  DW_TAG_typedef
+     475                            .dwattr $C$DW$T$62, DW_AT_name("float32")
+     476                            .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$16)
+     477                            .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
+     478                            .dwattr $C$DW$T$62, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+     479                            .dwattr $C$DW$T$62, DW_AT_decl_line(0x6d)
+     480                            .dwattr $C$DW$T$62, DW_AT_decl_column(0x0f)
+     481                    
+     482                    $C$DW$T$17      .dwtag  DW_TAG_base_type
+     483                            .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+     484                            .dwattr $C$DW$T$17, DW_AT_name("double")
+     485                            .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
+     486                    
+     487                    $C$DW$T$63      .dwtag  DW_TAG_typedef
+     488                            .dwattr $C$DW$T$63, DW_AT_name("float64")
+     489                            .dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$17)
+     490                            .dwattr $C$DW$T$63, DW_AT_language(DW_LANG_C)
+     491                            .dwattr $C$DW$T$63, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+     492                            .dwattr $C$DW$T$63, DW_AT_decl_line(0x72)
+     493                            .dwattr $C$DW$T$63, DW_AT_decl_column(0x10)
+     494                    
+     495                    $C$DW$T$18      .dwtag  DW_TAG_base_type
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE   10
+
+     496                            .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+     497                            .dwattr $C$DW$T$18, DW_AT_name("long double")
+     498                            .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
+     499                    
+     500                    $C$DW$T$64      .dwtag  DW_TAG_base_type
+     501                            .dwattr $C$DW$T$64, DW_AT_encoding(DW_ATE_unsigned_char)
+     502                            .dwattr $C$DW$T$64, DW_AT_name("unsigned char")
+     503                            .dwattr $C$DW$T$64, DW_AT_byte_size(0x01)
+     504                    
+     505                    $C$DW$T$65      .dwtag  DW_TAG_typedef
+     506                            .dwattr $C$DW$T$65, DW_AT_name("boolean")
+     507                            .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$64)
+     508                            .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
+     509                            .dwattr $C$DW$T$65, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+     510                            .dwattr $C$DW$T$65, DW_AT_decl_line(0x53)
+     511                            .dwattr $C$DW$T$65, DW_AT_decl_column(0x0f)
+     512                    
+     513                    $C$DW$T$66      .dwtag  DW_TAG_typedef
+     514                            .dwattr $C$DW$T$66, DW_AT_name("tBoolean")
+     515                            .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$65)
+     516                            .dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
+     517                            .dwattr $C$DW$T$66, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/
+     518                            .dwattr $C$DW$T$66, DW_AT_decl_line(0x40)
+     519                            .dwattr $C$DW$T$66, DW_AT_decl_column(0x11)
+     520                    
+     521                    
+     522                    $C$DW$T$67      .dwtag  DW_TAG_enumeration_type
+     523                            .dwattr $C$DW$T$67, DW_AT_name("config_value_type")
+     524                            .dwattr $C$DW$T$67, DW_AT_byte_size(0x01)
+     525                    $C$DW$5 .dwtag  DW_TAG_enumerator
+     526                            .dwattr $C$DW$5, DW_AT_name("InitialValue")
+     527                            .dwattr $C$DW$5, DW_AT_const_value(0x00)
+     528                            .dwattr $C$DW$5, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pro
+     529                            .dwattr $C$DW$5, DW_AT_decl_line(0x5c)
+     530                            .dwattr $C$DW$5, DW_AT_decl_column(0x02)
+     531                    
+     532                    $C$DW$6 .dwtag  DW_TAG_enumerator
+     533                            .dwattr $C$DW$6, DW_AT_name("CurrentValue")
+     534                            .dwattr $C$DW$6, DW_AT_const_value(0x01)
+     535                            .dwattr $C$DW$6, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pro
+     536                            .dwattr $C$DW$6, DW_AT_decl_line(0x5d)
+     537                            .dwattr $C$DW$6, DW_AT_decl_column(0x02)
+     538                    
+     539                            .dwattr $C$DW$T$67, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/
+     540                            .dwattr $C$DW$T$67, DW_AT_decl_line(0x5a)
+     541                            .dwattr $C$DW$T$67, DW_AT_decl_column(0x0e)
+     542                            .dwendtag $C$DW$T$67
+     543                    
+     544                    $C$DW$T$68      .dwtag  DW_TAG_typedef
+     545                            .dwattr $C$DW$T$68, DW_AT_name("config_value_type_t")
+     546                            .dwattr $C$DW$T$68, DW_AT_type(*$C$DW$T$67)
+     547                            .dwattr $C$DW$T$68, DW_AT_language(DW_LANG_C)
+     548                            .dwattr $C$DW$T$68, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/
+     549                            .dwattr $C$DW$T$68, DW_AT_decl_line(0x5e)
+     550                            .dwattr $C$DW$T$68, DW_AT_decl_column(0x02)
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE   11
+
+     551                    
+     552                    
+     553                    $C$DW$T$69      .dwtag  DW_TAG_enumeration_type
+     554                            .dwattr $C$DW$T$69, DW_AT_name("loopBackType")
+     555                            .dwattr $C$DW$T$69, DW_AT_byte_size(0x01)
+     556                    $C$DW$7 .dwtag  DW_TAG_enumerator
+     557                            .dwattr $C$DW$7, DW_AT_name("Digital_Lbk")
+     558                            .dwattr $C$DW$7, DW_AT_const_value(0x00)
+     559                            .dwattr $C$DW$7, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pro
+     560                            .dwattr $C$DW$7, DW_AT_decl_line(0x4e)
+     561                            .dwattr $C$DW$7, DW_AT_decl_column(0x05)
+     562                    
+     563                    $C$DW$8 .dwtag  DW_TAG_enumerator
+     564                            .dwattr $C$DW$8, DW_AT_name("Analog_Lbk")
+     565                            .dwattr $C$DW$8, DW_AT_const_value(0x01)
+     566                            .dwattr $C$DW$8, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pro
+     567                            .dwattr $C$DW$8, DW_AT_decl_line(0x4f)
+     568                            .dwattr $C$DW$8, DW_AT_decl_column(0x05)
+     569                    
+     570                            .dwattr $C$DW$T$69, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/
+     571                            .dwattr $C$DW$T$69, DW_AT_decl_line(0x4c)
+     572                            .dwattr $C$DW$T$69, DW_AT_decl_column(0x0e)
+     573                            .dwendtag $C$DW$T$69
+     574                    
+     575                    $C$DW$T$70      .dwtag  DW_TAG_typedef
+     576                            .dwattr $C$DW$T$70, DW_AT_name("loopBackType_t")
+     577                            .dwattr $C$DW$T$70, DW_AT_type(*$C$DW$T$69)
+     578                            .dwattr $C$DW$T$70, DW_AT_language(DW_LANG_C)
+     579                            .dwattr $C$DW$T$70, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/
+     580                            .dwattr $C$DW$T$70, DW_AT_decl_line(0x50)
+     581                            .dwattr $C$DW$T$70, DW_AT_decl_column(0x02)
+     582                    
+     583                    
+     584                    $C$DW$T$71      .dwtag  DW_TAG_enumeration_type
+     585                            .dwattr $C$DW$T$71, DW_AT_name("systemInterrupt")
+     586                            .dwattr $C$DW$T$71, DW_AT_byte_size(0x01)
+     587                    $C$DW$9 .dwtag  DW_TAG_enumerator
+     588                            .dwattr $C$DW$9, DW_AT_name("SYS_IRQ")
+     589                            .dwattr $C$DW$9, DW_AT_const_value(0x00)
+     590                            .dwattr $C$DW$9, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pro
+     591                            .dwattr $C$DW$9, DW_AT_decl_line(0x4b)
+     592                            .dwattr $C$DW$9, DW_AT_decl_column(0x05)
+     593                    
+     594                    $C$DW$10        .dwtag  DW_TAG_enumerator
+     595                            .dwattr $C$DW$10, DW_AT_name("SYS_FIQ")
+     596                            .dwattr $C$DW$10, DW_AT_const_value(0x01)
+     597                            .dwattr $C$DW$10, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
+     598                            .dwattr $C$DW$10, DW_AT_decl_line(0x4c)
+     599                            .dwattr $C$DW$10, DW_AT_decl_column(0x05)
+     600                    
+     601                            .dwattr $C$DW$T$71, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/
+     602                            .dwattr $C$DW$T$71, DW_AT_decl_line(0x49)
+     603                            .dwattr $C$DW$T$71, DW_AT_decl_column(0x0e)
+     604                            .dwendtag $C$DW$T$71
+     605                    
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE   12
+
+     606                    $C$DW$T$72      .dwtag  DW_TAG_typedef
+     607                            .dwattr $C$DW$T$72, DW_AT_name("systemInterrupt_t")
+     608                            .dwattr $C$DW$T$72, DW_AT_type(*$C$DW$T$71)
+     609                            .dwattr $C$DW$T$72, DW_AT_language(DW_LANG_C)
+     610                            .dwattr $C$DW$T$72, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/
+     611                            .dwattr $C$DW$T$72, DW_AT_decl_line(0x4d)
+     612                            .dwattr $C$DW$T$72, DW_AT_decl_column(0x02)
+     613                    
+     614                    
+     615                    $C$DW$T$23      .dwtag  DW_TAG_structure_type
+     616                            .dwattr $C$DW$T$23, DW_AT_name("vimBase")
+     617                            .dwattr $C$DW$T$23, DW_AT_byte_size(0x1e0)
+     618                    $C$DW$11        .dwtag  DW_TAG_member
+     619                            .dwattr $C$DW$11, DW_AT_type(*$C$DW$T$21)
+     620                            .dwattr $C$DW$11, DW_AT_name("rsvd1")
+     621                            .dwattr $C$DW$11, DW_AT_TI_symbol_name("rsvd1")
+     622                            .dwattr $C$DW$11, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+     623                            .dwattr $C$DW$11, DW_AT_accessibility(DW_ACCESS_public)
+     624                            .dwattr $C$DW$11, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     625                            .dwattr $C$DW$11, DW_AT_decl_line(0x45)
+     626                            .dwattr $C$DW$11, DW_AT_decl_column(0x11)
+     627                    
+     628                    $C$DW$12        .dwtag  DW_TAG_member
+     629                            .dwattr $C$DW$12, DW_AT_type(*$C$DW$T$20)
+     630                            .dwattr $C$DW$12, DW_AT_name("ECCSTAT")
+     631                            .dwattr $C$DW$12, DW_AT_TI_symbol_name("ECCSTAT")
+     632                            .dwattr $C$DW$12, DW_AT_data_member_location[DW_OP_plus_uconst 0xec]
+     633                            .dwattr $C$DW$12, DW_AT_accessibility(DW_ACCESS_public)
+     634                            .dwattr $C$DW$12, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     635                            .dwattr $C$DW$12, DW_AT_decl_line(0x46)
+     636                            .dwattr $C$DW$12, DW_AT_decl_column(0x11)
+     637                    
+     638                    $C$DW$13        .dwtag  DW_TAG_member
+     639                            .dwattr $C$DW$13, DW_AT_type(*$C$DW$T$20)
+     640                            .dwattr $C$DW$13, DW_AT_name("ECCCTL")
+     641                            .dwattr $C$DW$13, DW_AT_TI_symbol_name("ECCCTL")
+     642                            .dwattr $C$DW$13, DW_AT_data_member_location[DW_OP_plus_uconst 0xf0]
+     643                            .dwattr $C$DW$13, DW_AT_accessibility(DW_ACCESS_public)
+     644                            .dwattr $C$DW$13, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     645                            .dwattr $C$DW$13, DW_AT_decl_line(0x47)
+     646                            .dwattr $C$DW$13, DW_AT_decl_column(0x11)
+     647                    
+     648                    $C$DW$14        .dwtag  DW_TAG_member
+     649                            .dwattr $C$DW$14, DW_AT_type(*$C$DW$T$20)
+     650                            .dwattr $C$DW$14, DW_AT_name("UERRADDR")
+     651                            .dwattr $C$DW$14, DW_AT_TI_symbol_name("UERRADDR")
+     652                            .dwattr $C$DW$14, DW_AT_data_member_location[DW_OP_plus_uconst 0xf4]
+     653                            .dwattr $C$DW$14, DW_AT_accessibility(DW_ACCESS_public)
+     654                            .dwattr $C$DW$14, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     655                            .dwattr $C$DW$14, DW_AT_decl_line(0x48)
+     656                            .dwattr $C$DW$14, DW_AT_decl_column(0x11)
+     657                    
+     658                    $C$DW$15        .dwtag  DW_TAG_member
+     659                            .dwattr $C$DW$15, DW_AT_type(*$C$DW$T$20)
+     660                            .dwattr $C$DW$15, DW_AT_name("FBVECADDR")
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE   13
+
+     661                            .dwattr $C$DW$15, DW_AT_TI_symbol_name("FBVECADDR")
+     662                            .dwattr $C$DW$15, DW_AT_data_member_location[DW_OP_plus_uconst 0xf8]
+     663                            .dwattr $C$DW$15, DW_AT_accessibility(DW_ACCESS_public)
+     664                            .dwattr $C$DW$15, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     665                            .dwattr $C$DW$15, DW_AT_decl_line(0x49)
+     666                            .dwattr $C$DW$15, DW_AT_decl_column(0x11)
+     667                    
+     668                    $C$DW$16        .dwtag  DW_TAG_member
+     669                            .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$20)
+     670                            .dwattr $C$DW$16, DW_AT_name("SBERRADDR")
+     671                            .dwattr $C$DW$16, DW_AT_TI_symbol_name("SBERRADDR")
+     672                            .dwattr $C$DW$16, DW_AT_data_member_location[DW_OP_plus_uconst 0xfc]
+     673                            .dwattr $C$DW$16, DW_AT_accessibility(DW_ACCESS_public)
+     674                            .dwattr $C$DW$16, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     675                            .dwattr $C$DW$16, DW_AT_decl_line(0x4a)
+     676                            .dwattr $C$DW$16, DW_AT_decl_column(0x11)
+     677                    
+     678                    $C$DW$17        .dwtag  DW_TAG_member
+     679                            .dwattr $C$DW$17, DW_AT_type(*$C$DW$T$20)
+     680                            .dwattr $C$DW$17, DW_AT_name("IRQINDEX")
+     681                            .dwattr $C$DW$17, DW_AT_TI_symbol_name("IRQINDEX")
+     682                            .dwattr $C$DW$17, DW_AT_data_member_location[DW_OP_plus_uconst 0x100]
+     683                            .dwattr $C$DW$17, DW_AT_accessibility(DW_ACCESS_public)
+     684                            .dwattr $C$DW$17, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     685                            .dwattr $C$DW$17, DW_AT_decl_line(0x4b)
+     686                            .dwattr $C$DW$17, DW_AT_decl_column(0x11)
+     687                    
+     688                    $C$DW$18        .dwtag  DW_TAG_member
+     689                            .dwattr $C$DW$18, DW_AT_type(*$C$DW$T$20)
+     690                            .dwattr $C$DW$18, DW_AT_name("FIQINDEX")
+     691                            .dwattr $C$DW$18, DW_AT_TI_symbol_name("FIQINDEX")
+     692                            .dwattr $C$DW$18, DW_AT_data_member_location[DW_OP_plus_uconst 0x104]
+     693                            .dwattr $C$DW$18, DW_AT_accessibility(DW_ACCESS_public)
+     694                            .dwattr $C$DW$18, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     695                            .dwattr $C$DW$18, DW_AT_decl_line(0x4c)
+     696                            .dwattr $C$DW$18, DW_AT_decl_column(0x11)
+     697                    
+     698                    $C$DW$19        .dwtag  DW_TAG_member
+     699                            .dwattr $C$DW$19, DW_AT_type(*$C$DW$T$20)
+     700                            .dwattr $C$DW$19, DW_AT_name("rsvd2")
+     701                            .dwattr $C$DW$19, DW_AT_TI_symbol_name("rsvd2")
+     702                            .dwattr $C$DW$19, DW_AT_data_member_location[DW_OP_plus_uconst 0x108]
+     703                            .dwattr $C$DW$19, DW_AT_accessibility(DW_ACCESS_public)
+     704                            .dwattr $C$DW$19, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     705                            .dwattr $C$DW$19, DW_AT_decl_line(0x4d)
+     706                            .dwattr $C$DW$19, DW_AT_decl_column(0x11)
+     707                    
+     708                    $C$DW$20        .dwtag  DW_TAG_member
+     709                            .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$20)
+     710                            .dwattr $C$DW$20, DW_AT_name("rsvd3")
+     711                            .dwattr $C$DW$20, DW_AT_TI_symbol_name("rsvd3")
+     712                            .dwattr $C$DW$20, DW_AT_data_member_location[DW_OP_plus_uconst 0x10c]
+     713                            .dwattr $C$DW$20, DW_AT_accessibility(DW_ACCESS_public)
+     714                            .dwattr $C$DW$20, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     715                            .dwattr $C$DW$20, DW_AT_decl_line(0x4e)
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE   14
+
+     716                            .dwattr $C$DW$20, DW_AT_decl_column(0x11)
+     717                    
+     718                    $C$DW$21        .dwtag  DW_TAG_member
+     719                            .dwattr $C$DW$21, DW_AT_type(*$C$DW$T$20)
+     720                            .dwattr $C$DW$21, DW_AT_name("FIRQPR0")
+     721                            .dwattr $C$DW$21, DW_AT_TI_symbol_name("FIRQPR0")
+     722                            .dwattr $C$DW$21, DW_AT_data_member_location[DW_OP_plus_uconst 0x110]
+     723                            .dwattr $C$DW$21, DW_AT_accessibility(DW_ACCESS_public)
+     724                            .dwattr $C$DW$21, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     725                            .dwattr $C$DW$21, DW_AT_decl_line(0x4f)
+     726                            .dwattr $C$DW$21, DW_AT_decl_column(0x11)
+     727                    
+     728                    $C$DW$22        .dwtag  DW_TAG_member
+     729                            .dwattr $C$DW$22, DW_AT_type(*$C$DW$T$20)
+     730                            .dwattr $C$DW$22, DW_AT_name("FIRQPR1")
+     731                            .dwattr $C$DW$22, DW_AT_TI_symbol_name("FIRQPR1")
+     732                            .dwattr $C$DW$22, DW_AT_data_member_location[DW_OP_plus_uconst 0x114]
+     733                            .dwattr $C$DW$22, DW_AT_accessibility(DW_ACCESS_public)
+     734                            .dwattr $C$DW$22, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     735                            .dwattr $C$DW$22, DW_AT_decl_line(0x50)
+     736                            .dwattr $C$DW$22, DW_AT_decl_column(0x11)
+     737                    
+     738                    $C$DW$23        .dwtag  DW_TAG_member
+     739                            .dwattr $C$DW$23, DW_AT_type(*$C$DW$T$20)
+     740                            .dwattr $C$DW$23, DW_AT_name("FIRQPR2")
+     741                            .dwattr $C$DW$23, DW_AT_TI_symbol_name("FIRQPR2")
+     742                            .dwattr $C$DW$23, DW_AT_data_member_location[DW_OP_plus_uconst 0x118]
+     743                            .dwattr $C$DW$23, DW_AT_accessibility(DW_ACCESS_public)
+     744                            .dwattr $C$DW$23, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     745                            .dwattr $C$DW$23, DW_AT_decl_line(0x51)
+     746                            .dwattr $C$DW$23, DW_AT_decl_column(0x11)
+     747                    
+     748                    $C$DW$24        .dwtag  DW_TAG_member
+     749                            .dwattr $C$DW$24, DW_AT_type(*$C$DW$T$20)
+     750                            .dwattr $C$DW$24, DW_AT_name("FIRQPR3")
+     751                            .dwattr $C$DW$24, DW_AT_TI_symbol_name("FIRQPR3")
+     752                            .dwattr $C$DW$24, DW_AT_data_member_location[DW_OP_plus_uconst 0x11c]
+     753                            .dwattr $C$DW$24, DW_AT_accessibility(DW_ACCESS_public)
+     754                            .dwattr $C$DW$24, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     755                            .dwattr $C$DW$24, DW_AT_decl_line(0x52)
+     756                            .dwattr $C$DW$24, DW_AT_decl_column(0x11)
+     757                    
+     758                    $C$DW$25        .dwtag  DW_TAG_member
+     759                            .dwattr $C$DW$25, DW_AT_type(*$C$DW$T$20)
+     760                            .dwattr $C$DW$25, DW_AT_name("INTREQ0")
+     761                            .dwattr $C$DW$25, DW_AT_TI_symbol_name("INTREQ0")
+     762                            .dwattr $C$DW$25, DW_AT_data_member_location[DW_OP_plus_uconst 0x120]
+     763                            .dwattr $C$DW$25, DW_AT_accessibility(DW_ACCESS_public)
+     764                            .dwattr $C$DW$25, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     765                            .dwattr $C$DW$25, DW_AT_decl_line(0x53)
+     766                            .dwattr $C$DW$25, DW_AT_decl_column(0x11)
+     767                    
+     768                    $C$DW$26        .dwtag  DW_TAG_member
+     769                            .dwattr $C$DW$26, DW_AT_type(*$C$DW$T$20)
+     770                            .dwattr $C$DW$26, DW_AT_name("INTREQ1")
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE   15
+
+     771                            .dwattr $C$DW$26, DW_AT_TI_symbol_name("INTREQ1")
+     772                            .dwattr $C$DW$26, DW_AT_data_member_location[DW_OP_plus_uconst 0x124]
+     773                            .dwattr $C$DW$26, DW_AT_accessibility(DW_ACCESS_public)
+     774                            .dwattr $C$DW$26, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     775                            .dwattr $C$DW$26, DW_AT_decl_line(0x54)
+     776                            .dwattr $C$DW$26, DW_AT_decl_column(0x11)
+     777                    
+     778                    $C$DW$27        .dwtag  DW_TAG_member
+     779                            .dwattr $C$DW$27, DW_AT_type(*$C$DW$T$20)
+     780                            .dwattr $C$DW$27, DW_AT_name("INTREQ2")
+     781                            .dwattr $C$DW$27, DW_AT_TI_symbol_name("INTREQ2")
+     782                            .dwattr $C$DW$27, DW_AT_data_member_location[DW_OP_plus_uconst 0x128]
+     783                            .dwattr $C$DW$27, DW_AT_accessibility(DW_ACCESS_public)
+     784                            .dwattr $C$DW$27, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     785                            .dwattr $C$DW$27, DW_AT_decl_line(0x55)
+     786                            .dwattr $C$DW$27, DW_AT_decl_column(0x11)
+     787                    
+     788                    $C$DW$28        .dwtag  DW_TAG_member
+     789                            .dwattr $C$DW$28, DW_AT_type(*$C$DW$T$20)
+     790                            .dwattr $C$DW$28, DW_AT_name("INTREQ3")
+     791                            .dwattr $C$DW$28, DW_AT_TI_symbol_name("INTREQ3")
+     792                            .dwattr $C$DW$28, DW_AT_data_member_location[DW_OP_plus_uconst 0x12c]
+     793                            .dwattr $C$DW$28, DW_AT_accessibility(DW_ACCESS_public)
+     794                            .dwattr $C$DW$28, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     795                            .dwattr $C$DW$28, DW_AT_decl_line(0x56)
+     796                            .dwattr $C$DW$28, DW_AT_decl_column(0x11)
+     797                    
+     798                    $C$DW$29        .dwtag  DW_TAG_member
+     799                            .dwattr $C$DW$29, DW_AT_type(*$C$DW$T$20)
+     800                            .dwattr $C$DW$29, DW_AT_name("REQMASKSET0")
+     801                            .dwattr $C$DW$29, DW_AT_TI_symbol_name("REQMASKSET0")
+     802                            .dwattr $C$DW$29, DW_AT_data_member_location[DW_OP_plus_uconst 0x130]
+     803                            .dwattr $C$DW$29, DW_AT_accessibility(DW_ACCESS_public)
+     804                            .dwattr $C$DW$29, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     805                            .dwattr $C$DW$29, DW_AT_decl_line(0x57)
+     806                            .dwattr $C$DW$29, DW_AT_decl_column(0x11)
+     807                    
+     808                    $C$DW$30        .dwtag  DW_TAG_member
+     809                            .dwattr $C$DW$30, DW_AT_type(*$C$DW$T$20)
+     810                            .dwattr $C$DW$30, DW_AT_name("REQMASKSET1")
+     811                            .dwattr $C$DW$30, DW_AT_TI_symbol_name("REQMASKSET1")
+     812                            .dwattr $C$DW$30, DW_AT_data_member_location[DW_OP_plus_uconst 0x134]
+     813                            .dwattr $C$DW$30, DW_AT_accessibility(DW_ACCESS_public)
+     814                            .dwattr $C$DW$30, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     815                            .dwattr $C$DW$30, DW_AT_decl_line(0x58)
+     816                            .dwattr $C$DW$30, DW_AT_decl_column(0x11)
+     817                    
+     818                    $C$DW$31        .dwtag  DW_TAG_member
+     819                            .dwattr $C$DW$31, DW_AT_type(*$C$DW$T$20)
+     820                            .dwattr $C$DW$31, DW_AT_name("REQMASKSET2")
+     821                            .dwattr $C$DW$31, DW_AT_TI_symbol_name("REQMASKSET2")
+     822                            .dwattr $C$DW$31, DW_AT_data_member_location[DW_OP_plus_uconst 0x138]
+     823                            .dwattr $C$DW$31, DW_AT_accessibility(DW_ACCESS_public)
+     824                            .dwattr $C$DW$31, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     825                            .dwattr $C$DW$31, DW_AT_decl_line(0x59)
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE   16
+
+     826                            .dwattr $C$DW$31, DW_AT_decl_column(0x11)
+     827                    
+     828                    $C$DW$32        .dwtag  DW_TAG_member
+     829                            .dwattr $C$DW$32, DW_AT_type(*$C$DW$T$20)
+     830                            .dwattr $C$DW$32, DW_AT_name("REQMASKSET3")
+     831                            .dwattr $C$DW$32, DW_AT_TI_symbol_name("REQMASKSET3")
+     832                            .dwattr $C$DW$32, DW_AT_data_member_location[DW_OP_plus_uconst 0x13c]
+     833                            .dwattr $C$DW$32, DW_AT_accessibility(DW_ACCESS_public)
+     834                            .dwattr $C$DW$32, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     835                            .dwattr $C$DW$32, DW_AT_decl_line(0x5a)
+     836                            .dwattr $C$DW$32, DW_AT_decl_column(0x11)
+     837                    
+     838                    $C$DW$33        .dwtag  DW_TAG_member
+     839                            .dwattr $C$DW$33, DW_AT_type(*$C$DW$T$20)
+     840                            .dwattr $C$DW$33, DW_AT_name("REQMASKCLR0")
+     841                            .dwattr $C$DW$33, DW_AT_TI_symbol_name("REQMASKCLR0")
+     842                            .dwattr $C$DW$33, DW_AT_data_member_location[DW_OP_plus_uconst 0x140]
+     843                            .dwattr $C$DW$33, DW_AT_accessibility(DW_ACCESS_public)
+     844                            .dwattr $C$DW$33, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     845                            .dwattr $C$DW$33, DW_AT_decl_line(0x5b)
+     846                            .dwattr $C$DW$33, DW_AT_decl_column(0x11)
+     847                    
+     848                    $C$DW$34        .dwtag  DW_TAG_member
+     849                            .dwattr $C$DW$34, DW_AT_type(*$C$DW$T$20)
+     850                            .dwattr $C$DW$34, DW_AT_name("REQMASKCLR1")
+     851                            .dwattr $C$DW$34, DW_AT_TI_symbol_name("REQMASKCLR1")
+     852                            .dwattr $C$DW$34, DW_AT_data_member_location[DW_OP_plus_uconst 0x144]
+     853                            .dwattr $C$DW$34, DW_AT_accessibility(DW_ACCESS_public)
+     854                            .dwattr $C$DW$34, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     855                            .dwattr $C$DW$34, DW_AT_decl_line(0x5c)
+     856                            .dwattr $C$DW$34, DW_AT_decl_column(0x11)
+     857                    
+     858                    $C$DW$35        .dwtag  DW_TAG_member
+     859                            .dwattr $C$DW$35, DW_AT_type(*$C$DW$T$20)
+     860                            .dwattr $C$DW$35, DW_AT_name("REQMASKCLR2")
+     861                            .dwattr $C$DW$35, DW_AT_TI_symbol_name("REQMASKCLR2")
+     862                            .dwattr $C$DW$35, DW_AT_data_member_location[DW_OP_plus_uconst 0x148]
+     863                            .dwattr $C$DW$35, DW_AT_accessibility(DW_ACCESS_public)
+     864                            .dwattr $C$DW$35, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     865                            .dwattr $C$DW$35, DW_AT_decl_line(0x5d)
+     866                            .dwattr $C$DW$35, DW_AT_decl_column(0x11)
+     867                    
+     868                    $C$DW$36        .dwtag  DW_TAG_member
+     869                            .dwattr $C$DW$36, DW_AT_type(*$C$DW$T$20)
+     870                            .dwattr $C$DW$36, DW_AT_name("REQMASKCLR3")
+     871                            .dwattr $C$DW$36, DW_AT_TI_symbol_name("REQMASKCLR3")
+     872                            .dwattr $C$DW$36, DW_AT_data_member_location[DW_OP_plus_uconst 0x14c]
+     873                            .dwattr $C$DW$36, DW_AT_accessibility(DW_ACCESS_public)
+     874                            .dwattr $C$DW$36, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     875                            .dwattr $C$DW$36, DW_AT_decl_line(0x5e)
+     876                            .dwattr $C$DW$36, DW_AT_decl_column(0x11)
+     877                    
+     878                    $C$DW$37        .dwtag  DW_TAG_member
+     879                            .dwattr $C$DW$37, DW_AT_type(*$C$DW$T$20)
+     880                            .dwattr $C$DW$37, DW_AT_name("WAKEMASKSET0")
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE   17
+
+     881                            .dwattr $C$DW$37, DW_AT_TI_symbol_name("WAKEMASKSET0")
+     882                            .dwattr $C$DW$37, DW_AT_data_member_location[DW_OP_plus_uconst 0x150]
+     883                            .dwattr $C$DW$37, DW_AT_accessibility(DW_ACCESS_public)
+     884                            .dwattr $C$DW$37, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     885                            .dwattr $C$DW$37, DW_AT_decl_line(0x5f)
+     886                            .dwattr $C$DW$37, DW_AT_decl_column(0x11)
+     887                    
+     888                    $C$DW$38        .dwtag  DW_TAG_member
+     889                            .dwattr $C$DW$38, DW_AT_type(*$C$DW$T$20)
+     890                            .dwattr $C$DW$38, DW_AT_name("WAKEMASKSET1")
+     891                            .dwattr $C$DW$38, DW_AT_TI_symbol_name("WAKEMASKSET1")
+     892                            .dwattr $C$DW$38, DW_AT_data_member_location[DW_OP_plus_uconst 0x154]
+     893                            .dwattr $C$DW$38, DW_AT_accessibility(DW_ACCESS_public)
+     894                            .dwattr $C$DW$38, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     895                            .dwattr $C$DW$38, DW_AT_decl_line(0x60)
+     896                            .dwattr $C$DW$38, DW_AT_decl_column(0x11)
+     897                    
+     898                    $C$DW$39        .dwtag  DW_TAG_member
+     899                            .dwattr $C$DW$39, DW_AT_type(*$C$DW$T$20)
+     900                            .dwattr $C$DW$39, DW_AT_name("WAKEMASKSET2")
+     901                            .dwattr $C$DW$39, DW_AT_TI_symbol_name("WAKEMASKSET2")
+     902                            .dwattr $C$DW$39, DW_AT_data_member_location[DW_OP_plus_uconst 0x158]
+     903                            .dwattr $C$DW$39, DW_AT_accessibility(DW_ACCESS_public)
+     904                            .dwattr $C$DW$39, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     905                            .dwattr $C$DW$39, DW_AT_decl_line(0x61)
+     906                            .dwattr $C$DW$39, DW_AT_decl_column(0x11)
+     907                    
+     908                    $C$DW$40        .dwtag  DW_TAG_member
+     909                            .dwattr $C$DW$40, DW_AT_type(*$C$DW$T$20)
+     910                            .dwattr $C$DW$40, DW_AT_name("WAKEMASKSET3")
+     911                            .dwattr $C$DW$40, DW_AT_TI_symbol_name("WAKEMASKSET3")
+     912                            .dwattr $C$DW$40, DW_AT_data_member_location[DW_OP_plus_uconst 0x15c]
+     913                            .dwattr $C$DW$40, DW_AT_accessibility(DW_ACCESS_public)
+     914                            .dwattr $C$DW$40, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     915                            .dwattr $C$DW$40, DW_AT_decl_line(0x62)
+     916                            .dwattr $C$DW$40, DW_AT_decl_column(0x11)
+     917                    
+     918                    $C$DW$41        .dwtag  DW_TAG_member
+     919                            .dwattr $C$DW$41, DW_AT_type(*$C$DW$T$20)
+     920                            .dwattr $C$DW$41, DW_AT_name("WAKEMASKCLR0")
+     921                            .dwattr $C$DW$41, DW_AT_TI_symbol_name("WAKEMASKCLR0")
+     922                            .dwattr $C$DW$41, DW_AT_data_member_location[DW_OP_plus_uconst 0x160]
+     923                            .dwattr $C$DW$41, DW_AT_accessibility(DW_ACCESS_public)
+     924                            .dwattr $C$DW$41, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     925                            .dwattr $C$DW$41, DW_AT_decl_line(0x63)
+     926                            .dwattr $C$DW$41, DW_AT_decl_column(0x11)
+     927                    
+     928                    $C$DW$42        .dwtag  DW_TAG_member
+     929                            .dwattr $C$DW$42, DW_AT_type(*$C$DW$T$20)
+     930                            .dwattr $C$DW$42, DW_AT_name("WAKEMASKCLR1")
+     931                            .dwattr $C$DW$42, DW_AT_TI_symbol_name("WAKEMASKCLR1")
+     932                            .dwattr $C$DW$42, DW_AT_data_member_location[DW_OP_plus_uconst 0x164]
+     933                            .dwattr $C$DW$42, DW_AT_accessibility(DW_ACCESS_public)
+     934                            .dwattr $C$DW$42, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     935                            .dwattr $C$DW$42, DW_AT_decl_line(0x64)
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE   18
+
+     936                            .dwattr $C$DW$42, DW_AT_decl_column(0x11)
+     937                    
+     938                    $C$DW$43        .dwtag  DW_TAG_member
+     939                            .dwattr $C$DW$43, DW_AT_type(*$C$DW$T$20)
+     940                            .dwattr $C$DW$43, DW_AT_name("WAKEMASKCLR2")
+     941                            .dwattr $C$DW$43, DW_AT_TI_symbol_name("WAKEMASKCLR2")
+     942                            .dwattr $C$DW$43, DW_AT_data_member_location[DW_OP_plus_uconst 0x168]
+     943                            .dwattr $C$DW$43, DW_AT_accessibility(DW_ACCESS_public)
+     944                            .dwattr $C$DW$43, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     945                            .dwattr $C$DW$43, DW_AT_decl_line(0x65)
+     946                            .dwattr $C$DW$43, DW_AT_decl_column(0x11)
+     947                    
+     948                    $C$DW$44        .dwtag  DW_TAG_member
+     949                            .dwattr $C$DW$44, DW_AT_type(*$C$DW$T$20)
+     950                            .dwattr $C$DW$44, DW_AT_name("WAKEMASKCLR3")
+     951                            .dwattr $C$DW$44, DW_AT_TI_symbol_name("WAKEMASKCLR3")
+     952                            .dwattr $C$DW$44, DW_AT_data_member_location[DW_OP_plus_uconst 0x16c]
+     953                            .dwattr $C$DW$44, DW_AT_accessibility(DW_ACCESS_public)
+     954                            .dwattr $C$DW$44, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     955                            .dwattr $C$DW$44, DW_AT_decl_line(0x66)
+     956                            .dwattr $C$DW$44, DW_AT_decl_column(0x11)
+     957                    
+     958                    $C$DW$45        .dwtag  DW_TAG_member
+     959                            .dwattr $C$DW$45, DW_AT_type(*$C$DW$T$20)
+     960                            .dwattr $C$DW$45, DW_AT_name("IRQVECREG")
+     961                            .dwattr $C$DW$45, DW_AT_TI_symbol_name("IRQVECREG")
+     962                            .dwattr $C$DW$45, DW_AT_data_member_location[DW_OP_plus_uconst 0x170]
+     963                            .dwattr $C$DW$45, DW_AT_accessibility(DW_ACCESS_public)
+     964                            .dwattr $C$DW$45, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     965                            .dwattr $C$DW$45, DW_AT_decl_line(0x67)
+     966                            .dwattr $C$DW$45, DW_AT_decl_column(0x11)
+     967                    
+     968                    $C$DW$46        .dwtag  DW_TAG_member
+     969                            .dwattr $C$DW$46, DW_AT_type(*$C$DW$T$20)
+     970                            .dwattr $C$DW$46, DW_AT_name("FIQVECREG")
+     971                            .dwattr $C$DW$46, DW_AT_TI_symbol_name("FIQVECREG")
+     972                            .dwattr $C$DW$46, DW_AT_data_member_location[DW_OP_plus_uconst 0x174]
+     973                            .dwattr $C$DW$46, DW_AT_accessibility(DW_ACCESS_public)
+     974                            .dwattr $C$DW$46, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     975                            .dwattr $C$DW$46, DW_AT_decl_line(0x68)
+     976                            .dwattr $C$DW$46, DW_AT_decl_column(0x11)
+     977                    
+     978                    $C$DW$47        .dwtag  DW_TAG_member
+     979                            .dwattr $C$DW$47, DW_AT_type(*$C$DW$T$20)
+     980                            .dwattr $C$DW$47, DW_AT_name("CAPEVT")
+     981                            .dwattr $C$DW$47, DW_AT_TI_symbol_name("CAPEVT")
+     982                            .dwattr $C$DW$47, DW_AT_data_member_location[DW_OP_plus_uconst 0x178]
+     983                            .dwattr $C$DW$47, DW_AT_accessibility(DW_ACCESS_public)
+     984                            .dwattr $C$DW$47, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     985                            .dwattr $C$DW$47, DW_AT_decl_line(0x69)
+     986                            .dwattr $C$DW$47, DW_AT_decl_column(0x11)
+     987                    
+     988                    $C$DW$48        .dwtag  DW_TAG_member
+     989                            .dwattr $C$DW$48, DW_AT_type(*$C$DW$T$20)
+     990                            .dwattr $C$DW$48, DW_AT_name("rsvd4")
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE   19
+
+     991                            .dwattr $C$DW$48, DW_AT_TI_symbol_name("rsvd4")
+     992                            .dwattr $C$DW$48, DW_AT_data_member_location[DW_OP_plus_uconst 0x17c]
+     993                            .dwattr $C$DW$48, DW_AT_accessibility(DW_ACCESS_public)
+     994                            .dwattr $C$DW$48, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+     995                            .dwattr $C$DW$48, DW_AT_decl_line(0x6a)
+     996                            .dwattr $C$DW$48, DW_AT_decl_column(0x11)
+     997                    
+     998                    $C$DW$49        .dwtag  DW_TAG_member
+     999                            .dwattr $C$DW$49, DW_AT_type(*$C$DW$T$22)
+    1000                            .dwattr $C$DW$49, DW_AT_name("CHANCTRL")
+    1001                            .dwattr $C$DW$49, DW_AT_TI_symbol_name("CHANCTRL")
+    1002                            .dwattr $C$DW$49, DW_AT_data_member_location[DW_OP_plus_uconst 0x180]
+    1003                            .dwattr $C$DW$49, DW_AT_accessibility(DW_ACCESS_public)
+    1004                            .dwattr $C$DW$49, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
+    1005                            .dwattr $C$DW$49, DW_AT_decl_line(0x6b)
+    1006                            .dwattr $C$DW$49, DW_AT_decl_column(0x11)
+    1007                    
+    1008                            .dwattr $C$DW$T$23, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1009                            .dwattr $C$DW$T$23, DW_AT_decl_line(0x43)
+    1010                            .dwattr $C$DW$T$23, DW_AT_decl_column(0x19)
+    1011                            .dwendtag $C$DW$T$23
+    1012                    
+    1013                    $C$DW$T$73      .dwtag  DW_TAG_volatile_type
+    1014                            .dwattr $C$DW$T$73, DW_AT_type(*$C$DW$T$23)
+    1015                    
+    1016                    $C$DW$T$74      .dwtag  DW_TAG_typedef
+    1017                            .dwattr $C$DW$T$74, DW_AT_name("vimBASE_t")
+    1018                            .dwattr $C$DW$T$74, DW_AT_type(*$C$DW$T$73)
+    1019                            .dwattr $C$DW$T$74, DW_AT_language(DW_LANG_C)
+    1020                            .dwattr $C$DW$T$74, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
+    1021                            .dwattr $C$DW$T$74, DW_AT_decl_line(0x6c)
+    1022                            .dwattr $C$DW$T$74, DW_AT_decl_column(0x03)
+    1023                    
+    1024                    
+    1025                    $C$DW$T$24      .dwtag  DW_TAG_structure_type
+    1026                            .dwattr $C$DW$T$24, DW_AT_name("vim_config_reg")
+    1027                            .dwattr $C$DW$T$24, DW_AT_byte_size(0x94)
+    1028                    $C$DW$50        .dwtag  DW_TAG_member
+    1029                            .dwattr $C$DW$50, DW_AT_type(*$C$DW$T$20)
+    1030                            .dwattr $C$DW$50, DW_AT_name("CONFIG_FIRQPR0")
+    1031                            .dwattr $C$DW$50, DW_AT_TI_symbol_name("CONFIG_FIRQPR0")
+    1032                            .dwattr $C$DW$50, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+    1033                            .dwattr $C$DW$50, DW_AT_accessibility(DW_ACCESS_public)
+    1034                            .dwattr $C$DW$50, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
+    1035                            .dwattr $C$DW$50, DW_AT_decl_line(0x73)
+    1036                            .dwattr $C$DW$50, DW_AT_decl_column(0x0c)
+    1037                    
+    1038                    $C$DW$51        .dwtag  DW_TAG_member
+    1039                            .dwattr $C$DW$51, DW_AT_type(*$C$DW$T$20)
+    1040                            .dwattr $C$DW$51, DW_AT_name("CONFIG_FIRQPR1")
+    1041                            .dwattr $C$DW$51, DW_AT_TI_symbol_name("CONFIG_FIRQPR1")
+    1042                            .dwattr $C$DW$51, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+    1043                            .dwattr $C$DW$51, DW_AT_accessibility(DW_ACCESS_public)
+    1044                            .dwattr $C$DW$51, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
+    1045                            .dwattr $C$DW$51, DW_AT_decl_line(0x74)
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE   20
+
+    1046                            .dwattr $C$DW$51, DW_AT_decl_column(0x0c)
+    1047                    
+    1048                    $C$DW$52        .dwtag  DW_TAG_member
+    1049                            .dwattr $C$DW$52, DW_AT_type(*$C$DW$T$20)
+    1050                            .dwattr $C$DW$52, DW_AT_name("CONFIG_FIRQPR2")
+    1051                            .dwattr $C$DW$52, DW_AT_TI_symbol_name("CONFIG_FIRQPR2")
+    1052                            .dwattr $C$DW$52, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+    1053                            .dwattr $C$DW$52, DW_AT_accessibility(DW_ACCESS_public)
+    1054                            .dwattr $C$DW$52, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
+    1055                            .dwattr $C$DW$52, DW_AT_decl_line(0x75)
+    1056                            .dwattr $C$DW$52, DW_AT_decl_column(0x0c)
+    1057                    
+    1058                    $C$DW$53        .dwtag  DW_TAG_member
+    1059                            .dwattr $C$DW$53, DW_AT_type(*$C$DW$T$20)
+    1060                            .dwattr $C$DW$53, DW_AT_name("CONFIG_FIRQPR3")
+    1061                            .dwattr $C$DW$53, DW_AT_TI_symbol_name("CONFIG_FIRQPR3")
+    1062                            .dwattr $C$DW$53, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+    1063                            .dwattr $C$DW$53, DW_AT_accessibility(DW_ACCESS_public)
+    1064                            .dwattr $C$DW$53, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
+    1065                            .dwattr $C$DW$53, DW_AT_decl_line(0x76)
+    1066                            .dwattr $C$DW$53, DW_AT_decl_column(0x0c)
+    1067                    
+    1068                    $C$DW$54        .dwtag  DW_TAG_member
+    1069                            .dwattr $C$DW$54, DW_AT_type(*$C$DW$T$20)
+    1070                            .dwattr $C$DW$54, DW_AT_name("CONFIG_REQMASKSET0")
+    1071                            .dwattr $C$DW$54, DW_AT_TI_symbol_name("CONFIG_REQMASKSET0")
+    1072                            .dwattr $C$DW$54, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+    1073                            .dwattr $C$DW$54, DW_AT_accessibility(DW_ACCESS_public)
+    1074                            .dwattr $C$DW$54, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
+    1075                            .dwattr $C$DW$54, DW_AT_decl_line(0x77)
+    1076                            .dwattr $C$DW$54, DW_AT_decl_column(0x0c)
+    1077                    
+    1078                    $C$DW$55        .dwtag  DW_TAG_member
+    1079                            .dwattr $C$DW$55, DW_AT_type(*$C$DW$T$20)
+    1080                            .dwattr $C$DW$55, DW_AT_name("CONFIG_REQMASKSET1")
+    1081                            .dwattr $C$DW$55, DW_AT_TI_symbol_name("CONFIG_REQMASKSET1")
+    1082                            .dwattr $C$DW$55, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+    1083                            .dwattr $C$DW$55, DW_AT_accessibility(DW_ACCESS_public)
+    1084                            .dwattr $C$DW$55, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
+    1085                            .dwattr $C$DW$55, DW_AT_decl_line(0x78)
+    1086                            .dwattr $C$DW$55, DW_AT_decl_column(0x0c)
+    1087                    
+    1088                    $C$DW$56        .dwtag  DW_TAG_member
+    1089                            .dwattr $C$DW$56, DW_AT_type(*$C$DW$T$20)
+    1090                            .dwattr $C$DW$56, DW_AT_name("CONFIG_REQMASKSET2")
+    1091                            .dwattr $C$DW$56, DW_AT_TI_symbol_name("CONFIG_REQMASKSET2")
+    1092                            .dwattr $C$DW$56, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+    1093                            .dwattr $C$DW$56, DW_AT_accessibility(DW_ACCESS_public)
+    1094                            .dwattr $C$DW$56, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
+    1095                            .dwattr $C$DW$56, DW_AT_decl_line(0x79)
+    1096                            .dwattr $C$DW$56, DW_AT_decl_column(0x0c)
+    1097                    
+    1098                    $C$DW$57        .dwtag  DW_TAG_member
+    1099                            .dwattr $C$DW$57, DW_AT_type(*$C$DW$T$20)
+    1100                            .dwattr $C$DW$57, DW_AT_name("CONFIG_REQMASKSET3")
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE   21
+
+    1101                            .dwattr $C$DW$57, DW_AT_TI_symbol_name("CONFIG_REQMASKSET3")
+    1102                            .dwattr $C$DW$57, DW_AT_data_member_location[DW_OP_plus_uconst 0x1c]
+    1103                            .dwattr $C$DW$57, DW_AT_accessibility(DW_ACCESS_public)
+    1104                            .dwattr $C$DW$57, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
+    1105                            .dwattr $C$DW$57, DW_AT_decl_line(0x7a)
+    1106                            .dwattr $C$DW$57, DW_AT_decl_column(0x0c)
+    1107                    
+    1108                    $C$DW$58        .dwtag  DW_TAG_member
+    1109                            .dwattr $C$DW$58, DW_AT_type(*$C$DW$T$20)
+    1110                            .dwattr $C$DW$58, DW_AT_name("CONFIG_WAKEMASKSET0")
+    1111                            .dwattr $C$DW$58, DW_AT_TI_symbol_name("CONFIG_WAKEMASKSET0")
+    1112                            .dwattr $C$DW$58, DW_AT_data_member_location[DW_OP_plus_uconst 0x20]
+    1113                            .dwattr $C$DW$58, DW_AT_accessibility(DW_ACCESS_public)
+    1114                            .dwattr $C$DW$58, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
+    1115                            .dwattr $C$DW$58, DW_AT_decl_line(0x7b)
+    1116                            .dwattr $C$DW$58, DW_AT_decl_column(0x0c)
+    1117                    
+    1118                    $C$DW$59        .dwtag  DW_TAG_member
+    1119                            .dwattr $C$DW$59, DW_AT_type(*$C$DW$T$20)
+    1120                            .dwattr $C$DW$59, DW_AT_name("CONFIG_WAKEMASKSET1")
+    1121                            .dwattr $C$DW$59, DW_AT_TI_symbol_name("CONFIG_WAKEMASKSET1")
+    1122                            .dwattr $C$DW$59, DW_AT_data_member_location[DW_OP_plus_uconst 0x24]
+    1123                            .dwattr $C$DW$59, DW_AT_accessibility(DW_ACCESS_public)
+    1124                            .dwattr $C$DW$59, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
+    1125                            .dwattr $C$DW$59, DW_AT_decl_line(0x7c)
+    1126                            .dwattr $C$DW$59, DW_AT_decl_column(0x0c)
+    1127                    
+    1128                    $C$DW$60        .dwtag  DW_TAG_member
+    1129                            .dwattr $C$DW$60, DW_AT_type(*$C$DW$T$20)
+    1130                            .dwattr $C$DW$60, DW_AT_name("CONFIG_WAKEMASKSET2")
+    1131                            .dwattr $C$DW$60, DW_AT_TI_symbol_name("CONFIG_WAKEMASKSET2")
+    1132                            .dwattr $C$DW$60, DW_AT_data_member_location[DW_OP_plus_uconst 0x28]
+    1133                            .dwattr $C$DW$60, DW_AT_accessibility(DW_ACCESS_public)
+    1134                            .dwattr $C$DW$60, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
+    1135                            .dwattr $C$DW$60, DW_AT_decl_line(0x7d)
+    1136                            .dwattr $C$DW$60, DW_AT_decl_column(0x0c)
+    1137                    
+    1138                    $C$DW$61        .dwtag  DW_TAG_member
+    1139                            .dwattr $C$DW$61, DW_AT_type(*$C$DW$T$20)
+    1140                            .dwattr $C$DW$61, DW_AT_name("CONFIG_WAKEMASKSET3")
+    1141                            .dwattr $C$DW$61, DW_AT_TI_symbol_name("CONFIG_WAKEMASKSET3")
+    1142                            .dwattr $C$DW$61, DW_AT_data_member_location[DW_OP_plus_uconst 0x2c]
+    1143                            .dwattr $C$DW$61, DW_AT_accessibility(DW_ACCESS_public)
+    1144                            .dwattr $C$DW$61, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
+    1145                            .dwattr $C$DW$61, DW_AT_decl_line(0x7e)
+    1146                            .dwattr $C$DW$61, DW_AT_decl_column(0x0c)
+    1147                    
+    1148                    $C$DW$62        .dwtag  DW_TAG_member
+    1149                            .dwattr $C$DW$62, DW_AT_type(*$C$DW$T$20)
+    1150                            .dwattr $C$DW$62, DW_AT_name("CONFIG_CAPEVT")
+    1151                            .dwattr $C$DW$62, DW_AT_TI_symbol_name("CONFIG_CAPEVT")
+    1152                            .dwattr $C$DW$62, DW_AT_data_member_location[DW_OP_plus_uconst 0x30]
+    1153                            .dwattr $C$DW$62, DW_AT_accessibility(DW_ACCESS_public)
+    1154                            .dwattr $C$DW$62, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
+    1155                            .dwattr $C$DW$62, DW_AT_decl_line(0x7f)
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE   22
+
+    1156                            .dwattr $C$DW$62, DW_AT_decl_column(0x0c)
+    1157                    
+    1158                    $C$DW$63        .dwtag  DW_TAG_member
+    1159                            .dwattr $C$DW$63, DW_AT_type(*$C$DW$T$22)
+    1160                            .dwattr $C$DW$63, DW_AT_name("CONFIG_CHANCTRL")
+    1161                            .dwattr $C$DW$63, DW_AT_TI_symbol_name("CONFIG_CHANCTRL")
+    1162                            .dwattr $C$DW$63, DW_AT_data_member_location[DW_OP_plus_uconst 0x34]
+    1163                            .dwattr $C$DW$63, DW_AT_accessibility(DW_ACCESS_public)
+    1164                            .dwattr $C$DW$63, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
+    1165                            .dwattr $C$DW$63, DW_AT_decl_line(0x80)
+    1166                            .dwattr $C$DW$63, DW_AT_decl_column(0x0c)
+    1167                    
+    1168                            .dwattr $C$DW$T$24, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/
+    1169                            .dwattr $C$DW$T$24, DW_AT_decl_line(0x71)
+    1170                            .dwattr $C$DW$T$24, DW_AT_decl_column(0x10)
+    1171                            .dwendtag $C$DW$T$24
+    1172                    
+    1173                    $C$DW$T$75      .dwtag  DW_TAG_typedef
+    1174                            .dwattr $C$DW$T$75, DW_AT_name("vim_config_reg_t")
+    1175                            .dwattr $C$DW$T$75, DW_AT_type(*$C$DW$T$24)
+    1176                            .dwattr $C$DW$T$75, DW_AT_language(DW_LANG_C)
+    1177                            .dwattr $C$DW$T$75, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/
+    1178                            .dwattr $C$DW$T$75, DW_AT_decl_line(0x81)
+    1179                            .dwattr $C$DW$T$75, DW_AT_decl_column(0x03)
+    1180                    
+    1181                            .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+    1182                    
+    1183                    ;***************************************************************
+    1184                    ;* DWARF CIE ENTRIES                                           *
+    1185                    ;***************************************************************
+    1186                    
+    1187                    $C$DW$CIE       .dwcie 14
+    1188                            .dwcfi  cfa_register, 13
+    1189                            .dwcfi  cfa_offset, 0
+    1190                            .dwcfi  same_value, 4
+    1191                            .dwcfi  same_value, 5
+    1192                            .dwcfi  same_value, 6
+    1193                            .dwcfi  same_value, 7
+    1194                            .dwcfi  same_value, 8
+    1195                            .dwcfi  same_value, 9
+    1196                            .dwcfi  same_value, 10
+    1197                            .dwcfi  same_value, 11
+    1198                            .dwcfi  same_value, 80
+    1199                            .dwcfi  same_value, 81
+    1200                            .dwcfi  same_value, 82
+    1201                            .dwcfi  same_value, 83
+    1202                            .dwcfi  same_value, 84
+    1203                            .dwcfi  same_value, 85
+    1204                            .dwcfi  same_value, 86
+    1205                            .dwcfi  same_value, 87
+    1206                            .dwcfi  same_value, 88
+    1207                            .dwcfi  same_value, 89
+    1208                            .dwcfi  same_value, 90
+    1209                            .dwcfi  same_value, 91
+    1210                            .dwcfi  same_value, 92
+TI ARM Assembler PC v16.9.0 Thu Feb 16 13:27:11 2017
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bob\AppData\Local\Temp\0707610                              PAGE   23
+
+    1211                            .dwcfi  same_value, 93
+    1212                            .dwcfi  same_value, 94
+    1213                            .dwcfi  same_value, 95
+    1214                            .dwendentry
+    1215                            .dwendtag $C$DW$CU
+    1216                    
+
+No Assembly Errors, No Assembly Warnings
