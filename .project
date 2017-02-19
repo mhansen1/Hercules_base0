@@ -24,6 +24,18 @@
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>irqDispatch_a.asm</name>
+			<type>1</type>
+			<locationURI>PARENT-5-PROJECT_LOC/workspace_v7/IRQ%20Dispatcher/irqDispatch_a.asm</locationURI>
+		</link>
+		<link>
+			<name>irqDispatch_c.c</name>
+			<type>1</type>
+			<locationURI>PARENT-5-PROJECT_LOC/workspace_v7/IRQ%20Dispatcher/irqDispatch_c.c</locationURI>
+		</link>
+	</linkedResources>
 	<variableList>
 		<variable>
 			<name>SAFETY_LIB</name>

@@ -1,9 +1,11 @@
+#include "HL_sys_common.h"
 #include "HL_reg_system.h"
 #include "HL_reg_pinmux.h"
 #include "HL_reg_het.h"
 #include "HL_reg_gio.h"
 #include "HL_reg_mibspi.h"
 #include "HL_reg_vim.h"
+#include "reg_defs.h"
 #include "VIM.h"
 #include "ROLM.h"
 
@@ -11,18 +13,22 @@
 // Entry point for the program is the function _c_int00(void) in file HL_sys_startup.c
 // See the ARM compiler guide for more info on the subject
 
-// Functions used by the GIO button interrupts
-void button1(void) {
-    gioPORTB->DOUT ^= (1 << 6);
-}
-void button2(void) {
-    //gioPORTB-> ^= (1 << 6);
-    gioPORTB->DOUT ^= (1 << 7);
-}
-
+// Need to declare the ISR as an interrupt. If this is not done then if it called during
+// another function call, then the will be stuck in that called function. This is because
+// in the ARM Cortex-R4/R5 processors, there is only one SPSR and LR for storing the PC
+// during branch-and-links. When the ISR is performed there is no automatic functionality
+// for storing the old LR value. Found one solution to create custom push/pop routine
+// for when an ISR is called. Still trying to figure out how to get it to work (not calling
+// the push/pop assembly file when interrupt is fired). However, the #pragma INTERRUPT is
+// used then the code is automatically implemented in CCS.
+// http://www.ti.com/lit/an/spna219/spna219.pdf (Nested Interrupts on Hercules ARM Cortex-R4/R5 Based Microcontrollers)
+// http://www.ti.com/lit/an/spna218/spna218.pdf (Interrupt and Exception Handling on Hercules ARM Cortex-R4/R5 Based Microcontrollers)
+#pragma CODE_STATE(buttonISR,32)
+#pragma INTERRUPT(buttonISR,IRQ)
 // GIO high priority ISR entry point
 void buttonISR(void)
 {
+    // Reading OFF1 or OFF0 clears the register
     uint32 offset = gioREG->OFF1;
     // Make sure that there was not an error in calling the interrupt to this channel
     if (offset != 0U)
@@ -32,18 +38,16 @@ void buttonISR(void)
         // Check to see if interrupt was called on GIO4
         if (offset == 12)
         {
-            button1();
+            GIOB->DOUT ^= (1 << 6);
         }
         // Check to see if interrupt was called on GIO5
         else if (offset == 13)
         {
-            button2();
+            GIOB->DOUT ^= (1 << 7);
         }
     }
-    // Re-enable the interrupts
-    // May be a better way to do this but right now it works.
-    // If function not called (specifically sets the CPSR's "I" bit) then interrupt will not be called again.
-    _enable_IRQ();
+
+    return;
 }
 
 
@@ -52,12 +56,6 @@ void main()
     /**
      * Initialize the interrupts
      */
-    // Enable the IRQ in the CPU
-    _enable_IRQ();
-    // Initialize VIM table to empty functions.
-    uint32 i;
-    for(i = 0; i < 128; i++)
-        vimRAM->ISR[i] = s_vim_init[i];
     // Set the GIO high priority interrupt channel to the desired ISR.
     // Offset by one since ISR[0] is reserved
     vimRAM->ISR[10] = &buttonISR;
@@ -66,6 +64,8 @@ void main()
     vimREG->REQMASKSET0 |= (1 << 9);
     // Ignore setting the VIM priorities for now and leave at the default.
     // Ignore mapping the interrupt channels and leave at default
+    // Enable the IRQ in the CPU
+    _enable_IRQ();
 
     /**
      * SET UP GIO
@@ -80,7 +80,7 @@ void main()
     // Set GIOB4 and GIOB5 for input (buttons on LaunchPad)
     gioPORTB->DIR &= ~((1 << 4) | (1 << 5));
     // Ensure that GIOB4 and GIOB5 is triggered on only one edge
-    gioREG->INTDET &= ~(3 << 11);
+    gioREG->INTDET &= ~(3 << 12);
     // Set GIOB4 to rising edge and GIOB5 to falling edge.
     gioREG->POL |= (1 << 12);
     gioREG->POL &= ~(1 << 13);
@@ -107,7 +107,7 @@ void main()
     pinMuxReg->PINMUX[19] |= (1 << 26);
     pinMuxReg->KICKER0 = (uint32)0;
     pinMuxReg->KICKER1 = (uint32)0;
-
+#if 0
     // Enable N2HET1 for use
     hetREG1->GCR |= (1 << 24);
 
@@ -154,17 +154,18 @@ void main()
     // Using SIMO
     mibspiREG5->PC1 |= (1 << 19);
     mibspiREG5->PC2 |= (1 << 19);
+#endif
+    ROLMinit();
 
     while (1) {
-        // Toggle the various outputs to confirm that they are actually being used as GIO pins
-        //gioPORTA->DOUT ^= (1 << 6);
-        //hetREG1->DOUT ^= (1 << 4);
-        hetREG2->DOUT ^= ((1 << 20) | (1 << 19) | (1 << 4));
-        //_enable_IRQ();
-        //gioPORTB->DOUT &= ~((1 << 6) | (1 << 7));
-        //hetREG2->DOUT ^= (1 << 8);
-        //hetREG1->DOUT ^= ((1 << 1) | (1 << 4) | (1 << 7) | (1 << 9)| (1 << 5));
-        //mibspiREG5->PC3 ^= ((1 << 27) | (1 << 19));
+        // Toggle the ROLM bus data out pins
+        ROLMSDO((uint16_t)0xFFFF);
+        ROLMEDO();
+        ROLMDDO();
+        ROLMSDO((uint16_t)0x0000);
+        ROLMEDO();
+        ROLMDDO();
+
     }
 }
 

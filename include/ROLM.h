@@ -3,8 +3,11 @@
  * ALIAS FILE FOR ROLM I/O PORTS
  *
  */
- #include "reg_defs.h"	// Contains the register definitions
- #include <stdint.h>
+#ifndef _ROLM_H_
+#define _ROLM_H_
+ 
+#include "reg_defs.h"	// Contains the register definitions
+#include <stdint.h>
  
 // Use N2HET1 for input data.
 //		DIN0 - J10[20] - N2HET1[0]
@@ -46,7 +49,7 @@
  * Struct to create ROLM data bus.
  */
  
-typedef volatile struct ROLMIO_struct {
+typedef volatile struct ROLMIO_t {
 	uint16_t DIN;			/** 	INPUT DATA	*/
 	uint16_t DOUT;			/** 	OUTPUT DATA	*/
 	uint16_t DS;				/**	DEVICE SELECT	*/
@@ -77,18 +80,14 @@ typedef volatile struct ROLMIO_struct {
 	uint8_t   OVFLO;		/**	OVERFLOW	*/
 } ROLMIO_t;
 
-ROLMIO_t *ROLMBUS;
-
 void ROLMinit(void);
-void setDATOUT(uint16_t dat);
-void ENADOUT(void);
-uint16_t getDATIN(void);
+void ROLMSDO(uint16_t dat);
+void ROLMEDO(void);
+void ROLMDDO(void);
+uint16_t ROLMRDI(void);
+void test_func(void);
+void test_func2(void);
+
+#endif
 
 
- 
- 
- 
- 
- 
- 
- 

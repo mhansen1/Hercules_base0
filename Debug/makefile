@@ -10,6 +10,8 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
+"./irqDispatch_a.obj" \
+"./irqDispatch_c.obj" \
 "./demoapp/source/adc_demos.obj" \
 "./demoapp/source/app_main_NoOS.obj" \
 "./demoapp/source/esm_application_callback.obj" \
@@ -49,9 +51,11 @@ RMDIR := RMDIR /S/Q
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include subdir_vars.mk
 -include demoapp/source/subdir_vars.mk
 -include hcg/source/subdir_vars.mk
 -include src/subdir_vars.mk
+-include subdir_rules.mk
 -include demoapp/source/subdir_rules.mk
 -include hcg/source/subdir_rules.mk
 -include src/subdir_rules.mk
@@ -184,9 +188,9 @@ Project1_LAUNCHXL2_RM57L.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "demoapp\source\adc_demos.obj" "demoapp\source\app_main_NoOS.obj" "demoapp\source\esm_application_callback.obj" "demoapp\source\misc.obj" "demoapp\source\support_functions.obj" "hcg\source\HL_adc.obj" "hcg\source\HL_epc.obj" "hcg\source\HL_errata.obj" "hcg\source\HL_esm.obj" "hcg\source\HL_gio.obj" "hcg\source\HL_nmpu.obj" "hcg\source\HL_notification.obj" "hcg\source\HL_pinmux.obj" "hcg\source\HL_rti.obj" "hcg\source\HL_sci.obj" "hcg\source\HL_sys_core.obj" "hcg\source\HL_sys_dma.obj" "hcg\source\HL_sys_intvecs.obj" "hcg\source\HL_sys_mpu.obj" "hcg\source\HL_sys_pcr.obj" "hcg\source\HL_sys_phantom.obj" "hcg\source\HL_sys_pmm.obj" "hcg\source\HL_sys_pmu.obj" "hcg\source\HL_sys_startup.obj" "hcg\source\HL_sys_vim.obj" "hcg\source\HL_system.obj" "src\ROLM.obj" 
-	-$(RM) "demoapp\source\adc_demos.d" "demoapp\source\app_main_NoOS.d" "demoapp\source\esm_application_callback.d" "demoapp\source\support_functions.d" "hcg\source\HL_adc.d" "hcg\source\HL_epc.d" "hcg\source\HL_errata.d" "hcg\source\HL_esm.d" "hcg\source\HL_gio.d" "hcg\source\HL_nmpu.d" "hcg\source\HL_notification.d" "hcg\source\HL_pinmux.d" "hcg\source\HL_rti.d" "hcg\source\HL_sci.d" "hcg\source\HL_sys_dma.d" "hcg\source\HL_sys_pcr.d" "hcg\source\HL_sys_phantom.d" "hcg\source\HL_sys_pmm.d" "hcg\source\HL_sys_startup.d" "hcg\source\HL_sys_vim.d" "hcg\source\HL_system.d" "src\ROLM.d" 
-	-$(RM) "demoapp\source\misc.d" "hcg\source\HL_sys_core.d" "hcg\source\HL_sys_intvecs.d" "hcg\source\HL_sys_mpu.d" "hcg\source\HL_sys_pmu.d" 
+	-$(RM) "irqDispatch_a.obj" "irqDispatch_c.obj" "demoapp\source\adc_demos.obj" "demoapp\source\app_main_NoOS.obj" "demoapp\source\esm_application_callback.obj" "demoapp\source\misc.obj" "demoapp\source\support_functions.obj" "hcg\source\HL_adc.obj" "hcg\source\HL_epc.obj" "hcg\source\HL_errata.obj" "hcg\source\HL_esm.obj" "hcg\source\HL_gio.obj" "hcg\source\HL_nmpu.obj" "hcg\source\HL_notification.obj" "hcg\source\HL_pinmux.obj" "hcg\source\HL_rti.obj" "hcg\source\HL_sci.obj" "hcg\source\HL_sys_core.obj" "hcg\source\HL_sys_dma.obj" "hcg\source\HL_sys_intvecs.obj" "hcg\source\HL_sys_mpu.obj" "hcg\source\HL_sys_pcr.obj" "hcg\source\HL_sys_phantom.obj" "hcg\source\HL_sys_pmm.obj" "hcg\source\HL_sys_pmu.obj" "hcg\source\HL_sys_startup.obj" "hcg\source\HL_sys_vim.obj" "hcg\source\HL_system.obj" "src\ROLM.obj" 
+	-$(RM) "irqDispatch_c.d" "demoapp\source\adc_demos.d" "demoapp\source\app_main_NoOS.d" "demoapp\source\esm_application_callback.d" "demoapp\source\support_functions.d" "hcg\source\HL_adc.d" "hcg\source\HL_epc.d" "hcg\source\HL_errata.d" "hcg\source\HL_esm.d" "hcg\source\HL_gio.d" "hcg\source\HL_nmpu.d" "hcg\source\HL_notification.d" "hcg\source\HL_pinmux.d" "hcg\source\HL_rti.d" "hcg\source\HL_sci.d" "hcg\source\HL_sys_dma.d" "hcg\source\HL_sys_pcr.d" "hcg\source\HL_sys_phantom.d" "hcg\source\HL_sys_pmm.d" "hcg\source\HL_sys_startup.d" "hcg\source\HL_sys_vim.d" "hcg\source\HL_system.d" "src\ROLM.d" 
+	-$(RM) "irqDispatch_a.d" "demoapp\source\misc.d" "hcg\source\HL_sys_core.d" "hcg\source\HL_sys_intvecs.d" "hcg\source\HL_sys_mpu.d" "hcg\source\HL_sys_pmu.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

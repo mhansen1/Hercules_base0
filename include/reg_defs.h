@@ -12,6 +12,7 @@
  */
 #include <stdio.h>
 #include <stdint.h>
+#include <reg_defs.h>
 
 /*
  *
@@ -29,7 +30,7 @@
  * More info found on page 139 of the technical reference manual
  *
  */ 
-typedef volatile struct systemBase1 {
+typedef volatile struct sysRegDefs1 {
 	uint32_t SYSPC1;			// SYS Pin Control Register 1
 	uint32_t SYSPC2;			// SYS Pin Control Register 2 
 	uint32_t SYSPC3;			// SYS Pin Control Register 3
@@ -93,9 +94,9 @@ typedef volatile struct systemBase1 {
 	uint32_t DEVID;				// Device identification register
 	uint32_t SSIVEC;			// Software interrupt vector register 
 	uint32_t SSIF;				// System software interrupt flag register
-} systemBase1_t;
+} sysRegDefs1_t;
 // Set the base address for the primary system registers 
-#define SYSREG1 ((systemBase1_t *)0xFFFFFF00U)
+#define SYSREG1 ((sysRegDefs1_t *)0xFFFFFF00U)
  
 /**
  *
@@ -103,7 +104,7 @@ typedef volatile struct systemBase1 {
  * More info found on page 191 of the technical reference manual
  *
  */ 
-typedef volatile struct systemBase2 {
+typedef volatile struct sysRegDefs2 {
 	uint32_t PLLCTL3;			// PLL control register 3
 	uint32_t rsvd1;				// Reserved hardware space 
 	uint32_t STCCLKDIV;		// CPU logic BIST clock divider
@@ -125,9 +126,9 @@ typedef volatile struct systemBase2 {
 	uint32_t DIEDH_REG1;	// Die identification register, upper word
 	uint32_t DIEDL_REG2;	// Die identification register, lower word
 	uint32_t DIEDH_REG3;	// Die identification register, upper word	
-} systemBase2_t;
+} sysRegDefs2_t;
 // Set the base address for the secondary system registers 
-#define SYSREG2 ((systemBase2_t *)0xFFFFE100U)
+#define SYSREG2 ((sysRegDefs2_t *)0xFFFFE100U)
  
  
 /**
@@ -135,7 +136,7 @@ typedef volatile struct systemBase2 {
  * Setup the GIO configuration control registers 
  *
  */
- typedef volatile struct gioBase {
+ typedef volatile struct gioCntlRegDefs {
 	uint32_t GCR0;		// GIO global control register
 	uint32_t rsvd1;				// Reserved hardware space
 	uint32_t INTDET;		// GIO interrupt detect register
@@ -149,16 +150,16 @@ typedef volatile struct systemBase2 {
 	uint32_t OFF2;			// GIO offset 2 register
 	uint32_t EMU1;			// GIO emulation 1 register
 	uint32_t EMU2;			// GIO emulation 2 register
-} gioBase_t;
+} gioCntlRegDefs_t;
 // Set base address for the GIO control registers 
-#define GIOCNTL ((gioBase_t *)0xFFF7BC00U)
+#define GIOCNTL ((gioCntlRegDefs_t *)0xFFF7BC00U)
  
 /*
  *
  * Setup the GIO port control registers
  *
  */
- typedef volatile struct gioPort {
+ typedef volatile struct gioPortRegDefs {
 	uint32_t DIR;					// GIO data direction register 
 	uint32_t DIN;					// GIO data input register 
 	uint32_t DOUT;				// GIO data output register 
@@ -167,11 +168,11 @@ typedef volatile struct systemBase2 {
 	uint32_t PDR;				// GIO open drain register 
 	uint32_t PULDIS;			// GIO pull disable register 
 	uint32_t PSL;					// GIO pull select register 
-} gioPort_t;
+} gioPortRegDefs_t;
 // Set base address for GIO port A
-#define GIOA ((gioPort_t *)0xFFF7BC34U)
+#define GIOA ((gioPortRegDefs_t *)0xFFF7BC34U)
 // Set base address for GIO port A
-#define GIOB ((gioPort_t *)0xFFF7BC54U)
+#define GIOB ((gioPortRegDefs_t *)0xFFF7BC54U)
  
 /**
  *
@@ -185,7 +186,7 @@ typedef volatile struct systemBase2 {
  *    Mainly need to look some more at the PCR section and figure out exaclt how things with a 'x' function
  *    (such as PSxMSTID[32]). To just write out all the registers would be a monsterous task.
  */
- typedef volatile struct pcrBase
+ typedef volatile struct pcrRegDefs
 {
     uint32_t PMPROTSET0;    /* 0x0000 */
     uint32_t PMPROTSET1;    /* 0x0004 */
@@ -243,13 +244,13 @@ typedef volatile struct systemBase2 {
     }PPSExMSTID[32];            /* 0x0440 */
     uint32_t PCSxMSTID[32];    /* 0x0540 */
     uint32_t PPCSxMSTID[8];    /* 0x05C0 */
-} pcrBASE_t;
+} pcrRegDefs_t;
 // Set base address of PCR register 1
-#define PCRREG1 ((pcrBASE_t *)0xFFFF1000U)
+#define PCRREG1 ((pcrRegDefs_t *)0xFFFF1000U)
 // Set base address of PCR register 2
-#define PCRREG2 ((pcrBASE_t *)0xFCFF1000U)
+#define PCRREG2 ((pcrRegDefs_t *)0xFCFF1000U)
 // Set base address of PCR register 3
-#define PCRREG3 ((pcrBASE_t *)0xFFF78000U)
+#define PCRREG3 ((pcrRegDefs_t *)0xFFF78000U)
 
 
 /**
@@ -261,7 +262,7 @@ typedef volatile struct systemBase2 {
  * Register info found on page 313 of the technical manual
  * 
  */
-typedef volatile struct muxBase {
+typedef volatile struct muxRegDefs {
 	uint32_t REGISION_REG;		// Revision register
 	uint32_t rsvd1[7];			// Reserved hardware space
 	uint32_t BOOT_REG;			// Boot mode register
@@ -283,9 +284,9 @@ typedef volatile struct muxBase {
 	uint32_t PINMUXIN[20];		// Input pin multiplexing control registers
 	uint32_t rsvd[60];			// Reserved hardware space
 	uint32_t PINMUXSPCL[20];	// Special functionality control registers
-} muxBase_t;
+} muxRegDefs_t;
 // Set base address for the I/O pin multiplexer
-#define IOMMREG ((muxBase_t *)0xFFFF1C00)
+#define IOMMREG ((muxRegDefs_t *)0xFFFF1C00)
  
  /**
  *
@@ -293,7 +294,7 @@ typedef volatile struct muxBase {
  * For more info see page 968 of the technical manual.
  * 
  */
-typedef volatile struct hetBase {
+typedef volatile struct hetRegDefs {
 	uint32_t GCR;			/**	Global configuration register	*/
 	uint32_t PFR;			/**	Prescale factor register		*/
 	uint32_t ADDR;			/**	NHET current address register	*/
@@ -332,10 +333,10 @@ typedef volatile struct hetBase {
 	uint32_t LBPSEL;		/**	Loop back pair select register	*/
 	uint32_t LBPDIR;		/**	Loop back pair direction register	*/
 	uint32_t PINDIS;		/**	NHET pin disable registe	*/
-} hetBase_t;
+} hetRegDefs_t;
 // Set the base for the HET modules (HET1 and HET2)
-#define HET1REG ((hetBase_t *)0xFFF7B800U)
-#define HET2REG ((hetBase_t *)0xFFF7B900U)
+#define HET1REG ((hetRegDefs_t *)0xFFF7B800U)
+#define HET2REG ((hetRegDefs_t *)0xFFF7B900U)
 
 #endif
  

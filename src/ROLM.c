@@ -6,6 +6,11 @@
 #include "ROLM.h"
 
 /**
+ * LOCAL VARIABLES
+ */
+struct ROLMIO_t ROLMBUS;
+
+/**
  *
  * Initialize all of the ROLM data pins as GIOs
  *
@@ -33,8 +38,8 @@
  * Set data to the output bus
  *
  */
-void setDATOUT(uint16_t dat) {
-	ROLMBUS->DOUT = dat;
+void ROLMSDO(uint16_t dat) {
+	ROLMBUS.DOUT = dat;
 	return;
 }
 
@@ -43,8 +48,22 @@ void setDATOUT(uint16_t dat) {
  * Set the bus pins to the set valies
  *
  */
-void ENADOUT(void) {
-	HET2REG->DOUT |= HET2REG->DOUT;
+void ROLMEDO(void) {
+	// Clear the current values
+	HET2REG->DOUT &= ~(0xFFFF);
+	// Set new values
+	HET2REG->DOUT |= ROLMBUS.DOUT;
+
+	return;
+}
+
+/**
+ *
+ * Disable the output
+ *
+ */
+void ROLMDDO(void) {
+	HET2REG->DOUT &= ~(0xFFFF);
 	return;
 }
 
@@ -53,13 +72,15 @@ void ENADOUT(void) {
  * Read in data from the input bus
  *
  */
-uint16_t getDATIN(void) {
+uint16_t ROLMRDI(void) {
+	// Get bits 0 through 14
 	uint16_t dat = (HET1REG->DIN & 0x07FFF);
+	// Get bit 15
 	dat |= (HET1REG->DIN & 0x10000);
+	// Store the input 
+	ROLMBUS.DIN = dat;
 	return dat;
 }
-
-
 
 
 

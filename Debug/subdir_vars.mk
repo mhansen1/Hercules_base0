@@ -2,55 +2,39 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
+SHELL = cmd.exe
+
 # Add inputs and outputs from these tool invocations to the build variables 
 ASM_SRCS += \
-../misc.asm 
+C:/Users/bob/workspace_v7/IRQ\ Dispatcher/irqDispatch_a.asm 
 
 C_SRCS += \
-../adc_demos.c \
-../app_main_NoOS.c \
-../esm_application_callback.c \
-../support_functions.c 
-
-OBJS += \
-./adc_demos.obj \
-./app_main_NoOS.obj \
-./esm_application_callback.obj \
-./misc.obj \
-./support_functions.obj 
-
-ASM_DEPS += \
-./misc.pp 
+C:/Users/bob/workspace_v7/IRQ\ Dispatcher/irqDispatch_c.c 
 
 C_DEPS += \
-./adc_demos.pp \
-./app_main_NoOS.pp \
-./esm_application_callback.pp \
-./support_functions.pp 
+./irqDispatch_c.d 
 
-C_DEPS__QUOTED += \
-"adc_demos.pp" \
-"app_main_NoOS.pp" \
-"esm_application_callback.pp" \
-"support_functions.pp" 
+OBJS += \
+./irqDispatch_a.obj \
+./irqDispatch_c.obj 
+
+ASM_DEPS += \
+./irqDispatch_a.d 
 
 OBJS__QUOTED += \
-"adc_demos.obj" \
-"app_main_NoOS.obj" \
-"esm_application_callback.obj" \
-"misc.obj" \
-"support_functions.obj" 
+"irqDispatch_a.obj" \
+"irqDispatch_c.obj" 
+
+C_DEPS__QUOTED += \
+"irqDispatch_c.d" 
 
 ASM_DEPS__QUOTED += \
-"misc.pp" 
-
-C_SRCS__QUOTED += \
-"../adc_demos.c" \
-"../app_main_NoOS.c" \
-"../esm_application_callback.c" \
-"../support_functions.c" 
+"irqDispatch_a.d" 
 
 ASM_SRCS__QUOTED += \
-"../misc.asm" 
+"C:/Users/bob/workspace_v7/IRQ Dispatcher/irqDispatch_a.asm" 
+
+C_SRCS__QUOTED += \
+"C:/Users/bob/workspace_v7/IRQ Dispatcher/irqDispatch_c.c" 
 
 
