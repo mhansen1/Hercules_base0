@@ -164,7 +164,7 @@ typedef volatile struct sysRegDefs2 {
 	uint32_t DIN;					// GIO data input register 
 	uint32_t DOUT;				// GIO data output register 
 	uint32_t DSET;				// GIO data set register 
-	uint32_t DCLEAR;			// GIO data clear registers 
+	uint32_t DCLR;			// GIO data clear registers
 	uint32_t PDR;				// GIO open drain register 
 	uint32_t PULDIS;			// GIO pull disable register 
 	uint32_t PSL;					// GIO pull select register 

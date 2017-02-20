@@ -1,11 +1,11 @@
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    1
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE    1
 
        1                    ;******************************************************************************
        2                    ;* TI ARM C/C++ Codegen                                        PC v16.9.0.LTS *
-       3                    ;* Date/Time created: Sun Feb 19 14:51:36 2017                                *
+       3                    ;* Date/Time created: Sun Feb 19 20:17:51 2017                                *
        4                    ;******************************************************************************
        5                            .compiler_opts --abi=eabi --arm_vmrs_si_workaround=off --code_state=32 --diag_wrap=off --embed
        6 00000000                   .state32
@@ -58,10 +58,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    1
       53                    ;*   Regs Used         : A1,A2,V9,LR,SR                                      *
       54                    ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
       55                    ;*****************************************************************************
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    2
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE    2
 
       56 00000000           ROLMinit:
       57                    ;* --------------------------------------------------------------------------*
@@ -118,10 +118,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    2
      108                            .dwattr $C$DW$3, DW_AT_TI_return
      109                    
      110 00000078 E12FFF1E          BX        LR                    ; [DPU_4_PIPE1] 
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    3
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE    3
 
      111                            ; BRANCH OCCURS                  ; [] 
      112                            .dwattr $C$DW$2, DW_AT_TI_end_file("../src/ROLM.c")
@@ -178,10 +178,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    3
      163                            .dwattr $C$DW$6, DW_AT_location[DW_OP_breg13 0]
      164                    
      165 00000080 E1CD00B0          STRH      A1, [SP, #0]          ; [DPU_4_PIPE0] |41| 
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    4
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE    4
 
      166                            .dwpsn  file "../src/ROLM.c",line 42,column 2,is_stmt,isa 2
      167 00000084 E59F00A8          LDR       A1, $C$CON7           ; [DPU_4_PIPE0] |42| 
@@ -238,10 +238,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    4
      218                            .dwcfi  cfa_offset, 0
      219                            .dwpsn  file "../src/ROLM.c",line 53,column 2,is_stmt,isa 2
      220 00000098 E59F0084          LDR       A1, $C$CON3           ; [DPU_4_PIPE0] |53| 
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    5
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE    5
 
      221 0000009c E590C000          LDR       V9, [A1, #0]          ; [DPU_4_PIPE0] |53| 
      222 000000a0 E7CFC01F          BFC       V9, #0, #16           ; [DPU_4_PIPE0] |53| 
@@ -298,10 +298,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    5
      273                    ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
      274                    ;*****************************************************************************
      275 000000c4           ROLMDDO:
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    6
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE    6
 
      276                    ;* --------------------------------------------------------------------------*
      277                            .dwcfi  cfa_offset, 0
@@ -358,10 +358,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    6
      328 000000d8           ROLMRDI:
      329                    ;* --------------------------------------------------------------------------*
      330                            .dwcfi  cfa_offset, 0
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    7
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE    7
 
      331 000000d8 E24DD008          SUB       SP, SP, #8            ; [DPU_4_PIPE0] 
      332                            .dwcfi  cfa_offset, 8
@@ -418,10 +418,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    7
      383 00000128 FFF7B800  ||$C$CON4||:    .bits   -542720,32
      384                            .align  4
      385 0000012c FFF7B84C  ||$C$CON5||:    .bits   -542644,32
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    8
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE    8
 
      386                            .align  4
      387 00000130 FFFE8000  ||$C$CON6||:    .bits   -98304,32
@@ -478,10 +478,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    8
      438                            .dwattr $C$DW$17, DW_AT_name("pos")
      439                            .dwattr $C$DW$17, DW_AT_TI_symbol_name("pos")
      440                            .dwattr $C$DW$17, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    9
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE    9
 
      441                            .dwattr $C$DW$17, DW_AT_accessibility(DW_ACCESS_public)
      442                            .dwattr $C$DW$17, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/st
@@ -538,10 +538,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE    9
      493                            .dwattr $C$DW$21, DW_AT_type(*$C$DW$T$21)
      494                            .dwattr $C$DW$21, DW_AT_name("PSxMSTID_L")
      495                            .dwattr $C$DW$21, DW_AT_TI_symbol_name("PSxMSTID_L")
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   10
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   10
 
      496                            .dwattr $C$DW$21, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
      497                            .dwattr $C$DW$21, DW_AT_accessibility(DW_ACCESS_public)
@@ -598,10 +598,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   10
      548                            .dwattr $C$DW$25, DW_AT_decl_column(0x12)
      549                    
      550                            .dwattr $C$DW$T$23, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   11
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   11
 
      551                            .dwattr $C$DW$T$23, DW_AT_decl_line(0xec)
      552                            .dwattr $C$DW$T$23, DW_AT_decl_column(0x05)
@@ -658,10 +658,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   11
      603                    
      604                    $C$DW$T$27      .dwtag  DW_TAG_structure_type
      605                            .dwattr $C$DW$T$27, DW_AT_name("ROLMIO_t")
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   12
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   12
 
      606                            .dwattr $C$DW$T$27, DW_AT_byte_size(0x20)
      607                    $C$DW$30        .dwtag  DW_TAG_member
@@ -718,10 +718,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   12
      658                            .dwattr $C$DW$35, DW_AT_type(*$C$DW$T$26)
      659                            .dwattr $C$DW$35, DW_AT_name("DATOC")
      660                            .dwattr $C$DW$35, DW_AT_TI_symbol_name("DATOC")
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   13
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   13
 
      661                            .dwattr $C$DW$35, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
      662                            .dwattr $C$DW$35, DW_AT_accessibility(DW_ACCESS_public)
@@ -778,10 +778,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   13
      713                            .dwattr $C$DW$40, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
      714                            .dwattr $C$DW$40, DW_AT_decl_line(0x3f)
      715                            .dwattr $C$DW$40, DW_AT_decl_column(0x0c)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   14
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   14
 
      716                    
      717                    $C$DW$41        .dwtag  DW_TAG_member
@@ -838,10 +838,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   14
      768                            .dwattr $C$DW$46, DW_AT_type(*$C$DW$T$26)
      769                            .dwattr $C$DW$46, DW_AT_name("INTA")
      770                            .dwattr $C$DW$46, DW_AT_TI_symbol_name("INTA")
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   15
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   15
 
      771                            .dwattr $C$DW$46, DW_AT_data_member_location[DW_OP_plus_uconst 0x13]
      772                            .dwattr $C$DW$46, DW_AT_accessibility(DW_ACCESS_public)
@@ -898,10 +898,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   15
      823                            .dwattr $C$DW$51, DW_AT_decl_file("C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Pr
      824                            .dwattr $C$DW$51, DW_AT_decl_line(0x4a)
      825                            .dwattr $C$DW$51, DW_AT_decl_column(0x0c)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   16
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   16
 
      826                    
      827                    $C$DW$52        .dwtag  DW_TAG_member
@@ -958,10 +958,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   16
      878                            .dwattr $C$DW$57, DW_AT_type(*$C$DW$T$26)
      879                            .dwattr $C$DW$57, DW_AT_name("OVFLO")
      880                            .dwattr $C$DW$57, DW_AT_TI_symbol_name("OVFLO")
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   17
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   17
 
      881                            .dwattr $C$DW$57, DW_AT_data_member_location[DW_OP_plus_uconst 0x1e]
      882                            .dwattr $C$DW$57, DW_AT_accessibility(DW_ACCESS_public)
@@ -1018,10 +1018,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   17
      933                            .dwattr $C$DW$T$58, DW_AT_decl_line(0x37)
      934                            .dwattr $C$DW$T$58, DW_AT_decl_column(0x17)
      935                    
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   18
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   18
 
      936                    $C$DW$T$6       .dwtag  DW_TAG_base_type
      937                            .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
@@ -1078,10 +1078,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   18
      988                            .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
      989                            .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
      990                            .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   19
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   19
 
      991                    
      992                    $C$DW$T$25      .dwtag  DW_TAG_typedef
@@ -1138,10 +1138,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   19
     1043                            .dwattr $C$DW$T$67, DW_AT_decl_column(0x17)
     1044                    
     1045                    $C$DW$T$68      .dwtag  DW_TAG_typedef
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   20
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   20
 
     1046                            .dwattr $C$DW$T$68, DW_AT_name("int_least32_t")
     1047                            .dwattr $C$DW$T$68, DW_AT_type(*$C$DW$T$64)
@@ -1198,10 +1198,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   20
     1098                            .dwattr $C$DW$59, DW_AT_upper_bound(0x04)
     1099                    
     1100                            .dwendtag $C$DW$T$33
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   21
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   21
 
     1101                    
     1102                    
@@ -1258,10 +1258,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   21
     1153                    $C$DW$T$39      .dwtag  DW_TAG_array_type
     1154                            .dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$21)
     1155                            .dwattr $C$DW$T$39, DW_AT_language(DW_LANG_C)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   22
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   22
 
     1156                            .dwattr $C$DW$T$39, DW_AT_byte_size(0xf0)
     1157                    $C$DW$65        .dwtag  DW_TAG_subrange_type
@@ -1318,10 +1318,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   22
     1208                            .dwattr $C$DW$70, DW_AT_upper_bound(0x07)
     1209                    
     1210                            .dwendtag $C$DW$T$48
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   23
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   23
 
     1211                    
     1212                    $C$DW$T$72      .dwtag  DW_TAG_typedef
@@ -1378,10 +1378,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   23
     1263                            .dwattr $C$DW$T$77, DW_AT_decl_column(0x0e)
     1264                    
     1265                    $C$DW$T$13      .dwtag  DW_TAG_base_type
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   24
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   24
 
     1266                            .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
     1267                            .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
@@ -1438,10 +1438,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   24
     1318                            .dwattr $C$DW$T$82, DW_AT_decl_column(0x20)
     1319                    
     1320                    $C$DW$T$83      .dwtag  DW_TAG_typedef
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   25
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   25
 
     1321                            .dwattr $C$DW$T$83, DW_AT_name("uint_fast64_t")
     1322                            .dwattr $C$DW$T$83, DW_AT_type(*$C$DW$T$82)
@@ -1498,10 +1498,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   25
     1373                            .dwattr $C$DW$T$28, DW_AT_decl_file("C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/
     1374                            .dwattr $C$DW$T$28, DW_AT_decl_line(0x37)
     1375                            .dwattr $C$DW$T$28, DW_AT_decl_column(0x10)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   26
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   26
 
     1376                            .dwendtag $C$DW$T$28
     1377                    
@@ -1558,10 +1558,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   26
     1428                            .dwattr $C$DW$75, DW_AT_decl_column(0x0b)
     1429                    
     1430                    $C$DW$76        .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   27
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   27
 
     1431                            .dwattr $C$DW$76, DW_AT_type(*$C$DW$T$21)
     1432                            .dwattr $C$DW$76, DW_AT_name("ENASET")
@@ -1618,10 +1618,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   27
     1483                            .dwattr $C$DW$81, DW_AT_TI_symbol_name("OFF1")
     1484                            .dwattr $C$DW$81, DW_AT_data_member_location[DW_OP_plus_uconst 0x24]
     1485                            .dwattr $C$DW$81, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   28
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   28
 
     1486                            .dwattr $C$DW$81, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
     1487                            .dwattr $C$DW$81, DW_AT_decl_line(0x95)
@@ -1678,10 +1678,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   28
     1538                            .dwattr $C$DW$T$30, DW_AT_name("gioPortRegDefs")
     1539                            .dwattr $C$DW$T$30, DW_AT_byte_size(0x20)
     1540                    $C$DW$85        .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   29
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   29
 
     1541                            .dwattr $C$DW$85, DW_AT_type(*$C$DW$T$21)
     1542                            .dwattr $C$DW$85, DW_AT_name("DIR")
@@ -1724,8 +1724,8 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   29
     1579                    
     1580                    $C$DW$89        .dwtag  DW_TAG_member
     1581                            .dwattr $C$DW$89, DW_AT_type(*$C$DW$T$21)
-    1582                            .dwattr $C$DW$89, DW_AT_name("DCLEAR")
-    1583                            .dwattr $C$DW$89, DW_AT_TI_symbol_name("DCLEAR")
+    1582                            .dwattr $C$DW$89, DW_AT_name("DCLR")
+    1583                            .dwattr $C$DW$89, DW_AT_TI_symbol_name("DCLR")
     1584                            .dwattr $C$DW$89, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
     1585                            .dwattr $C$DW$89, DW_AT_accessibility(DW_ACCESS_public)
     1586                            .dwattr $C$DW$89, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
@@ -1738,10 +1738,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   29
     1593                            .dwattr $C$DW$90, DW_AT_TI_symbol_name("PDR")
     1594                            .dwattr $C$DW$90, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
     1595                            .dwattr $C$DW$90, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   30
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   30
 
     1596                            .dwattr $C$DW$90, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
     1597                            .dwattr $C$DW$90, DW_AT_decl_line(0xa8)
@@ -1798,10 +1798,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   30
     1648                            .dwattr $C$DW$93, DW_AT_decl_column(0x0b)
     1649                    
     1650                    $C$DW$94        .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   31
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   31
 
     1651                            .dwattr $C$DW$94, DW_AT_type(*$C$DW$T$21)
     1652                            .dwattr $C$DW$94, DW_AT_name("PFR")
@@ -1858,10 +1858,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   31
     1703                            .dwattr $C$DW$99, DW_AT_TI_symbol_name("INTENAC")
     1704                            .dwattr $C$DW$99, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
     1705                            .dwattr $C$DW$99, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   32
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   32
 
     1706                            .dwattr $C$DW$99, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\Pr
     1707                            .dwattr $C$DW$99, DW_AT_decl_line(0x130)
@@ -1918,10 +1918,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   32
     1758                            .dwattr $C$DW$104, DW_AT_decl_column(0x0b)
     1759                    
     1760                    $C$DW$105       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   33
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   33
 
     1761                            .dwattr $C$DW$105, DW_AT_type(*$C$DW$T$21)
     1762                            .dwattr $C$DW$105, DW_AT_name("rsvd1")
@@ -1978,10 +1978,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   33
     1813                            .dwattr $C$DW$110, DW_AT_TI_symbol_name("REQDS")
     1814                            .dwattr $C$DW$110, DW_AT_data_member_location[DW_OP_plus_uconst 0x44]
     1815                            .dwattr $C$DW$110, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   34
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   34
 
     1816                            .dwattr $C$DW$110, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\P
     1817                            .dwattr $C$DW$110, DW_AT_decl_line(0x13b)
@@ -2038,10 +2038,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   34
     1868                            .dwattr $C$DW$115, DW_AT_decl_column(0x0b)
     1869                    
     1870                    $C$DW$116       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   35
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   35
 
     1871                            .dwattr $C$DW$116, DW_AT_type(*$C$DW$T$21)
     1872                            .dwattr $C$DW$116, DW_AT_name("DCLR")
@@ -2098,10 +2098,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   35
     1923                            .dwattr $C$DW$121, DW_AT_TI_symbol_name("rsvd4")
     1924                            .dwattr $C$DW$121, DW_AT_data_member_location[DW_OP_plus_uconst 0x70]
     1925                            .dwattr $C$DW$121, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   36
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   36
 
     1926                            .dwattr $C$DW$121, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\P
     1927                            .dwattr $C$DW$121, DW_AT_decl_line(0x146)
@@ -2158,10 +2158,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   36
     1978                            .dwattr $C$DW$126, DW_AT_decl_column(0x0b)
     1979                    
     1980                    $C$DW$127       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   37
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   37
 
     1981                            .dwattr $C$DW$127, DW_AT_type(*$C$DW$T$21)
     1982                            .dwattr $C$DW$127, DW_AT_name("rsvd5")
@@ -2218,10 +2218,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   37
     2033                            .dwattr $C$DW$T$92, DW_AT_decl_line(0x150)
     2034                            .dwattr $C$DW$T$92, DW_AT_decl_column(0x03)
     2035                    
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   38
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   38
 
     2036                    
     2037                    $C$DW$T$40      .dwtag  DW_TAG_structure_type
@@ -2278,10 +2278,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   38
     2088                            .dwattr $C$DW$135, DW_AT_decl_column(0x0b)
     2089                    
     2090                    $C$DW$136       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   39
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   39
 
     2091                            .dwattr $C$DW$136, DW_AT_type(*$C$DW$T$21)
     2092                            .dwattr $C$DW$136, DW_AT_name("KICK_REG1")
@@ -2338,10 +2338,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   39
     2143                            .dwattr $C$DW$141, DW_AT_TI_symbol_name("ERR_ENABLE_CLR_REG")
     2144                            .dwattr $C$DW$141, DW_AT_data_member_location[DW_OP_plus_uconst 0xec]
     2145                            .dwattr $C$DW$141, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   40
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   40
 
     2146                            .dwattr $C$DW$141, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\P
     2147                            .dwattr $C$DW$141, DW_AT_decl_line(0x114)
@@ -2398,10 +2398,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   40
     2198                            .dwattr $C$DW$146, DW_AT_decl_column(0x0b)
     2199                    
     2200                    $C$DW$147       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   41
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   41
 
     2201                            .dwattr $C$DW$147, DW_AT_type(*$C$DW$T$36)
     2202                            .dwattr $C$DW$147, DW_AT_name("PINMUXOUT")
@@ -2458,10 +2458,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   41
     2253                            .dwendtag $C$DW$T$40
     2254                    
     2255                    $C$DW$T$94      .dwtag  DW_TAG_volatile_type
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   42
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   42
 
     2256                            .dwattr $C$DW$T$94, DW_AT_type(*$C$DW$T$40)
     2257                    
@@ -2518,10 +2518,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   42
     2308                            .dwattr $C$DW$155, DW_AT_decl_column(0x0e)
     2309                    
     2310                    $C$DW$156       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   43
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   43
 
     2311                            .dwattr $C$DW$156, DW_AT_type(*$C$DW$T$21)
     2312                            .dwattr $C$DW$156, DW_AT_name("PMPROTCLR1")
@@ -2578,10 +2578,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   43
     2363                            .dwattr $C$DW$161, DW_AT_TI_symbol_name("PPROTSET3")
     2364                            .dwattr $C$DW$161, DW_AT_data_member_location[DW_OP_plus_uconst 0x2c]
     2365                            .dwattr $C$DW$161, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   44
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   44
 
     2366                            .dwattr $C$DW$161, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\P
     2367                            .dwattr $C$DW$161, DW_AT_decl_line(0xc8)
@@ -2638,10 +2638,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   44
     2418                            .dwattr $C$DW$166, DW_AT_decl_column(0x0e)
     2419                    
     2420                    $C$DW$167       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   45
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   45
 
     2421                            .dwattr $C$DW$167, DW_AT_type(*$C$DW$T$35)
     2422                            .dwattr $C$DW$167, DW_AT_name("rsvd4")
@@ -2698,10 +2698,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   45
     2473                            .dwattr $C$DW$172, DW_AT_TI_symbol_name("PCSPWRDWNCLR1")
     2474                            .dwattr $C$DW$172, DW_AT_data_member_location[DW_OP_plus_uconst 0x74]
     2475                            .dwattr $C$DW$172, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   46
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   46
 
     2476                            .dwattr $C$DW$172, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\P
     2477                            .dwattr $C$DW$172, DW_AT_decl_line(0xd3)
@@ -2758,10 +2758,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   46
     2528                            .dwattr $C$DW$177, DW_AT_decl_column(0x0e)
     2529                    
     2530                    $C$DW$178       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   47
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   47
 
     2531                            .dwattr $C$DW$178, DW_AT_type(*$C$DW$T$35)
     2532                            .dwattr $C$DW$178, DW_AT_name("rsvd7")
@@ -2818,10 +2818,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   47
     2583                            .dwattr $C$DW$183, DW_AT_TI_symbol_name("rsvd8")
     2584                            .dwattr $C$DW$183, DW_AT_data_member_location[DW_OP_plus_uconst 0xb0]
     2585                            .dwattr $C$DW$183, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   48
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   48
 
     2586                            .dwattr $C$DW$183, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\P
     2587                            .dwattr $C$DW$183, DW_AT_decl_line(0xde)
@@ -2878,10 +2878,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   48
     2638                            .dwattr $C$DW$188, DW_AT_decl_column(0x0e)
     2639                    
     2640                    $C$DW$189       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   49
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   49
 
     2641                            .dwattr $C$DW$189, DW_AT_type(*$C$DW$T$21)
     2642                            .dwattr $C$DW$189, DW_AT_name("MSTIDDIAGCTRL")
@@ -2938,10 +2938,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   49
     2693                            .dwattr $C$DW$194, DW_AT_TI_symbol_name("PCSxMSTID")
     2694                            .dwattr $C$DW$194, DW_AT_data_member_location[DW_OP_plus_uconst 0x540]
     2695                            .dwattr $C$DW$194, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   50
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   50
 
     2696                            .dwattr $C$DW$194, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\P
     2697                            .dwattr $C$DW$194, DW_AT_decl_line(0xf5)
@@ -2998,10 +2998,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   50
     2748                            .dwattr $C$DW$197, DW_AT_decl_column(0x0b)
     2749                    
     2750                    $C$DW$198       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   51
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   51
 
     2751                            .dwattr $C$DW$198, DW_AT_type(*$C$DW$T$21)
     2752                            .dwattr $C$DW$198, DW_AT_name("SYSPC3")
@@ -3058,10 +3058,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   51
     2803                            .dwattr $C$DW$203, DW_AT_TI_symbol_name("SYSPC8")
     2804                            .dwattr $C$DW$203, DW_AT_data_member_location[DW_OP_plus_uconst 0x1c]
     2805                            .dwattr $C$DW$203, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   52
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   52
 
     2806                            .dwattr $C$DW$203, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\P
     2807                            .dwattr $C$DW$203, DW_AT_decl_line(0x29)
@@ -3118,10 +3118,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   52
     2858                            .dwattr $C$DW$208, DW_AT_decl_column(0x0b)
     2859                    
     2860                    $C$DW$209       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   53
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   53
 
     2861                            .dwattr $C$DW$209, DW_AT_type(*$C$DW$T$21)
     2862                            .dwattr $C$DW$209, DW_AT_name("CSDISSET")
@@ -3178,10 +3178,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   53
     2913                            .dwattr $C$DW$214, DW_AT_TI_symbol_name("GHVSRC")
     2914                            .dwattr $C$DW$214, DW_AT_data_member_location[DW_OP_plus_uconst 0x48]
     2915                            .dwattr $C$DW$214, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   54
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   54
 
     2916                            .dwattr $C$DW$214, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\P
     2917                            .dwattr $C$DW$214, DW_AT_decl_line(0x34)
@@ -3238,10 +3238,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   54
     2968                            .dwattr $C$DW$219, DW_AT_decl_column(0x0b)
     2969                    
     2970                    $C$DW$220       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   55
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   55
 
     2971                            .dwattr $C$DW$220, DW_AT_type(*$C$DW$T$21)
     2972                            .dwattr $C$DW$220, DW_AT_name("MSINEA")
@@ -3298,10 +3298,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   55
     3023                            .dwattr $C$DW$225, DW_AT_TI_symbol_name("PLLCTL2")
     3024                            .dwattr $C$DW$225, DW_AT_data_member_location[DW_OP_plus_uconst 0x74]
     3025                            .dwattr $C$DW$225, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   56
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   56
 
     3026                            .dwattr $C$DW$225, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\P
     3027                            .dwattr $C$DW$225, DW_AT_decl_line(0x3f)
@@ -3358,10 +3358,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   56
     3078                            .dwattr $C$DW$230, DW_AT_decl_column(0x0b)
     3079                    
     3080                    $C$DW$231       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   57
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   57
 
     3081                            .dwattr $C$DW$231, DW_AT_type(*$C$DW$T$21)
     3082                            .dwattr $C$DW$231, DW_AT_name("CLKTEST")
@@ -3418,10 +3418,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   57
     3133                            .dwattr $C$DW$236, DW_AT_TI_symbol_name("GPREG1")
     3134                            .dwattr $C$DW$236, DW_AT_data_member_location[DW_OP_plus_uconst 0xa0]
     3135                            .dwattr $C$DW$236, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   58
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   58
 
     3136                            .dwattr $C$DW$236, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\P
     3137                            .dwattr $C$DW$236, DW_AT_decl_line(0x4a)
@@ -3478,10 +3478,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   58
     3188                            .dwattr $C$DW$241, DW_AT_decl_column(0x0b)
     3189                    
     3190                    $C$DW$242       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   59
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   59
 
     3191                            .dwattr $C$DW$242, DW_AT_type(*$C$DW$T$21)
     3192                            .dwattr $C$DW$242, DW_AT_name("SSIR3")
@@ -3538,10 +3538,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   59
     3243                            .dwattr $C$DW$247, DW_AT_TI_symbol_name("CPURSTCR")
     3244                            .dwattr $C$DW$247, DW_AT_data_member_location[DW_OP_plus_uconst 0xcc]
     3245                            .dwattr $C$DW$247, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   60
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   60
 
     3246                            .dwattr $C$DW$247, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\P
     3247                            .dwattr $C$DW$247, DW_AT_decl_line(0x55)
@@ -3598,10 +3598,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   60
     3298                            .dwattr $C$DW$252, DW_AT_decl_column(0x0b)
     3299                    
     3300                    $C$DW$253       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   61
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   61
 
     3301                            .dwattr $C$DW$253, DW_AT_type(*$C$DW$T$21)
     3302                            .dwattr $C$DW$253, DW_AT_name("SYSESR")
@@ -3658,10 +3658,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   61
     3353                            .dwattr $C$DW$258, DW_AT_TI_symbol_name("SSIF")
     3354                            .dwattr $C$DW$258, DW_AT_data_member_location[DW_OP_plus_uconst 0xf8]
     3355                            .dwattr $C$DW$258, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   62
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   62
 
     3356                            .dwattr $C$DW$258, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\P
     3357                            .dwattr $C$DW$258, DW_AT_decl_line(0x60)
@@ -3718,10 +3718,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   62
     3408                            .dwattr $C$DW$261, DW_AT_decl_column(0x0b)
     3409                    
     3410                    $C$DW$262       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   63
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   63
 
     3411                            .dwattr $C$DW$262, DW_AT_type(*$C$DW$T$21)
     3412                            .dwattr $C$DW$262, DW_AT_name("rsvd2")
@@ -3778,10 +3778,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   63
     3463                            .dwattr $C$DW$267, DW_AT_TI_symbol_name("VCLKACON1")
     3464                            .dwattr $C$DW$267, DW_AT_data_member_location[DW_OP_plus_uconst 0x20]
     3465                            .dwattr $C$DW$267, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   64
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   64
 
     3466                            .dwattr $C$DW$267, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\P
     3467                            .dwattr $C$DW$267, DW_AT_decl_line(0x74)
@@ -3838,10 +3838,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   64
     3518                            .dwattr $C$DW$272, DW_AT_decl_column(0x0b)
     3519                    
     3520                    $C$DW$273       .dwtag  DW_TAG_member
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   65
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   65
 
     3521                            .dwattr $C$DW$273, DW_AT_type(*$C$DW$T$21)
     3522                            .dwattr $C$DW$273, DW_AT_name("IP1ECCERREN")
@@ -3898,10 +3898,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   65
     3573                            .dwattr $C$DW$278, DW_AT_TI_symbol_name("DIEDL_REG2")
     3574                            .dwattr $C$DW$278, DW_AT_data_member_location[DW_OP_plus_uconst 0x4c]
     3575                            .dwattr $C$DW$278, DW_AT_accessibility(DW_ACCESS_public)
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   66
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   66
 
     3576                            .dwattr $C$DW$278, DW_AT_decl_file("C:\Users\bob\Documents\Projects\induct_forge\RM57Lx_test\P
     3577                            .dwattr $C$DW$278, DW_AT_decl_line(0x7f)
@@ -3958,10 +3958,10 @@ C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   66
     3628                            .dwcfi  same_value, 85
     3629                            .dwcfi  same_value, 86
     3630                            .dwcfi  same_value, 87
-TI ARM Assembler PC v16.9.0 Sun Feb 19 14:51:37 2017
+TI ARM Assembler PC v16.9.0 Sun Feb 19 20:17:51 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bob\AppData\Local\Temp\1084010                              PAGE   67
+C:\Users\bob\AppData\Local\Temp\0199210                              PAGE   67
 
     3631                            .dwcfi  same_value, 88
     3632                            .dwcfi  same_value, 89

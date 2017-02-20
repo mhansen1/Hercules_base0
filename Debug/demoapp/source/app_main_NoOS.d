@@ -11,6 +11,8 @@ demoapp/source/app_main_NoOS.obj: C:/Users/bob/Documents/Projects/induct_forge/R
 demoapp/source/app_main_NoOS.obj: C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Project1_LAUNCHXL2_RM57L/hcg/include/HL_reg_het.h
 demoapp/source/app_main_NoOS.obj: C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Project1_LAUNCHXL2_RM57L/hcg/include/HL_reg_mibspi.h
 demoapp/source/app_main_NoOS.obj: C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Project1_LAUNCHXL2_RM57L/hcg/include/HL_reg_vim.h
+demoapp/source/app_main_NoOS.obj: C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Project1_LAUNCHXL2_RM57L/hcg/include/HL_rti.h
+demoapp/source/app_main_NoOS.obj: C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Project1_LAUNCHXL2_RM57L/hcg/include/HL_reg_rti.h
 demoapp/source/app_main_NoOS.obj: C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Project1_LAUNCHXL2_RM57L/include/reg_defs.h
 demoapp/source/app_main_NoOS.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/stdio.h
 demoapp/source/app_main_NoOS.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/linkage.h
@@ -30,6 +32,8 @@ C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Project1_LAUNCHXL2_RM57
 C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Project1_LAUNCHXL2_RM57L/hcg/include/HL_reg_het.h: 
 C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Project1_LAUNCHXL2_RM57L/hcg/include/HL_reg_mibspi.h: 
 C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Project1_LAUNCHXL2_RM57L/hcg/include/HL_reg_vim.h: 
+C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Project1_LAUNCHXL2_RM57L/hcg/include/HL_rti.h: 
+C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Project1_LAUNCHXL2_RM57L/hcg/include/HL_reg_rti.h: 
 C:/Users/bob/Documents/Projects/induct_forge/RM57Lx_test/Project1_LAUNCHXL2_RM57L/include/reg_defs.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/stdio.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include/linkage.h: 

@@ -16,6 +16,7 @@ ASM_SRCS += \
 
 C_SRCS += \
 ../hcg/source/HL_adc.c \
+../hcg/source/HL_emif.c \
 ../hcg/source/HL_epc.c \
 ../hcg/source/HL_errata.c \
 ../hcg/source/HL_esm.c \
@@ -35,6 +36,7 @@ C_SRCS += \
 
 C_DEPS += \
 ./hcg/source/HL_adc.d \
+./hcg/source/HL_emif.d \
 ./hcg/source/HL_epc.d \
 ./hcg/source/HL_errata.d \
 ./hcg/source/HL_esm.d \
@@ -54,6 +56,7 @@ C_DEPS += \
 
 OBJS += \
 ./hcg/source/HL_adc.obj \
+./hcg/source/HL_emif.obj \
 ./hcg/source/HL_epc.obj \
 ./hcg/source/HL_errata.obj \
 ./hcg/source/HL_esm.obj \
@@ -83,6 +86,7 @@ ASM_DEPS += \
 
 OBJS__QUOTED += \
 "hcg\source\HL_adc.obj" \
+"hcg\source\HL_emif.obj" \
 "hcg\source\HL_epc.obj" \
 "hcg\source\HL_errata.obj" \
 "hcg\source\HL_esm.obj" \
@@ -106,6 +110,7 @@ OBJS__QUOTED += \
 
 C_DEPS__QUOTED += \
 "hcg\source\HL_adc.d" \
+"hcg\source\HL_emif.d" \
 "hcg\source\HL_epc.d" \
 "hcg\source\HL_errata.d" \
 "hcg\source\HL_esm.d" \
@@ -131,6 +136,7 @@ ASM_DEPS__QUOTED += \
 
 C_SRCS__QUOTED += \
 "../hcg/source/HL_adc.c" \
+"../hcg/source/HL_emif.c" \
 "../hcg/source/HL_epc.c" \
 "../hcg/source/HL_errata.c" \
 "../hcg/source/HL_esm.c" \

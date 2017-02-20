@@ -1,7 +1,7 @@
 /** @file HL_rti.h
 *   @brief RTI Driver Header File
-*   @date 03.Apr.2015
-*   @version 04.04.00
+*   @date 05-Oct-2016
+*   @version 04.06.00
 *   
 *   This file contains:
 *   - Definitions
@@ -12,7 +12,7 @@
 */
 
 /* 
-* Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com  
+* Copyright (C) 2009-2016 Texas Instruments Incorporated - www.ti.com  
 * 
 * 
 *  Redistribution and use in source and binary forms, with or without 
@@ -251,14 +251,14 @@ typedef struct rti_config_reg
 
 
 /* Configuration registers initial value */
-#define RTI_GCTRL_CONFIGVALUE	 ((uint32)((uint32)0x5U << 16U) | 0x00000000U)
+#define RTI_GCTRL_CONFIGVALUE	 ((uint32)((uint32)0xAU << 16U) | 0x00000000U)
 #define RTI_TBCTRL_CONFIGVALUE  0x00000000U
 #define RTI_CAPCTRL_CONFIGVALUE  (0U | 0U)
-#define RTI_COMPCTRL_CONFIGVALUE (0x00000000U | 0x00000000U | 0x00000000U | 0x00000000U)
-#define RTI_UDCP0_CONFIGVALUE 28125U
-#define RTI_UDCP1_CONFIGVALUE 46875000U
-#define RTI_UDCP2_CONFIGVALUE 4687500U
-#define RTI_UDCP3_CONFIGVALUE 46875000U
+#define RTI_COMPCTRL_CONFIGVALUE (0x00001000U | 0x00000100U | 0x00000000U | 0x00000000U)
+#define RTI_UDCP0_CONFIGVALUE 10286U
+#define RTI_UDCP1_CONFIGVALUE 51428U
+#define RTI_UDCP2_CONFIGVALUE 82285U
+#define RTI_UDCP3_CONFIGVALUE 102856U
 
 
 /** 

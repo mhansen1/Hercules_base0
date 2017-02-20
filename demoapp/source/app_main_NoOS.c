@@ -5,6 +5,7 @@
 #include "HL_reg_gio.h"
 #include "HL_reg_mibspi.h"
 #include "HL_reg_vim.h"
+#include "HL_rti.h"
 #include "reg_defs.h"
 #include "VIM.h"
 #include "ROLM.h"
@@ -13,6 +14,11 @@
 // Entry point for the program is the function _c_int00(void) in file HL_sys_startup.c
 // See the ARM compiler guide for more info on the subject
 
+// Clock sources can be found on page 75 of the processor datasheet
+
+/**
+ * SETUP ISR ROUTINES
+ */
 // Need to declare the ISR as an interrupt. If this is not done then if it called during
 // another function call, then the will be stuck in that called function. This is because
 // in the ARM Cortex-R4/R5 processors, there is only one SPSR and LR for storing the PC
@@ -46,10 +52,39 @@ void buttonISR(void)
             GIOB->DOUT ^= (1 << 7);
         }
     }
-
     return;
 }
 
+#if 0
+// Setup the RTI ISRs
+#pragma CODE_STATE(timer1ISR,32)
+#pragma INTERRUPT(timer1ISR,IRQ)
+void timer1ISR(void) {
+    rtiREG1->INTFLAG &= ~1U;
+    GIOA->DOUT ^= (1 << 6);
+    return;
+}
+
+#pragma CODE_STATE(timer2ISR,32)
+#pragma INTERRUPT(timer2ISR,IRQ)
+void timer2ISR(void) {
+    GIOA->DOUT ^= (1 << 1);
+    rtiREG1->INTFLAG &= ~2U;
+    return;
+}
+#endif
+
+void rtiNotification(rtiBASE_t *rtiREG,uint32 notification) {
+    if(notification == rtiNOTIFICATION_COMPARE0) {
+        rtiREG1->INTFLAG &= ~1U;
+        gioPORTA->DOUT ^= (1 << 6);
+    }
+    else if(notification == rtiNOTIFICATION_COMPARE1) {
+        rtiREG1->INTFLAG &= ~2U;
+        gioPORTA->DOUT ^= (1 << 1);
+    }
+    return;
+}
 
 void main()
 {
@@ -59,13 +94,15 @@ void main()
     // Set the GIO high priority interrupt channel to the desired ISR.
     // Offset by one since ISR[0] is reserved
     vimRAM->ISR[10] = &buttonISR;
-    // Enable INT9 channel (GIO high priority interrupt)
+    //vimRAM->ISR[3] = &timer1ISR;
+    //vimRAM->ISR[4] = &timer2ISR;
     // See data sheet for locations of interrupts in the particular device.
-    vimREG->REQMASKSET0 |= (1 << 9);
+    vimREG->REQMASKSET0 |= (1 << 9); // GIO high priority interrupt
+    vimREG->REQMASKSET0 |= (1 << 2); // RTI0 interrupt
+    vimREG->REQMASKSET0 |= (1 << 3); // RTI1 interrupt
     // Ignore setting the VIM priorities for now and leave at the default.
     // Ignore mapping the interrupt channels and leave at default
     // Enable the IRQ in the CPU
-    _enable_IRQ();
 
     /**
      * SET UP GIO
@@ -101,12 +138,12 @@ void main()
     // Otherwise it is at the default and dedicated to GIOA[6].
     // NOTE: TO CHANGE WHAT SIGNAL A MUX OUTPUT USES, THESE EXACT VALUES MUST BE PUT INTO BOTH KICK
     //       REGISTERS!
-    pinMuxReg->KICKER0 = 0x83E70B13U; // Enable changing of mux outputs
-    pinMuxReg->KICKER1 = 0x95A4F1E0U;
-    pinMuxReg->PINMUX[19] &= ~(7 << 24); // Change the output on ball H3
-    pinMuxReg->PINMUX[19] |= (1 << 26);
-    pinMuxReg->KICKER0 = (uint32)0;
-    pinMuxReg->KICKER1 = (uint32)0;
+    //pinMuxReg->KICKER0 = 0x83E70B13U; // Enable changing of mux outputs
+    //pinMuxReg->KICKER1 = 0x95A4F1E0U;
+    //pinMuxReg->PINMUX[19] &= ~(7 << 24); // Change the output on ball H3
+    //pinMuxReg->PINMUX[19] |= (1 << 26);
+    //pinMuxReg->KICKER0 = (uint32)0;
+    //pinMuxReg->KICKER1 = (uint32)0;
 #if 0
     // Enable N2HET1 for use
     hetREG1->GCR |= (1 << 24);
@@ -157,6 +194,20 @@ void main()
 #endif
     ROLMinit();
 
+    /**
+     * SETUP RTI MODULE
+     */
+    // Set up GIOs to be toggled during the ISRs
+    gioPORTA->DIR |= ((1 << 6) | (1 << 1));
+    gioPORTA->DCLR |= ((1 << 6) | (1 << 1));
+
+    rtiInit();
+    rtiEnableNotification(rtiREG1,rtiNOTIFICATION_COMPARE0);
+    rtiEnableNotification(rtiREG1,rtiNOTIFICATION_COMPARE1);
+    rtiStartCounter(rtiREG1,rtiCOUNTER_BLOCK0);
+
+    _enable_IRQ();
+
     while (1) {
         // Toggle the ROLM bus data out pins
         ROLMSDO((uint16_t)0xFFFF);
@@ -165,7 +216,7 @@ void main()
         ROLMSDO((uint16_t)0x0000);
         ROLMEDO();
         ROLMDDO();
-
+        //GIOA->DOUT ^= (1 << 6);
     }
 }
 

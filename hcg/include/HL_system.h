@@ -305,10 +305,10 @@ typedef struct system_config_reg
     uint32 CONFIG_SYSECR;
     uint32 CONFIG_PLLCTL3;
     uint32 CONFIG_STCCLKDIV;
-	uint32 CONFIG_ECPCNTL1;
+    uint32 CONFIG_ECPCNTL1;
     uint32 CONFIG_CLK2CNTRL;
     uint32 CONFIG_VCLKACON1;
-	uint32 CONFIG_HCLKCNTL;
+    uint32 CONFIG_HCLKCNTL;
     uint32 CONFIG_CLKSLIP;
     uint32 CONFIG_EFC_CTLEN;
 } system_config_reg_t;
@@ -336,7 +336,7 @@ typedef struct system_config_reg
 #define SYS_CDDIS_CONFIGVALUE   ( (uint32)((uint32)0U << 4U )\
                                 | (uint32)((uint32)1U << 5U )\
                                 | (uint32)((uint32)0U << 8U )\
-								| (uint32)((uint32)0U << 9U )\
+                                | (uint32)((uint32)0U << 9U )\
                                 | (uint32)((uint32)0U << 10U)\
                                 | (uint32)((uint32)0U << 11U) )
                       
@@ -412,7 +412,7 @@ typedef struct system_config_reg
 #define SYS2_CLK2CNTRL_CONFIGVALUE  (1U | 0x00000100U)
 #define SYS2_HCLKCNTL_CONFIGVALUE    1U
 #define SYS2_VCLKACON1_CONFIGVALUE  ( (uint32)((uint32)1U << 24U) \
-									| (uint32)((uint32)1U << 20U) \
+                                    | (uint32)((uint32)1U << 20U) \
                                     | (uint32)((uint32)SYS_VCLK << 16U)\
                                     | (uint32)((uint32)1U << 8U)\
                                     | (uint32)((uint32)1U << 4U) \
@@ -429,7 +429,7 @@ typedef struct system_config_reg
                                             | (uint32)((uint32)SYS_ACTIVE << 2U) \
                                             | (uint32)((uint32)SYS_ACTIVE << 0U) )
 #define L2FLASH_FRDCNTL_CONFIGVALUE        ((uint32)((uint32)3U << 8U) |  3U)
-											
+
 void systemGetConfigValue(system_config_reg_t *config_reg, config_value_type_t type);
 
 /* USER CODE BEGIN (1) */
